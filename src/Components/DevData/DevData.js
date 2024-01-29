@@ -155,10 +155,11 @@ export const menuItems = [
 // Homepage
 
 export const chartsData = [
-  { icon: 'images/Home/Users.svg', value: '_', label: 'الزيارات' },
-  { icon: 'images/Home/Group 23.svg', value: '125', label: 'المبيعات' },
-  { icon: 'images/Home/box.svg', value: '6', label: 'الطلبات' },
+  { id: 1, icon: 'images/Home/Users.svg', value: '_', label: 'الزيارات' },
+  { id: 2, icon: 'images/Home/Group 23.svg', value: '125', label: 'المبيعات' },
+  { id: 3, icon: 'images/Home/box.svg', value: '6', label: 'الطلبات' },
   {
+    id: 4,
     icon: 'images/Home/cup.svg',
     value: '5000',
     arrow: <FaAngleLeft />,

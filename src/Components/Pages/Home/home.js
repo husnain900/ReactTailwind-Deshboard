@@ -30,7 +30,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 const Home = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState('');
+  const [selectedValue, setSelectedValue] = useState(5000);
 
   const handleOpen = () => {
     setIsPopupOpen(true);
@@ -41,7 +41,7 @@ const Home = () => {
   };
 
   const handleBoxClick = (index) => {
-    setSelectedValue(chartsData[index].value);
+    // setSelectedValue(chartsData[index].value);
     if (index === 3) {
       handleOpen();
     }
@@ -83,7 +83,7 @@ const Home = () => {
                         <img src={item.icon} alt="" />
                       </div>
                       <div className="">
-                        <h5>{item.value}</h5>
+                        <h5>{item.id === 4 ? selectedValue : item.value}</h5>
                         <h5 className="flex items-center gap-1">
                           {item.label} <span>{item.arrow}</span>{' '}
                         </h5>

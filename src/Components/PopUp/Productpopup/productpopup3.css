@@ -1,0 +1,15 @@
+.productOrderButton {
+  background-color: white;
+  color: #004d5a;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productOrderButton:active {
+  background-color: #76e8cd;
+}
+.productOrderButton:hover {
+  background-color: #76e8cd;
+}

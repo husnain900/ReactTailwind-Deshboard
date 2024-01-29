@@ -48,8 +48,8 @@ const Sidebar = () => {
               </div>
             </div>
             {isPopupVisible && (
-              <ul className="tech-user-menu-drop-popup absolute left-6 top-[105px] rounded bg-white popup">
-                <li className="hover:bg-gray-100 p-1 hover:rounded">
+              <ul className="tech-user-menu-drop-popup absolute left-6 top-[105px] rounded bg-white popup ">
+                <li className="hover:bg-gray-100 p-1 hover:rounded ">
                   <a
                     href="#"
                     className="text-gray-800 p-2 flex items-center gap-1 ShareD"
