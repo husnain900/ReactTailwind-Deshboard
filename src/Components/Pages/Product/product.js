@@ -273,7 +273,7 @@ const Product = () => {
                 </div>
               </div>
               <div className="fm-box-footer">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center px-2">
                   <Productpopup3 />
                   <div className="fm-ft-col-2">
                     <select>
