@@ -1,0 +1,208 @@
+.common-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.common-header p {
+  color: var(--a-7-a-7-a-7, #a7a7a7);
+  font-size: 15.373px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.common-btn {
+  border-radius: 82px !important;
+  padding: 3px 8px !important;
+  color: var(--003-c-47, #003c47) !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  cursor: pointer !important;
+  line-height: normal !important;
+  font-family: 'Noto Naskh Arabic', serif !important;
+}
+
+/*Checkbox*/
+.css-jsexje-MuiSwitch-thumb {
+  background: #ebebeb !important;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+  + .MuiSwitch-track {
+  background-color: #76e8cd !important;
+  opacity: 0.9 !important;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase {
+  border-radius: 22px;
+  position: absolute;
+}
+
+.css-1yjjitx-MuiSwitch-track {
+  border-radius: 15px !important;
+}
+
+.MuiSwitch-sizeMedium {
+  padding: 6px !important;
+}
+
+.chk-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  gap: 10px;
+  color: #444;
+  font-weight: 400;
+}
+
+.chk-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: relative;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #004d5a;
+  border-radius: 3px;
+  transition: all 0.35s cubic-bezier(0.2, 1, 0.3, 1);
+  margin-right: 0px;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.chk-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.chk-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #004d5a;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.css-1fdsijx-ValueContainer {
+  color: #c2c2c2 !important;
+  font-size: 9.803px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal;
+}
+
+.css-13cymwt-control {
+  border-radius: 0px 8px 8px 0 !important;
+}
+
+.text-b {
+  color: var(--003-c-47, #003c47);
+  font-size: 15.373px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/*  */
+.top-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-title p {
+  color: #000;
+  font-size: 18.05px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.top-title .left-side svg {
+  font-size: 24px;
+}
+
+/* common check box  */
+.tech-static-p-custom-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.tech-static-p-custom-checkbox input {
+  display: none;
+}
+
+.tech-static-p-custom-checkbox .tech-static-p-checkbox-background {
+  width: 47px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  border: 1px solid #e8e8e8;
+}
+
+.tech-static-p-custom-checkbox .tech-static-p-slider {
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.tech-static-p-custom-checkbox
+  input:checked
+  + .tech-static-p-checkbox-background {
+  background-color: #76e8cd;
+  border-color: #76e8cd;
+}
+
+.tech-static-p-custom-checkbox
+  input:checked
+  + .tech-static-p-checkbox-background
+  .tech-static-p-slider {
+  transform: translateX(20px);
+}
+
+/* Datepicekr  */
+input.relative.transition-all.duration-300.py-2\.5.pl-4.pr-14.w-full.border-gray-300.dark\:bg-slate-800.dark\:text-white\/80.dark\:border-slate-600.rounded-lg.tracking-wide.font-light.text-sm.placeholder-gray-400.bg-white.focus\:ring.disabled\:opacity-40.disabled\:cursor-not-allowed.focus\:border-teal-500.focus\:ring-teal-500\/20 {
+  text-align: left;
+  color: var(--a-7-a-7-a-7, #a7a7a7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (max-width: 767px) {
+  .top-title .left-side {
+    flex-direction: row;
+  }
+
+  .top-title .left-side a {
+    display: inline-flex;
+    padding-top: 5px;
+  }
+}

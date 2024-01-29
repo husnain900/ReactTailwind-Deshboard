@@ -1,0 +1,159 @@
+/* Table  */
+.tech-static-p-main {
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid #BDBDBD;
+}
+
+.tech-static-p-title {
+    height: 68.633px;
+    border-radius: 6.535px 6.535px 0px 0px;
+    background: #F4F3F3;
+    display: flex;
+    align-items: center;
+    padding: 0 23.42px;
+}
+
+.tech-static-p-title h6 {
+    margin: 0;
+    color: #333;
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.tech-static-p-title h6 span {
+    color: var(--Gray-1, #333);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.tech-static-p-title h6 img {
+    width: 24px;
+    height: 24px;
+}
+
+.tech-static-p-table {
+    padding: 22px 0;
+}
+
+.tech-static-p-table table {
+    width: 100%;
+}
+
+.tech-static-p-table-td-title a {
+    color: #000;
+    text-align: right;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.tech-static-p-table-td-title a:hover {
+    color: #00414D;
+}
+
+.tech-static-p-table td {
+    padding: 12px 23.42px;
+
+}
+
+.tech-static-p-table td:nth-child(2) {
+    text-align: left;
+    border: none;
+}
+
+/*more buttons design*/
+.tech-static-p-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.tech-static-p-more-btn-main button {
+    border: none;
+    height: 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tech-static-p-more-popup {
+    display: none;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .07);
+    display: none;
+    left: 0;
+    margin-top: 5px;
+    min-width: 100px;
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+    min-width: 200px;
+}
+
+.tech-active-popup .tech-static-p-more-popup {
+    display: block;
+}
+
+.tech-static-p-more-popup ul {
+    list-style: none;
+}
+
+.tech-static-p-more-popup ul li a {
+    color: #333;
+    padding: 10px;
+    display: block;
+    font-size: 13px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.staticPage ul {
+    left: 0 !important;
+    right: 80%;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+    .tech-static-p-table td {
+        padding: 5px 24px !important;
+    }
+
+    .tech-static-p-title {
+        height: 50.633px !important;
+        padding: 0px 20px !important;
+    }
+
+    .tech-static-p-title h6 {
+        font-size: 18px !important;
+    }
+
+    .tech-static-p-table {
+        padding: 10px 0 !important;
+    }
+
+    /* abandond */
+    .alert-box-abandond h3 {
+        font-size: 19px !important;
+    }
+
+    .alert-box-abandond h4 {
+        font-size: 16px !important;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) {}

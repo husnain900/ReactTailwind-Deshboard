@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 480px) {
+    .d13-btm-form button {
+        padding: 3px 3px !important;
+    }
+    .d13-btm-form input {
+        padding: 3px 6px !important;
+        font-size: 10px !important;
+        width: 75px !important;
+    }
+    .tech-static-p-title h6 {
+        font-size: 18px !important;
+    }
+    .tech-static-p-title h6 span {
+        font-size: 11px !important;
+    }
+    .tech-static-p-table {
+        padding: 6px 0 !important;
+    }
+    .tech-static-p-title {
+        height: 50 !important;
+        padding: 0 10px !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) {}

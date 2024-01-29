@@ -1,0 +1,35 @@
+.ss-box {
+	border-radius: 6px;
+	border: 0.636px solid #CECECE;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ss-box h3 {
+	color: #333;
+	font-size: 12px;
+	font-weight: 700;
+	margin: 15px 0 3px 0;
+
+}
+
+.ss-box p {
+	color: #A7A7A7;
+	font-size: 12px;
+	font-weight: 300;
+	margin: 0;
+	text-align: center;
+}
+
+.ss-tp-box h1 {
+	color: #333;
+	font-size: 24px;
+	font-weight: 300;
+	margin: 75px 0 20px;
+}
+
+.ss-tp-box svg {
+	color: #1AEDB8;
+	font-size: 30px;
+}

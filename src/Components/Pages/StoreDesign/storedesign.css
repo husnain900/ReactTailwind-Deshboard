@@ -1,0 +1,220 @@
+.st-bnr-container {
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(92deg, #2c4875 9.59%, #080f1a 102.05%);
+}
+.no-border-input {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+.customEyebutton {
+  color: #003c47;
+}
+.customEyebutton:hover {
+  color: #76e8cd; /* This will change the text color on hover */
+}
+.st-bnr-sub-container {
+  padding: 22px 15px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.st-bnr-col h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.st-bnr-col p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.storeBox {
+  border-radius: 16px;
+  border: 1px solid #9c9c9c;
+  padding: 30px;
+}
+
+.storeBox h1 {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: normal;
+}
+
+.st-bx-container {
+  padding: 5px 0 0 0;
+  border-radius: 6px;
+  border: 1px solid #cecece;
+  background: #fff;
+}
+
+.st-mn-img img {
+  width: 100%;
+}
+
+.st-mn-img {
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 5px;
+}
+
+.st-mn-heading {
+  margin-top: 17px;
+}
+
+.st-mn-heading h2 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.st-mn-body {
+  padding: 0 17px;
+}
+
+.st-txt-rtng-cntn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.st-txt-rtng-cntn-col h4 {
+  color: #000;
+  font-size: 11px;
+  font-weight: 400;
+  margin: 2px 0 0 0;
+}
+
+.st-txt-rtng-cntn-col p {
+  color: #8b8b8b;
+  font-size: 11px;
+  font-weight: 400;
+  margin: 2px 0 0 0;
+}
+
+.st-mn-btm-btn {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.st-mn-btm-btn button {
+  width: 100%;
+  padding: 7px 0;
+  border: none;
+  border-top: 1px solid #cecece;
+  color: #003c47;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+}
+
+.fm-fields {
+  width: 520px;
+  margin: 0 auto 75px;
+}
+
+.fm-fields h2 {
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.fm-fields p {
+  padding: 16px 0;
+  color: #8c8c8c;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.fm-fields form {
+  border-radius: 73px;
+  border: 1px solid #b6b6b6;
+  padding: 14px 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.storebtn {
+  border-radius: 12px;
+  background: var(--bbf-3-e-5, #bbf3e5);
+  padding: 10px;
+  color: var(--003-c-47, #003c47);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+  .st-bnr-col h1 {
+    font-size: 22px !important;
+  }
+
+  .st-bnr-sub-container {
+    padding: 10px !important;
+    gap: 10px !important;
+  }
+
+  .storeBox {
+    padding: 15px !important;
+  }
+
+  .storeBox h1 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .fm-fields {
+    width: 100%;
+    margin: 0 auto 30px !important;
+  }
+
+  .fm-fields p {
+    padding: 12px 0 !important;
+  }
+
+  .fm-fields form {
+    padding: 12px !important;
+    height: 45px !important;
+  }
+
+  .st-mn-btm-btn button {
+    font-size: 16px !important;
+  }
+
+  .st-mn-btm-btn {
+    margin-top: 20px !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

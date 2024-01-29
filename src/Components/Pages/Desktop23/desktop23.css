@@ -1,0 +1,194 @@
+.dk-23-fst-row-col h2 {
+    color: #BDBDBD;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 35px 25px 0;
+}
+
+.dk-23-fst-row-sub-col {
+    padding: 40px 100px;
+    border-radius: 12px;
+    border: 1px solid #A7A7A7;
+}
+
+.dk-23-fst-row-sub-col h3 {
+    text-align: center;
+    color: #00414D;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.dk-23-scnd-row {
+    margin: 35px 0;
+}
+
+.dk-23-scnd-row h2 {
+    color: var(--Gray-4, #BDBDBD);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.dk-23-scnd-sub-row {
+    border-radius: 12px;
+    border: 1px solid #CFCFCF;
+    padding: 10px;
+}
+
+.dk-23-cl-rows {
+    border-bottom: 1px solid #C9C9C9;
+}
+
+.dk-23-cl-rows:last-child {
+    border-bottom: none !important;
+}
+
+.dk-23-cl-sub-rows {
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dk-23-cl-sub-rows-col {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.dk-23-cl-crcl {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #00C336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dk-23-cl-txt h4 {
+    color: #6C6F70;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 5px 0;
+}
+
+.dk-23-cl-txt p {
+    color: #A1A1A1;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.dk-23-cl-sub-rows-col button {
+    border-radius: 6px;
+    background: #BBF3E5;
+    color: #003C47;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    padding: 7px 13px;
+}
+
+#dk-23-cl-btn {
+    background: rgba(245, 81, 87, 0.18);
+    color: #F55157;
+}
+
+.dk-23-thrd-row {
+    border-radius: 12px;
+    border: 1px solid #CBCBCB;
+}
+
+.dk-23-thrd-row-sub {
+    padding: 70px 45px;
+}
+
+.dk-23-thrd-row-sub h2 {
+    color: #8C8C8C;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 25px 0;
+}
+
+.dk-23-thrd-row-sub input {
+    border-radius: 73px;
+    border: 1px solid #B6B6B6;
+    padding: 14px 25px;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.dk-23-thrd-row-sub button {
+    color: #003C47;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px;
+    width: 120px;
+    border-radius: 52px;
+    background: #BBF3E5;
+    border: none;
+
+}
+
+
+.dk-23-thrd-row-sub .MuiOutlinedInput-notchedOutline {
+    border-color: #B6B6B6 !important;
+    border-width: 1px !important;
+    border-radius: 30px !important;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+
+    .dk-23-cl-crcl {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .dk-23-cl-txt h4, p {
+        font-size: 14px !important;
+    }
+
+    .dk-23-cl-sub-rows-col button {
+        font-size: 16px !important;
+        padding: 4px 11px !important;
+    }
+
+    .dk-23-cl-sub-rows {
+        padding: 10px 5px !important;
+    }
+
+    .dk-23-thrd-row-sub {
+        padding: 30px !important;
+    }
+
+    .dk-23-thrd-row-sub select {
+        padding: 6px 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .dk-23-thrd-row-sub input {
+        padding: 6px 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .dk-23-thrd-row-sub h2 {
+        font-size: 14px !important;
+        margin: 0 0 15px 0 !important;
+    }
+
+    .dk-23-thrd-row-sub button {
+
+        font-size: 16px !important;
+        padding: 4px !important;
+        width: 85px !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) {}

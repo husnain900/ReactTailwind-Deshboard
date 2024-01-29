@@ -1,0 +1,252 @@
+.fm-box-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6.535px;
+  border: 0.817px solid #cecece;
+}
+
+.blur-background {
+  filter: blur(5px);
+  background-color: transparent;
+}
+
+.fm-box-row {
+  display: flex;
+  padding: 8px 15px;
+  flex-direction: column;
+}
+
+.fm-pr-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 134px;
+}
+
+.fm-head-pr-btn {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.fm-head-pr-btn button img {
+  margin-left: 5px;
+}
+
+.popup-product p {
+  font-size: 12px !important;
+  color: #999 !important;
+}
+
+.css-1hb7zxy-IndicatorsContainer {
+  height: 38px;
+}
+
+.fm-head-pr-btn button {
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  outline: none;
+  color: var(--003-c-47, #003c47);
+  text-align: right;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  margin-top: -43px;
+  display: flex;
+  align-items: center;
+}
+
+.fm-fields-lr {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+}
+
+.fm-sub-fields-lr {
+  width: 100%;
+}
+
+.fm-sub-fields-btn-1 {
+  width: 38px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fm-sub-fields-btn-1 button {
+  border: 1px solid #cecece;
+  outline: none;
+  border-radius: 7px 0px 0px 7px !important;
+  background: transparent !important;
+  cursor: pointer;
+  color: #c2c2c2;
+  font-size: 10px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.fm-sub-fields-slc > select {
+  color: #c2c2c2;
+  font-size: 9.803px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: white;
+}
+
+.fm-sub-fields-lsm input {
+  border-left: none !important;
+  border-radius: 0px 7px 7px 0px !important;
+}
+
+.fm-fields-lr-in {
+  border-radius: 7px;
+  border: 1px solid #cecece;
+  padding: 7px 28px 7px 8px;
+  width: 100%;
+  outline: none;
+}
+
+.fm-fields-lr-lab {
+  position: absolute;
+  margin: 11px 6px 0px 0px;
+}
+
+.fm-sub-fields-lrm input {
+  border-left: none !important;
+  border-radius: 0px 7px 7px 0px !important;
+  outline: none;
+}
+
+.fm-sub-fields-btn-2 {
+  width: 40px;
+}
+
+.fm-sub-fields-btn-2 > button {
+  border: 1px solid #cecece;
+  outline: none;
+  cursor: pointer;
+  color: #c2c2c2;
+  font-size: 10px;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.round-btn button {
+  border-radius: 7px 0px 0px 7px !important;
+  background: transparent !important;
+  border-right: 0;
+}
+
+.fm-sub-fields-slc > select {
+  border-radius: 0px 7px 7px 0px;
+  border: 1px solid #cecece;
+  padding: 6px 8px 6px 8px;
+  width: 100%;
+  border-left: none !important;
+  outline: none;
+}
+
+.fm-sub-fields-btn-3 {
+  width: 84px;
+  display: flex;
+}
+
+.fm-sub-fields-btn-3 > button {
+  border: 1px solid #cecece !important;
+  outline: none !important;
+  border-right: 0 !important;
+  border-radius: 7px 0px 0px 7px !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  color: #c2c2c2 !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.fm-box-footer {
+  border-top: 1px solid #cecece;
+  padding: 10px 15px;
+  margin-top: 5px;
+}
+
+.fm-ft-col-1 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.fm-ft-col-1 img {
+  width: 10px;
+  height: 10px;
+}
+
+.fm-ft-col-1 p {
+  color: #c2c2c2;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0px 5px 0 0;
+}
+
+.fm-ft-col-2 {
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.fm-ft-col-2 select {
+  background: transparent;
+  border: none;
+  color: #c2c2c2;
+  font-size: 10px;
+}
+
+.fm-main-btn-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fm-main-btn-block button {
+  padding: 11px !important;
+  border-radius: 6.535px !important;
+  background: #bbf3e5 !important;
+  border: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  color: #003c47 !important;
+  text-align: center !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  margin-top: 10px !important;
+}
+
+.tech-active-order svg {
+  color: white;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+  .common-btn {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

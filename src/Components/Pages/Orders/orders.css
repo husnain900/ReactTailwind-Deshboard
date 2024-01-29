@@ -1,0 +1,293 @@
+/* order slider */
+/*css document*/
+.tech-order-top-boxes {
+    width: 100%;
+}
+
+.tech-order-top-box-items {
+    gap: 19px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    user-select: none;
+    cursor: grab;
+    overflow: hidden;
+}
+
+.tech-order-top-box-item {
+    min-width: 148.955px;
+    max-width: 148.955px;
+    height: 87.065px;
+    border-radius: 9.741px;
+    border: 0.812px solid #D7D7D7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .35s cubic-bezier(.2, 1, .3, 1);
+    position: relative;
+    cursor: grab;
+    cursor: -webkit-grab;
+    user-select: none;
+}
+
+.tech-active-order {
+    background-color: #00414D;
+}
+
+.tech-order-top-box-item-icon {
+    padding-right: 12.06px;
+    padding-top: 13.25px;
+}
+
+.tech-order-top-box-item-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.tech-order-top-box-item-content h5 {
+    color: #003C47;
+    text-align: right;
+    position: relative;
+    font-size: 12.479px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 12.06px 15.04px 11.34px;
+}
+
+.tech-active-order .tech-order-top-box-item-content h5 {
+    color: #BBF3E5;
+}
+
+.tech-order-top-box-item-content .tech-order-top-box-item-text {
+    margin-right: 17px;
+}
+
+.tech-order-top-box-item-content .status-circle {
+    width: 7.493px;
+    height: 7.493px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    margin-left: 120px;
+    top: 3px;
+}
+
+.tech-close-btn {
+    background-color: #f55157;
+    border-radius: 50%;
+    display: none;
+    height: 20px;
+    left: 10px;
+    padding: 2px;
+    position: absolute;
+    top: 12px;
+    line-height: 0;
+    transition: all .35s cubic-bezier(.2, 1, .3, 1);
+    width: 20px;
+    border: none;
+    color: #fff;
+    cursor: grabbing;
+}
+
+.tech-active-order .tech-close-btn {
+    display: block;
+}
+
+.tech-order-top-box-items:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: white;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/*  */
+
+/* table section */
+.order-table table {
+    width: 100%;
+}
+
+.order-table table thead {
+    border-radius: 7px;
+    background: #F4F3F3;
+}
+
+.order-table table thead tr {
+    border-radius: 7px;
+}
+
+.order-table table thead tr th:first-child {
+    border-radius: 0px 7px 7px 0px;
+}
+
+.order-table table thead tr th {
+    padding: 8px 0;
+}
+
+.order-table table thead tr th:last-child {
+    border-radius: 7px 0px 0px 7px;
+
+}
+
+.order-table table thead tr th p {
+    color: #BDBDBD;
+    font-size: 16px;
+    text-align: right;
+    font-weight: 300;
+    margin: 0;
+}
+
+.order-table table thead tr th p b {
+    color: #333;
+}
+
+.order-table table thead tr th button {
+    text-align: left;
+    display: flex;
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid #BBF3E5;
+    color: #003C47;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.order-table tbody tr {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+tbody td {
+    padding: 7px 0;
+}
+
+tbody tr td h2 {
+    color: #333;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+tbody tr td p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+tbody tr td h3 {
+    color: #003C47;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+tbody tr td h4 {
+    color: #A7A7A7;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.txt-cn {
+    text-align: center;
+}
+
+.border-0 {
+    border: none !important;
+}
+
+.checkbox-flex>div {
+    justify-content: center;
+    display: flex;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+    .order-table table thead tr th {
+        padding: 8px 10px !important;
+    }
+
+    .order-table table thead tr th button {
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px !important;
+        margin-left: 0 !important;
+        width: 100px !important;
+    }
+
+    tbody tr td h2 {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+    }
+
+    .sm-text-h4 {
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        width: 80px !important;
+    }
+
+    .order-table tbody td {
+        padding: 2px 5px !important;
+    }
+
+    .order-table tbody tr td p {
+        width: 275px;
+    }
+
+    .order-table .btm-br-nn>div {
+        width: 30px;
+    }
+
+    /*  */
+    .mohally-logo p {
+        font-size: 18px !important;
+    }
+
+    .mohally-logo h3 {
+        font-size: 24px !important;
+        padding: 14px 0 !important;
+    }
+
+    .mohally-logo {
+        margin: 40px auto !important;
+    }
+
+    .mohally-btn button {
+        padding: 16px 70px !important;
+        font-size: 16px !important;
+    }
+
+    /* report */
+    .table-container-report tbody tr td p {
+        width: 125px !important;
+    }
+
+    .table-container-report {
+        overflow-x: auto !important;
+    }
+
+    .table-container-report tbody tr td {
+        padding: 10px 0 !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) {}

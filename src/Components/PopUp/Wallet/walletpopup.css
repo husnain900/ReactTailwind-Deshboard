@@ -1,0 +1,31 @@
+
+.wl-mdl-row{
+	margin-bottom: 20px;
+}
+.wl-mdl-alert{
+	background: #FFF7EC;
+	border: 1px solid #FFE8CB;
+	padding: 10px 15px;
+	border-radius: 8px;
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+.wl-mdl-alert h3{
+	color: #aa6100;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+}
+.wl-mdl-cntnt p{
+	font-size: 13px;
+	margin:0 0 6px 0;
+	color: #444;
+}
+.wl-mdl-cntnt select{
+	width: 100%;
+	border: 1px solid #eee;
+	padding: 7px 12px;
+	font-size: 13px;
+	border-radius: 3px;
+}

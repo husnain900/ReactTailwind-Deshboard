@@ -1,0 +1,46 @@
+.top-title-clients h4 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.top-title-clients span {
+    color: var(--a-7-a-7-a-7, #A7A7A7);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.top-title-clients p {
+    color: #000;
+    font-size: 18.05px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+}
+
+/* Clients box  */
+.client-bx {
+    border-radius: 6px;
+    border: 1px solid #CECECE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-sub-bx h2 {
+    color: #A7A7A7;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 20px 0 15px 0;
+}
+
+.client-sub-bx p {
+    color: #A7A7A7;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}

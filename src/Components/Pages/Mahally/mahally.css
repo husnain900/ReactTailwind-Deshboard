@@ -1,0 +1,63 @@
+.mahally-logo {
+    max-width: 812px;
+    margin: 60px auto;
+}
+
+.mahally-logo h3 {
+    color: var(--Gray-1, #333);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 20px 0;
+}
+
+.mahally-logo p {
+    color: var(--a-7-a-7-a-7, #A7A7A7);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.mahally-box {
+    border-radius: 5.907px;
+    border: 0.738px solid #CECECE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.mahally-box h4 {
+    color: var(--Gray-1, #333);
+    font-size: 13.894px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mahally-box p {
+    color: var(--a-7-a-7-a-7, #A7A7A7);
+    font-size: 13.894px;
+    font-style: normal;
+    font-weight: 300;
+    width: 184.43px;
+    margin: 0 auto 10px;
+    line-height: normal;
+}
+
+.mahally-box>div {
+    text-align: center;
+}
+
+.mahally-btn button{
+    border-radius: 42px !important;
+    background: #F55157 !important;
+    padding: 19px 101px !important;
+    border: none;
+    color: #FFF !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    cursor: pointer !important;
+}

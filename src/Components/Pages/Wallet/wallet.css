@@ -1,0 +1,294 @@
+.wp-tp-row {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ededed;
+}
+
+.wp-tp-sub-row {
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wp-tp-row a {
+  text-decoration: none;
+}
+
+.wp-tp-row-col {
+  display: flex;
+}
+
+.wp-tp-row-inr-col {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.wp-tp-row-inr-col .wp-tp-img-spn {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f55157;
+}
+
+.wp-tp-txt-col p {
+  color: #003c47;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+#wp-tp-arw-img {
+  width: 24px;
+  height: 24px;
+}
+
+.wp-tp-txt-col p span {
+  color: #f55157;
+}
+
+.wp-md-row-col {
+  border-radius: 8px;
+  border: 1px solid #ededed;
+  width: 100%;
+}
+
+.wp-md-row-sub-col {
+  padding: 8px;
+}
+
+.wp-md-roe-col-fst-rw {
+  align-items: center;
+  display: flex;
+}
+
+.wp-md-roe-col-fst-rw p {
+  color: #003c47;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 17px 0 0;
+}
+
+.wp-md-roe-col-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.wp-md-roe-col-body h2 {
+  color: #003c47;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 7px 0 20px 0;
+}
+
+.wp-md-roe-col-body h4 {
+  color: #003c47;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 28 0;
+}
+
+.wp-md-col-btm button {
+  border-radius: 8px;
+  border: 1px solid #76e8cd;
+  padding: 10px 45px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  color: #003c47;
+  font-size: 14px;
+  font-weight: 300;
+  background: transparent;
+}
+.addCreditBtn {
+  border-radius: 8px;
+  border: 1px solid #76e8cd;
+  padding: 10px 60px;
+  margin-left: 20px;
+  color: #003c47;
+  font-size: 14px;
+  font-weight: 300;
+  background: transparent;
+}
+.balanceWithdrawBtn {
+  border-radius: 8px;
+  border: 1px solid #76e8cd;
+  padding: 10px 30px;
+  color: #003c47;
+  font-size: 14px;
+  font-weight: 300;
+  background: transparent;
+}
+
+.addCreditBtn,
+.wp-md-col-btm button:hover {
+  background: #bbf3e5;
+  cursor: pointer;
+}
+
+.wp-md-col-btm {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.wp-md-roe-col-body span {
+  font-size: 17px;
+  margin-left: 5px;
+  color: #003c47;
+  font-weight: 300;
+}
+
+.wp-md-roe-col-body p {
+  color: #003c47;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+.wp-md-sc-row {
+  border-radius: 9px;
+  border: 1px solid #bdbdbd;
+  width: 100%;
+}
+
+.wp-md-sc-row-head {
+  border-radius: 9px 9px 0px 0px;
+  border-bottom: 1px solid #cecece;
+  background: #f4f3f3;
+}
+
+.wp-md-sc-row-sub-head {
+  padding: 27px 41px 16px 41px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+
+.wp-md-sc-row-sub-head h2 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.wp-md-sc-row-body-sb-row {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.wp-md-sc-row-body-sb-row:last-child {
+  border: none !important;
+}
+
+.wp-md-sc-row-body-sb-row-sub {
+  padding: 25px 41px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+
+.wp-md-sc-row-body-sb-row-sub h3 {
+  margin: 0;
+  color: #000;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.wp-md-sc-row-body-sb-row-sub p {
+  margin: 0;
+  color: #969696;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+  .wp-md-sc-row-body-sb-row-sub {
+    padding: 16px 20px !important;
+    gap: 10px !important;
+  }
+
+  .wp-md-sc-row-body-sb-row-sub h3 {
+    font-size: 18px !important;
+  }
+
+  .wp-md-sc-row-sub-head h2 {
+    font-size: 18px !important;
+  }
+
+  .wp-md-sc-row-sub-head {
+    padding: 18px 22px !important;
+    gap: 10px !important;
+  }
+
+  .wp-md-roe-col-body h2 {
+    color: #003c47;
+    font-size: 20px !important;
+    text-align: center;
+    font-weight: 700;
+    margin: 7px 0 !important;
+  }
+
+  .wp-tp-row-inr-col {
+    display: flex;
+    align-items: center;
+    gap: 10px !important;
+  }
+
+  .wp-md-row-sub-col img {
+    height: 27px;
+  }
+
+  .st-bnr-col h1 {
+    font-size: 22px !important;
+  }
+
+  .st-bnr-sub-container {
+    padding: 10px !important;
+    gap: 10px !important;
+  }
+
+  .storeBox {
+    padding: 15px !important;
+  }
+
+  .storeBox h1 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .fm-fields {
+    width: 100%;
+    margin: 0 auto 30px !important;
+  }
+
+  .fm-fields p {
+    padding: 12px 0 !important;
+  }
+
+  .fm-fields form {
+    padding: 12px !important;
+    height: 45px !important;
+  }
+
+  .st-mn-btm-btn button {
+    font-size: 16px !important;
+  }
+  .st-mn-btm-btn {
+    margin-top: 20px !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

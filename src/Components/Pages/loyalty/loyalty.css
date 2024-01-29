@@ -1,0 +1,141 @@
+.lp-container {
+    border-radius: 9px;
+    border: 1px solid #BDBDBD;
+    padding: 26px 19px 19px;
+}
+
+.lp-top-lf-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.lp-top-col-row h1 {
+    color: #333;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.lp-top-col-row {
+    text-align: center;
+    width: 300px;
+    margin-right: auto;
+}
+
+.lp-top-col-row h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.lp-top-col p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 35px 0;
+    width: 450px;
+    line-height: 23px;
+}
+
+.lp-top-col .lp-top-col-btn-rt {
+    padding: 19px 142px;
+    border-radius: 8px;
+    background: #BBF3E5;
+    color: #003C47;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.lp-top-col-btn-lf {
+    width: 100%;
+    padding: 19px;
+    border-radius: 8px;
+    background: #EBC500;
+    color: #003C47;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+}
+
+.lp-btm-section {
+    padding: 17px 8px;
+    background: #ECECEC;
+    width: 100%;
+    margin-top: 138px;
+}
+
+.lp-btm-sec-cards {
+    padding: 21px 40px;
+    background: #fff;
+    display: flex;
+    gap: 5px;
+}
+
+.lf-btm-cr-col h5 {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.lf-btm-cr-col p {
+    color: #333;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* responsive  */
+
+@media screen and (max-width: 480px) {
+    .lp-top-col-row h1 {
+        font-size: 24px !important;
+        margin: 0 !important;
+    }
+
+    .lp-top-col-row h3 {
+        font-size: 18px !important;
+    }
+
+    .lp-top-col p {
+        font-size: 14px !important;
+        margin: 10px 0 !important;
+        width: 100% !important;
+    }
+
+    .lp-top-col .lp-top-col-btn-rt {
+        padding: 8px !important;
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+
+    .lp-top-col-btn-lf {
+        padding: 8px !important;
+        font-size: 16px !important;
+    }
+
+    .lp-btm-section {
+        padding: 16px 10px !important;
+        margin-top: 40px !important;
+    }
+
+    .lp-btm-sec-cards {
+        padding: 18px 16px !important;
+    }
+
+    .lp-top-lf-img {
+        margin-top: 30px !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) {}

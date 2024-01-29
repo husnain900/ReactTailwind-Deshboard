@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:wght@200;400;500;700&family=Mulish:wght@300;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: Ping-LCG-Regular;
+    src: url(../public/FontsFamily/ping-lcg-cufonfonts/Ping\ LCG\ Regular.otf);
+}
+
+@font-face {
+    font-family: Ping-LCG-Medium;
+    src: url(../public/FontsFamily/ping-lcg-cufonfonts/Ping\ LCG\ Medium.otf);
+}
+
+body {
+    font-family: 'Noto Naskh Arabic', serif;
+}
