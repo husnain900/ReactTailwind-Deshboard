@@ -10,6 +10,9 @@
 .productOrderButton:active {
   background-color: #76e8cd;
 }
-.productOrderButton:hover {
+.productOrderButton:focus {
+  background-color: #76e8cd;
+}
+.productOrderButton:visited {
   background-color: #76e8cd;
 }
