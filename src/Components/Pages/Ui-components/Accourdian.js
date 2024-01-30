@@ -116,42 +116,6 @@ const items4 = {
   'ثيم نمو': null,
 };
 
-<<<<<<< Updated upstream
-const items4 = {
-  "التسويق والأدوات التسويقية": null,
-  "كتابة مقالة جديد على مدونة متجرك": null,
-  "إدارة مدونة متجرك على سلة": null,
-  "إدارة نظام الولاء": null,
-  "إضافة عرض خاص جديد": null,
-  "إدارة صفحة السلات المتروكة": null,
-  "تفعيل نظام ولاء العملاء": null,
-  "تخصيص نص العروض الخاصة": null,
-  "الأسئلة الشائعة حول نظام الولاء": null,
-  "أسئلة شائعة حول العروض الخاصة": null,
-  "التذكير بالسلة المتروكة بدون إرسال خصم": null,
-  "العمل مع الحملات التسويقية": null,
-  "التذكير بالسلة المتروكة مع إرسال خصم عليها": null,
-  "إنشاء كوبون جديد": null,
-  "خطوات الحصول على App signing key certificate": null,
-  "بطاقات الإهداء الرقمية": null,
-  "تفعيل الخصم المؤقت على السلات المتروكة": null,
-  "تفعيل الطلب المباشر في المتجر": null,
-  "إنشاء مجموعات كوبونات": null,
-  "الربط بوبتن poptin للنوافذ المنبثقة": null,
-  "أسئلة شائعة حول كوبونات التخفيض": null,
-  "إكمال الطلب للسلات المتروكة": null,
-  "الربط مع بريفي Privy للتسويق الإلكتروني": null,
-  "الحد الأعلى للخصم في الكوبون": null,
-  "التسويق بالعمولة": null,
-  "أسئلة شائعة حول السلات المتروكة": null,
-  "ربط الكوبون مع طريقة دفع معينة": null,
-  "خيارات التحكم بالكوبونات وطريقة عرضها": null,
-  "الكوبون التسويقي": null,
-  "الربط مع PopupSmart لإدارة الحملات الإعلانية": null,
-  "الربط مع تطبيق صفحات هبوط المنتج": null,
-  الإعلانات: null,
-  "الربط مع Crazy Egg": null,
-=======
 const items5 = {
   'التسويق والأدوات التسويقية': null,
   'كتابة مقالة جديد على مدونة متجرك': null,
@@ -186,7 +150,6 @@ const items5 = {
   'الربط مع تطبيق صفحات هبوط المنتج': null,
   الإعلانات: null,
   'الربط مع Crazy Egg': null,
->>>>>>> Stashed changes
 };
 const items6 = [
   'توثيق المتجر',
@@ -602,9 +565,6 @@ export default function AccordionUsage() {
           aria-controls="panel3-content"
           id="panel3-header"
         >
-<<<<<<< Updated upstream
-          التسويق والأدوات التسويقية
-=======
           المنتجات{' '}
         </AccordionSummary>
         <AccordionDetails>
@@ -631,7 +591,6 @@ export default function AccordionUsage() {
           id="panel3-header"
         >
           الطلبات
->>>>>>> Stashed changes
         </AccordionSummary>
         <AccordionDetails>
           <ul>
@@ -684,17 +643,10 @@ export default function AccordionUsage() {
         </AccordionSummary>
         <AccordionDetails>
           <ul>
-<<<<<<< Updated upstream
-            {Object.keys(items3).map((item, index) => (
-              <li key={index}>
-                <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
-=======
             {Object.keys(items4).map((item, index) => (
               <li key={index}>
                 <a
                   className="hover:text-[#76E8D0] duration-200 cursor-pointer"
->>>>>>> Stashed changes
                   href="#"
                 >
                   {item}
@@ -716,17 +668,10 @@ export default function AccordionUsage() {
         </AccordionSummary>
         <AccordionDetails>
           <ul>
-<<<<<<< Updated upstream
-            {Object.keys(items4).map((item, index) => (
-              <li key={index}>
-                <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
-=======
             {Object.keys(items5).map((item, index) => (
               <li key={index}>
                 <a
                   className="hover:text-[#76E8D0] duration-200 cursor-pointer"
->>>>>>> Stashed changes
                   href="#"
                 >
                   {item}
