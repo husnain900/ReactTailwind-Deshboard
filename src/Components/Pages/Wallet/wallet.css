@@ -68,6 +68,9 @@
   font-weight: 500;
   margin: 0 17px 0 0;
 }
+.walletTable {
+  overflow-x: auto;
+}
 
 .wp-md-roe-col-body {
   display: flex;

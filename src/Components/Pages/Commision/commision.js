@@ -39,58 +39,60 @@ const commision = () => {
               </h1>
             </div>
           </div>
-          <table cellPadding="0" cellSpacing="0">
-            <thead>
-              <tr>
-                <th colSpan={5}>
-                  <h1>عنوان الكوبون</h1>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {commisionData.map((coupon) => (
-                <tr key={coupon.id}>
-                  <td>
-                    <table>
-                      <tr>
-                        <td className="tbl-scg-rmv">
-                          <div className="flex gap-3 items-center w-72">
-                            <p>
-                              <span className="underline">
-                                عبائة عليك وعبائة علينا
-                              </span>
-                              ,{' '}
-                              {coupon.name.substring(
-                                'عبائة عليك وعبائة علينا'.length
-                              )}
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>
-                    <table>
-                      <tr>
-                        <td className="tbl-scg-rmv text-left">
-                          <div className="flex items-center justify-end gap-3">
-                            {/* <FaChartBar /> */}
-                            <img src="images/bar.png" alt="bar" />
-                            <p>احصائيات</p>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>
-                    <div className="text-center">
-                      <Commoncheckbox />
-                    </div>
-                  </td>
+          <div className="commisionTable">
+            <table cellPadding="0" cellSpacing="0">
+              <thead>
+                <tr>
+                  <th colSpan={5}>
+                    <h1>عنوان الكوبون</h1>
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {commisionData.map((coupon) => (
+                  <tr key={coupon.id}>
+                    <td>
+                      <table>
+                        <tr>
+                          <td className="tbl-scg-rmv">
+                            <div className="flex gap-3 items-center w-72">
+                              <p>
+                                <span className="underline">
+                                  عبائة عليك وعبائة علينا
+                                </span>
+                                ,{' '}
+                                {coupon.name.substring(
+                                  'عبائة عليك وعبائة علينا'.length
+                                )}
+                              </p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td className="tbl-scg-rmv text-left">
+                            <div className="flex items-center justify-end gap-3">
+                              {/* <FaChartBar /> */}
+                              <img src="images/bar.png" alt="bar" />
+                              <p>احصائيات</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <div className="text-center">
+                        <Commoncheckbox />
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </div>

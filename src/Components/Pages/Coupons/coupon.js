@@ -51,65 +51,66 @@ const Coupon = () => {
               </div>
             </div>
           </div>
-          <table cellPadding="0" cellSpacing="0">
-            <thead>
-              <tr>
-                <th>
-                  <h1>عنوان الكوبون</h1>
-                </th>
-                <th style={{ textAlign: 'center' }}>
-                  <h1>تاريخ بداية الكوبون</h1>
-                </th>
-                <th colSpan="3">
-                  <h1>تاريخ انتهاء الكوبون</h1>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {couponsData.map((coupon) => (
-                <tr key={coupon.id}>
-                  <td>
-                    <table>
-                      <tr>
-                        <td className="tbl-scg-rmv">
-                          <div className="flex gap-2 items-center">
-                            <div
-                              className={`PopBoxCoupans ${
-                                coupon.status === 'active'
-                                  ? 'PopBoxCoupansActive'
-                                  : 'PopBoxCoupansInactive'
-                              }`}
-                            ></div>
-                            <p>{coupon.name}</p>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td style={{ textAlign: 'center' }}>-</td>
-                  <td>
-                    <p style={{ marginTop: '10px' }}>{coupon.date}</p>
-                  </td>
-                  <td>
-                    <table>
-                      <tr>
-                        <td className="tbl-scg-rmv">
-                          <div className="flex items-center gap-3">
-                            {/* <FaChartBar /> */}
-                            <img src="images/bar.png" alt="bar" />
-                            <p>احصائيات</p>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>
-                    <Commoncheckbox />
-                  </td>
+          <div className="couponTable">
+            <table cellPadding="0" cellSpacing="0">
+              <thead>
+                <tr>
+                  <th>
+                    <h1>عنوان الكوبون</h1>
+                  </th>
+                  <th style={{ textAlign: 'center' }}>
+                    <h1>تاريخ بداية الكوبون</h1>
+                  </th>
+                  <th colSpan="3">
+                    <h1>تاريخ انتهاء الكوبون</h1>
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {couponsData.map((coupon) => (
+                  <tr key={coupon.id}>
+                    <td>
+                      <table>
+                        <tr>
+                          <td className="tbl-scg-rmv">
+                            <div className="flex gap-2 items-center">
+                              <div
+                                className={`PopBoxCoupans ${
+                                  coupon.status === 'active'
+                                    ? 'PopBoxCoupansActive'
+                                    : 'PopBoxCoupansInactive'
+                                }`}
+                              ></div>
+                              <p>{coupon.name}</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td style={{ textAlign: 'center' }}>-</td>
+                    <td>
+                      <p style={{ marginTop: '10px' }}>{coupon.date}</p>
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td className="tbl-scg-rmv">
+                            <div className="flex items-center gap-3">
+                              <img src="images/bar.png" alt="bar" />
+                              <p>احصائيات</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <Commoncheckbox />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </div>

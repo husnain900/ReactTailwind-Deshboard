@@ -327,28 +327,34 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
 
-@media screen and (min-width: 768px) and (max-width: 1367px) {}
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+}
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+  .chartbox {
+    display: none;
+  }
+}
 
-
+@media screen and (max-width: 1200px) {
+}
 /* darkmode  */
 
 .darkmode .tb-head-dark {
-  background: #2C2C2C;
-
+  background: #2c2c2c;
 }
 
 .darkmode .dark-text {
-  color: #A6A6A6;
+  color: #a6a6a6;
 }
 .darkmode .bg-dark {
   background: #272626;
 }
 .darkmode .dark-text-light {
-  color: #B1E6DA;
+  color: #b1e6da;
 }
 
 .darkmode .bx-cntn-text h1 {
@@ -356,7 +362,7 @@
 }
 
 .darkmode .scrollstyle::-webkit-scrollbar-track {
-  background: #2C2C2C;
+  background: #2c2c2c;
   padding: 5px 0;
 }
 

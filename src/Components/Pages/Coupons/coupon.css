@@ -110,3 +110,9 @@
 .PopBoxCoupansInactive {
   background: #f7ca68 !important; /* Inactive color */
 }
+
+@media screen and (max-width: 600px) {
+  .couponTable {
+    overflow-x: auto;
+  }
+}

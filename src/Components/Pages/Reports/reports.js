@@ -60,6 +60,15 @@ const Reports = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 768, // Width less than 768px
+        settings: {
+          slidesToShow: 2, // Show 2 slides
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -90,8 +99,12 @@ const Reports = () => {
                     }`}
                     onClick={() => handleTabClick(index)}
                   >
-                    <img src={type.icon} alt={type.label} />
-                    {type.label}
+                    <img
+                      className="reportImageIcon"
+                      src={type.icon}
+                      alt={type.label}
+                    />
+                    <span className="reportsTexticon"> {type.label}</span>
                   </button>
                 </div>
               ))}

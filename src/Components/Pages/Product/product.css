@@ -250,3 +250,8 @@
 
 @media screen and (min-width: 1024px) {
 }
+
+.darkmode .fm-fields-lr-in {
+  background-color: #272626;
+  color: #cccccc;
+}

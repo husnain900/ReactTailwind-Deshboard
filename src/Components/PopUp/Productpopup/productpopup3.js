@@ -5,6 +5,9 @@ import Datepickerpopup from '../../Pages/Ui-components/Datepickerpopup';
 import { CiCircleList } from 'react-icons/ci';
 import { RiFileList2Line } from 'react-icons/ri';
 import './productpopup3.css';
+import { CiCirclePlus } from 'react-icons/ci';
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa6';
+import Button from '@mui/material/Button';
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
@@ -12,6 +15,11 @@ export default function Modal() {
   const percent = '{present}';
   const discount = '{discount}';
 
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
   const changeHideAndDisplay = () => {
     sethideAndDisplay(true);
   };
@@ -455,7 +463,29 @@ export default function Modal() {
                       </>
                     ) : (
                       <>
-                        <div>Content Here</div>
+                        <div>
+                          <Button
+                            className="btn-hover common-btn"
+                            onClick={toggleDropdown}
+                          >
+                            <div className="flex gap-2 items-center">
+                              <CiCirclePlus size={27} />
+                              أضافة جمل جديدة{' '}
+                              {dropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
+                            </div>
+                          </Button>
+                          {dropdownOpen && (
+                            <div className="dropdown-content">
+                              {/* Dropdown menu items go here */}
+                              {/* <ul>
+                                {' '}
+                                <li href="#">Menu Item 1</li>
+                                <li href="#">Menu Item 2</li>
+                                <li href="#">Menu Item 3</li>
+                              </ul> */}
+                            </div>
+                          )}
+                        </div>
                       </>
                     )}
                   </div>

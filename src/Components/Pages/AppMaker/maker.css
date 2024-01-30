@@ -389,6 +389,9 @@
   .ds-17-sub-innr-container {
     padding: 15px !important;
   }
+  .ds-17-cntr-trd-rw-col h5 {
+    padding-left: 0px;
+  }
 
   .ds-17-cntr-snd-rw-bx button {
     padding: 2px 10px !important;
@@ -465,5 +468,11 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 480px) {
+  .ds-17-cntr-ftr-rw {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }

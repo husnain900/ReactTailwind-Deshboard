@@ -5,6 +5,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { CiMinimize1 } from 'react-icons/ci';
 import AccordionUsage from '../Pages/Ui-components/Accourdian';
 import { Button } from '@mui/material';
+import './BreadCrumpopup.css';
 
 const TecAccordion = () => {
   const [panelVisible, setPanelVisible] = useState(false);
@@ -80,7 +81,7 @@ const TecAccordion = () => {
             <div className="tc-helppanel-head-sub">
               <h2 id="tc-head-text">المقالات</h2>
               <button
-                className="tc-help-panel-wdh flex gap-3"
+                className="tc-help-panel-wdh flex gap-3 ExpendedQ&A "
                 onClick={toggleWidth}
               >
                 {isExpanded ? (

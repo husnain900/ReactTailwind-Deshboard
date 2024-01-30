@@ -161,90 +161,92 @@ const Wallet = () => {
           </Button>
         </div>
         <div
-          className="tech-static-p-table overflow-x-auto"
+          className="tech-static-p-table overflow-x-auto "
           style={{ overflow: 'visible' }}
         >
-          <table className="min-w-full">
-            <thead>
-              <tr>
-                <td>تفاصيل الإشتراك</td>
-                <td style={{ textAlign: 'right' }}>مدة الإشتراك</td>
-                <td>تاريخ الإشتراك</td>
-                <td>تاريخ التجديد القادم</td>
-                <td>رسوم الإشتراك</td>
-                <td>التجديد التلقائي</td>
-              </tr>
-            </thead>
-            <tbody>
-              {staticPages.map((page, index) => (
-                <tr key={index}>
-                  <td>سلة برو</td>
-                  <td style={{ textAlign: 'right' }}>مفتوح</td>
-                  <td>2023-04-06</td>
-                  <td>2025-04-06</td>
-                  <td>0.00 ر.س</td>
-                  <td>
-                    <CiCircleCheck />
-                  </td>
-                  <td>
-                    <div className="tech-static-p-buttons">
-                      <div className="tech-static-p-more-btn-main">
-                        {/* <button
+          <div className="walletTable">
+            <table className="min-w-full">
+              <thead>
+                <tr>
+                  <td>تفاصيل الإشتراك</td>
+                  <td style={{ textAlign: 'right' }}>مدة الإشتراك</td>
+                  <td>تاريخ الإشتراك</td>
+                  <td>تاريخ التجديد القادم</td>
+                  <td>رسوم الإشتراك</td>
+                  <td>التجديد التلقائي</td>
+                </tr>
+              </thead>
+              <tbody>
+                {staticPages.map((page, index) => (
+                  <tr key={index}>
+                    <td>سلة برو</td>
+                    <td style={{ textAlign: 'right' }}>مفتوح</td>
+                    <td>2023-04-06</td>
+                    <td>2025-04-06</td>
+                    <td>0.00 ر.س</td>
+                    <td>
+                      <CiCircleCheck />
+                    </td>
+                    <td>
+                      <div className="tech-static-p-buttons">
+                        <div className="tech-static-p-more-btn-main">
+                          {/* <button
                           className={`tech-static-more-btn-open ${
                             index === activePopup ? 'tech-active-popup' : ''
                           }`}
                           onClick={() => handlePopupClick(index)}
                         > */}
-                        <button
-                          className={`tech-static-more-btn-open ${
-                            index === activePopupGroup1
-                              ? 'tech-active-popup'
-                              : ''
-                          }`}
-                          onClick={() => handlePopupClick(index, 'group1')}
-                        >
-                          <img src="images/static/Menu.png" alt="Menu Icon" />
-                          <div
-                            className="tech-static-p-more-popup"
-                            style={{
-                              position: 'absolute',
-                              zIndex: 1000,
-                              top: '100%',
-                            }}
+                          <button
+                            className={`tech-static-more-btn-open ${
+                              index === activePopupGroup1
+                                ? 'tech-active-popup'
+                                : ''
+                            }`}
+                            onClick={() => handlePopupClick(index, 'group1')}
                           >
-                            <ul>
-                              <li className="hover:bg-gray-200 hover:rounded">
-                                <a href="#">
-                                  <span
-                                    className="flex items-center gap-2"
-                                    style={{ color: '#003c47' }}
-                                  >
-                                    {/* <FaRegCopy /> */}
-                                    {page.moreLink}
-                                  </span>
-                                </a>
-                              </li>
-                              <li className="hover:bg-gray-200 hover:rounded">
-                                <a href="#">
-                                  <span
-                                    className="flex items-center gap-2"
-                                    style={{ color: '#003c47' }}
-                                  >
-                                    {/* <FaRegCopy /> */}
-                                    {page.moreLink2}
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </button>
+                            <img src="images/static/Menu.png" alt="Menu Icon" />
+                            <div
+                              className="tech-static-p-more-popup"
+                              style={{
+                                position: 'absolute',
+                                zIndex: 1000,
+                                top: '100%',
+                              }}
+                            >
+                              <ul>
+                                <li className="hover:bg-gray-200 hover:rounded">
+                                  <a href="#">
+                                    <span
+                                      className="flex items-center gap-2"
+                                      style={{ color: '#003c47' }}
+                                    >
+                                      {/* <FaRegCopy /> */}
+                                      {page.moreLink}
+                                    </span>
+                                  </a>
+                                </li>
+                                <li className="hover:bg-gray-200 hover:rounded">
+                                  <a href="#">
+                                    <span
+                                      className="flex items-center gap-2"
+                                      style={{ color: '#003c47' }}
+                                    >
+                                      {/* <FaRegCopy /> */}
+                                      {page.moreLink2}
+                                    </span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
       <section className="tech-static-p-main my-5">

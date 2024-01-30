@@ -35,29 +35,13 @@ const StoreApproval = () => {
       </div>
     </div>
   );
-  const rightHalfWidthStyle = {
-    width: '50%',
-    float: 'right',
-    marginBottom: '100px',
-  };
-  const rightsixtyWidthStyle = {
-    width: '60%',
-    float: 'right', // Align to the right
-  };
-  const rightfiftytwoWidthStyle = {
-    width: '52%',
-    float: 'right', // Align to the right
-  };
 
   return (
     <div>
-      <div
-        style={rightsixtyWidthStyle}
-        className="dk-23-fst-row grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-9 w-full lg:w-2/3 md:w-3/4 mx-auto mt-5"
-      >
+      <div className=" rightsixtyWidthStyle dk-23-fst-row grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-9 w-full lg:w-2/3 md:w-3/4 mx-auto mt-5">
         {rowsData.map((row, index) => renderRow(row, index))}
       </div>
-      <div style={rightfiftytwoWidthStyle} className="dk-23-scnd-row">
+      <div className="rightfiftytwoWidthStyle dk-23-scnd-row">
         <h2>موافقة المخازن</h2>
         <div className="dk-23-scnd-sub-row ">
           {storesData.map((store, index) => (
@@ -81,7 +65,7 @@ const StoreApproval = () => {
           ))}
         </div>
       </div>
-      <div style={rightHalfWidthStyle} className="dk-23-thrd-row">
+      <div className="dk-23-thrd-row rightHalfWidthStyle">
         <div className="dk-23-thrd-row-sub">
           <Box className="mb-9" sx={{ minWidth: 120 }}>
             <FormControl fullWidth>
