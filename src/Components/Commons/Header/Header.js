@@ -80,7 +80,7 @@ const Header = () => {
             </div>
             <div className="tech-topbar-menu-items">
               <div className="tech-topbar-headsup">
-                <a href="#">تحديثات المنصة</a>
+                <a className='dark-a' href="#">تحديثات المنصة</a>
               </div>
             </div>
             <div className="tech-topbar-user-menu tech-topbar-menu-items ">

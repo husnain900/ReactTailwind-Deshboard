@@ -48,21 +48,21 @@ const Sidebar = () => {
               </div>
             </div>
             {isPopupVisible && (
-              <ul className="tech-user-menu-drop-popup absolute left-6 top-[105px] rounded bg-white popup ">
-                <li className="hover:bg-gray-100 p-1 hover:rounded ">
+              <ul className="dark-ul tech-user-menu-drop-popup absolute left-6 top-[105px] rounded bg-white popup ">
+                <li className="hover:bg-gray-100 dark-li p-1 hover:rounded ">
                   <a
                     href="#"
-                    className="text-gray-800 p-2 flex items-center gap-1 ShareD"
+                    className="text-gray-800 p-2 flex dark-a items-center gap-1 ShareD"
                     onClick={togglePopup}
                   >
                     <FaRegCopy size={15} />
                     نسخ رابط المتجر
                   </a>
                 </li>
-                <li className="hover:bg-gray-100 p-1 hover:rounded">
+                <li className="hover:bg-gray-100 dark-li p-1 hover:rounded">
                   <a
                     href="#"
-                    className="text-gray-800 flex items-center gap-1 ShareD"
+                    className="text-gray-800 dark-a flex items-center gap-1 ShareD"
                     onClick={togglePopup}
                   >
                     <MdOutlineWhatsapp size={15} />

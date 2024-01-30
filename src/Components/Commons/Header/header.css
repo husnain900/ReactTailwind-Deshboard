@@ -349,12 +349,17 @@
 
 }
 
-.darkmode .tech-topbar-menu a {
+.darkmode .dark-a {
     color: #ddd !important;
 }
 
 .darkmode .dark-ul {
     background: #333333;
+}
+
+.darkmode .dark-li:hover {
+    background: #2C2C2C !important;
+    border-radius: 6px;
 }
 
 .darkmode .dark-li a:hover {

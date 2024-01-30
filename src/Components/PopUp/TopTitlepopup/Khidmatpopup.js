@@ -34,11 +34,11 @@ const ullist = [
 ];
 
 const PopupContent = ({ items }) => (
-  <ul className="popup-product shadow rounded-lg right-[-142px] top-2 bg-white absolute z-10 ">
+  <ul className="popup-product dark-ul shadow rounded-lg right-[-142px] top-2 bg-white absolute z-10 ">
     {items.map((item, index) => (
-      <li key={index} className="hover:bg-gray-100 p-1 hover:rounded relative">
+      <li key={index} className="hover:bg-gray-100 dark-li p-1 hover:rounded relative">
         <a
-          className="text-gray-800 p-2 flex items-center gap-2 text-sm"
+          className="text-gray-800 p-2 flex items-center dark-a gap-2 text-sm"
           href="#" 
         >
           {item.icon && <span>{item.icon}</span>}
@@ -86,16 +86,16 @@ const Khidmatpopup = () => {
         <p>خدمات</p>
       </div>
       {isDropdownOpen && (
-        <ul className="popup-product shadow rounded-lg right-0 top-9 bg-white absolute z-10">
+        <ul className="popup-product dark-ul shadow rounded-lg right-0 top-9 bg-white absolute z-10">
           {ullist.map((item, index) => (
             <li
-              className="hover:bg-gray-100 p-1 hover:rounded relative"
+              className="hover:bg-gray-100 dark-li p-1 hover:rounded relative"
               key={index}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
               <a
-                className="text-gray-800 p-2 flex items-center justify-between"
+                className="text-gray-800 dark-a p-2 flex items-center justify-between"
                 href="#"
                 onClick={toggleDropdownClose}
               >
