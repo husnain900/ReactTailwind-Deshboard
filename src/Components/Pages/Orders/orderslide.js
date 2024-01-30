@@ -61,7 +61,7 @@ const TechOrderTopBoxes = () => {
         onMouseLeave={handleContainerMouseLeave}
         onMouseMove={handleContainerMouseMove}
         ref={containerRef}
-        style={{ marginLeft: '-28px', marginRight: '-28px' }}
+        style={{ marginLeft: '-28px' }}
       >
         {orderItems.map((order) => (
           <div
