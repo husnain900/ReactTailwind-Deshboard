@@ -78,8 +78,8 @@ const SideAccordion = () => {
             >
               <div className="pr-side-head">
                 <div className="pr-side-head-col gap-2">
-                  <CiFilter className="dark-icon" />
-                  <h2> فرز المنتجات حسب</h2>
+                  <CiFilter className="dark-gray-txt" />
+                  <h2 className="dark-gray-txt"> فرز المنتجات حسب</h2>
                 </div>
                 <div className="pr-side-head-col">
                   <button className="" onClick={toggleSideContainer}>
@@ -96,7 +96,7 @@ const SideAccordion = () => {
                     className="pr-side-rows-acc-btns"
                     onClick={() => toggleAccordion(1)}
                   >
-                    <h3>حالة المنتج</h3>
+                    <h3 className="dark-gray-txt">حالة المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
                       {openAccordions.includes(1) ? "-" : "+"}
@@ -121,7 +121,7 @@ const SideAccordion = () => {
                     className="pr-side-rows-acc-btns"
                     onClick={() => toggleAccordion(2)}
                   >
-                    <h3>ماركة المنتج</h3>
+                    <h3 className="dark-gray-txt">ماركة المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
                       {openAccordions.includes(2) ? "-" : "+"}
@@ -159,7 +159,7 @@ const SideAccordion = () => {
                     className="pr-side-rows-acc-btns"
                     onClick={() => toggleAccordion(3)}
                   >
-                    <h3>نوع المنتج</h3>
+                    <h3 className="dark-gray-txt">نوع المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
                       {openAccordions.includes(3) ? "-" : "+"}
@@ -184,7 +184,7 @@ const SideAccordion = () => {
                     className="pr-side-rows-acc-btns"
                     onClick={() => toggleAccordion(4)}
                   >
-                    <h3>تصنيف المنتج</h3>
+                    <h3 className="dark-gray-txt">تصنيف المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
                       {openAccordions.includes(4) ? "-" : "+"}
