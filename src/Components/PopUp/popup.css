@@ -788,8 +788,6 @@ i {
   background: #fff;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   height: 100%;
-  /*    left: -280px;*/
-  /*    opacity: 0;*/
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 20px 15px 20px 15px;
@@ -1375,9 +1373,7 @@ i {
   color: #004d5a;
 }
 
-.tech-pro-op-custom-checkbox-btn:checked
-  + .tech-pro-op-custom-checkbox
-  .tech-pro-op-check-icon {
+.tech-pro-op-custom-checkbox-btn:checked+.tech-pro-op-custom-checkbox .tech-pro-op-check-icon {
   display: block;
 }
 
@@ -1499,4 +1495,23 @@ i {
 .css-qfso29-MuiTypography-root-MuiDialogContentText-root {
   font-family: 'Noto Naskh Arabic', serif !important;
   font-size: 22px !important;
+}
+
+/* darkmode */
+
+.darkmode .pr-side-acordin-sub-container h3, h2, .dark-icon {
+  color: #C2C9CC;
+}
+
+.darkmode .pr-side-acordin-sub-container label {
+  color: #C2C9CC;
+}
+
+.darkmode .checkmark {
+  border: 1px solid rgba(186, 243, 230, .45);
+}
+
+.darkmode .checkmark:after {
+  border: 1px solid #baf3e6;
+
 }

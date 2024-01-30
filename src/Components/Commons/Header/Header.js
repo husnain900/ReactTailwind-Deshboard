@@ -84,11 +84,11 @@ const Header = () => {
               </div>
             </div>
             <div className="tech-topbar-user-menu tech-topbar-menu-items ">
-              <ul>
-                <li>
+              <ul className=''>
+                <li className=''>
                   <a
                     href="#"
-                    className="tech-user-menu-drop-open"
+                    className="tech-user-menu-drop-open dark-a"
                     ref={dropOpenRef}
                     onClick={(e) => {
                       e.preventDefault();
@@ -99,13 +99,13 @@ const Header = () => {
                     <FaChevronDown className="ps-2" />
                   </a>
                   <ul
-                    className="tech-user-menu-drop-popup bg-white p-2"
+                    className="dark-ul tech-user-menu-drop-popup bg-white p-2"
                     style={{ display: isPopupOpen ? 'block' : 'none' }}
                     ref={dropPopupRef}
                   >
                     {headerItems.map((item, index) => (
-                      <li key={index}>
-                        <a href="#" onClick={togglePopup}>
+                      <li className='dark-li' key={index}>
+                        <a className='dark-a' href="#" onClick={togglePopup}>
                           {item.icon}
                           {item.text}
                         </a>

@@ -112,7 +112,7 @@ const items4 = {
   "الكوبون التسويقي": null,
   "الربط مع PopupSmart لإدارة الحملات الإعلانية": null,
   "الربط مع تطبيق صفحات هبوط المنتج": null,
-  "الإعلانات": null,
+  الإعلانات: null,
   "الربط مع Crazy Egg": null,
 };
 export default function AccordionUsage() {
@@ -132,7 +132,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -150,15 +150,14 @@ export default function AccordionUsage() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-        التسويق والأدوات التسويقية
-
+          التسويق والأدوات التسويقية
         </AccordionSummary>
         <AccordionDetails>
           <ul>
             {items2.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -175,20 +174,22 @@ export default function AccordionUsage() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-        الثيمات وتصميم المتجر
+          الثيمات وتصميم المتجر
         </AccordionSummary>
         <AccordionDetails>
-        <ul>
-          {Object.keys(items3).map((item, index) => (
-            <li key={index}>
-              <a className="hover:text-[#76E8D0] duration-200 cursor-pointer" href="#">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </AccordionDetails>
-      
+          <ul>
+            {Object.keys(items3).map((item, index) => (
+              <li key={index}>
+                <a
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  href="#"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </AccordionDetails>
       </Accordion>
 
       <Accordion className="shadow-none py-2">
@@ -198,18 +199,21 @@ export default function AccordionUsage() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-        الشحن والتوصيل
+          الشحن والتوصيل
         </AccordionSummary>
         <AccordionDetails>
-        <ul>
-      {Object.keys(items4).map((item, index) => (
-        <li key={index}>
-          <a className="hover:text-[#76E8D0] duration-200 cursor-pointer" href="#">
-            {item}
-          </a>
-        </li>
-      ))}
-    </ul>
+          <ul>
+            {Object.keys(items4).map((item, index) => (
+              <li key={index}>
+                <a
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  href="#"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
         </AccordionDetails>
       </Accordion>
 
@@ -227,7 +231,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -251,7 +255,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -275,7 +279,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -299,7 +303,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -323,7 +327,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -347,7 +351,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -371,7 +375,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -395,7 +399,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}

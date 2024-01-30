@@ -1,38 +1,38 @@
 // SideAccordion.js
-import React, { useState } from 'react';
-import { CiFilter } from 'react-icons/ci';
-import { IoIosCloseCircleOutline } from 'react-icons/io';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import { Button } from '@mui/material';
+import React, { useState } from "react";
+import { CiFilter } from "react-icons/ci";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import { Button } from "@mui/material";
 
 const checkboxItems = [
-  { label: 'الكل' },
-  { label: 'منتجات غير مسعرة' },
-  { label: 'منتجات مثبتة' },
-  { label: 'ممنتجات مخفية' },
-  { label: 'ممنتجات مخفية من تطبيق المتجر' },
-  { label: 'ممنتجات مخفضة' },
-  { label: 'ممنتجات نفدت' },
-  { label: 'ممنتجات للبيع' },
-  { label: 'ممنتجات غير مصنفة' },
-  { label: 'ممنتجات خاضعة للضريبة' },
-  { label: 'ممنتجات تتطلب شحن' },
-  { label: 'ممنتجات قاربت على النفاد' },
-  { label: 'ممنتجات بدون وصف' },
+  { label: "الكل" },
+  { label: "منتجات غير مسعرة" },
+  { label: "منتجات مثبتة" },
+  { label: "ممنتجات مخفية" },
+  { label: "ممنتجات مخفية من تطبيق المتجر" },
+  { label: "ممنتجات مخفضة" },
+  { label: "ممنتجات نفدت" },
+  { label: "ممنتجات للبيع" },
+  { label: "ممنتجات غير مصنفة" },
+  { label: "ممنتجات خاضعة للضريبة" },
+  { label: "ممنتجات تتطلب شحن" },
+  { label: "ممنتجات قاربت على النفاد" },
+  { label: "ممنتجات بدون وصف" },
 ];
 
 const checkboxItems2 = [
-  { label: 'الكل' },
-  { label: 'منتج جاهز' },
-  { label: 'خدمة حسب الطلب' },
-  { label: 'أكل' },
-  { label: 'منتج رقمي' },
-  { label: 'بطاقة رقمية' },
-  { label: 'مجموعة منتجات' },
-  { label: 'استخدام نماذج جاهزة!' },
+  { label: "الكل" },
+  { label: "منتج جاهز" },
+  { label: "خدمة حسب الطلب" },
+  { label: "أكل" },
+  { label: "منتج رقمي" },
+  { label: "بطاقة رقمية" },
+  { label: "مجموعة منتجات" },
+  { label: "استخدام نماذج جاهزة!" },
 ];
 
 const SideAccordion = () => {
@@ -70,15 +70,15 @@ const SideAccordion = () => {
         <>
           <div
             className="pr-side-acordin-container fixed top-0 left-0 z-50"
-            style={{ zIndex: '1000' }}
+            style={{ zIndex: "1000" }}
           >
             <div
-              className="pr-side-acordin-sub-container pb-16"
-              style={{ zIndex: '1' }}
+              className="pr-side-acordin-sub-container bg-dark pb-16"
+              style={{ zIndex: "1" }}
             >
               <div className="pr-side-head">
-                <div className="pr-side-head-col">
-                  <input type="checkbox" name="" id="" />
+                <div className="pr-side-head-col gap-2">
+                  <CiFilter className="dark-icon" />
                   <h2> فرز المنتجات حسب</h2>
                 </div>
                 <div className="pr-side-head-col">
@@ -99,12 +99,12 @@ const SideAccordion = () => {
                     <h3>حالة المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
-                      {openAccordions.includes(1) ? '-' : '+'}
+                      {openAccordions.includes(1) ? "-" : "+"}
                     </span>
                   </div>
                   <div
                     className={`pr-side-rows-acc-content ${
-                      openAccordions.includes(1) ? 'open' : ''
+                      openAccordions.includes(1) ? "open" : ""
                     }`}
                   >
                     {checkboxItems.map((item, index) => (
@@ -124,12 +124,12 @@ const SideAccordion = () => {
                     <h3>ماركة المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
-                      {openAccordions.includes(2) ? '-' : '+'}
+                      {openAccordions.includes(2) ? "-" : "+"}
                     </span>
                   </div>
                   <div
                     className={`pr-side-rows-acc-content ${
-                      openAccordions.includes(2) ? 'open' : ''
+                      openAccordions.includes(2) ? "open" : ""
                     }`}
                   >
                     <FormControl
@@ -162,12 +162,12 @@ const SideAccordion = () => {
                     <h3>نوع المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
-                      {openAccordions.includes(3) ? '-' : '+'}
+                      {openAccordions.includes(3) ? "-" : "+"}
                     </span>
                   </div>
                   <div
                     className={`pr-side-rows-acc-content ${
-                      openAccordions.includes(3) ? 'open' : ''
+                      openAccordions.includes(3) ? "open" : ""
                     }`}
                   >
                     {checkboxItems2.map((item, index) => (
@@ -187,12 +187,12 @@ const SideAccordion = () => {
                     <h3>تصنيف المنتج</h3>
                     <div className="pr-acc-divider"></div>
                     <span className="accordion-icon">
-                      {openAccordions.includes(4) ? '-' : '+'}
+                      {openAccordions.includes(4) ? "-" : "+"}
                     </span>
                   </div>
                   <div
                     className={`pr-side-rows-acc-content ${
-                      openAccordions.includes(4) ? 'open' : ''
+                      openAccordions.includes(4) ? "open" : ""
                     }`}
                   >
                     <FormControl
@@ -247,7 +247,7 @@ const SideAccordion = () => {
                   <Button>
                     <img
                       src="./images/download.png"
-                      style={{ width: '11px', marginLeft: '5px' }}
+                      style={{ width: "11px", marginLeft: "5px" }}
                     />
                     تصدير النتائج
                   </Button>

@@ -353,11 +353,11 @@
     color: #ddd !important;
 }
 
-.darkmode .tech-user-menu-drop-popup {
+.darkmode .dark-ul {
     background: #333333;
 }
 
-.darkmode .tech-topbar-user-menu ul li ul li a:hover {
+.darkmode .dark-li a:hover {
     background: #2C2C2C;
     border-radius: 7px;
 }

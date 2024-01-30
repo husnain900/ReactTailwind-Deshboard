@@ -1,25 +1,27 @@
-import React, { useState } from 'react';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
-import Typography from '@mui/material/Typography';
-import { FaTimes } from 'react-icons/fa';
-import { GoVideo } from 'react-icons/go';
-import { GoPulse } from 'react-icons/go';
+import React, { useState } from "react";
+import { styled } from "@mui/material/styles";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import Typography from "@mui/material/Typography";
+import { FaTimes } from "react-icons/fa";
+import { GoVideo } from "react-icons/go";
+import { GoPulse } from "react-icons/go";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
+  "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
   },
-  '& .MuiDialogActions-root': {
+  "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
-  '& .MuiPaper-root': {
-    maxWidth: '70%',
+  "& .MuiPaper-root": {
+    maxWidth: "70%",
+  },
+  "& .MuiBackdrop-root": {
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
 }));
-
 export default function CustomizedDialogs({
   openpop,
   handleOpenC,
@@ -39,11 +41,11 @@ export default function CustomizedDialogs({
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
-    if (file && file.type === 'image/png') {
+    if (file && file.type === "image/png") {
       setSelectedFile(file);
-      console.log('Selected file:', file);
+      console.log("Selected file:", file);
     } else {
-      alert('Please select a valid PNG image.');
+      alert("Please select a valid PNG image.");
     }
   };
 
@@ -82,7 +84,7 @@ export default function CustomizedDialogs({
           <Typography gutterBottom>
             <p
               className="text-gray-600 text-sm font-medium mb-3"
-              style={{ color: '#999999' }}
+              style={{ color: "#999999" }}
             >
               المقاس لا يقل عن (100px ارتفاع * 250px عرض) من نوع ( jpg, jpeg,
               png , gif ) ولا يتجاوز 5 ميجابيت لكل صوره بحد اقصي 10 صور
@@ -94,15 +96,15 @@ export default function CustomizedDialogs({
                 type="file"
                 accept="image/png"
                 onChange={handleFileChange}
-                style={{ display: 'none' }}
+                style={{ display: "none" }}
                 ref={fileInputRef}
               />
               <button
                 className="w-full"
                 onClick={() => fileInputRef.current.click()}
               >
-                <h4 style={{ color: '#4f4f4f' }}>اسحب الصورة وأفلتها هنا </h4>
-                <p style={{ color: '#999999' }}>او تصفح من جهازك </p>
+                <h4 style={{ color: "#4f4f4f" }}>اسحب الصورة وأفلتها هنا </h4>
+                <p style={{ color: "#999999" }}>او تصفح من جهازك </p>
               </button>
             </div>
           </div>
@@ -116,7 +118,7 @@ export default function CustomizedDialogs({
               />
             </div>
             <button className="flex gap-2 p-3 text-[#74A3A8] items-center bg-[#D2F7EF]  rounded-lg ">
-              {' '}
+              {" "}
               <GoPulse /> اضافة
             </button>
           </div>
@@ -125,7 +127,7 @@ export default function CustomizedDialogs({
         <img
           src={Productimg}
           alt="product"
-          style={{ width: '230px', height: 'auto', marginTop: '-20px' }}
+          style={{ width: "230px", height: "auto", marginTop: "-20px" }}
         />
         <DialogActions className="py-3 px-4 bg-gray-200 border-t py-2 border-solid border-blueGray-200 rounded-b">
           <button

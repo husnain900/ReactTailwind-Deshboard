@@ -83,8 +83,8 @@ const Home = () => {
                         <img src={item.icon} alt="" />
                       </div>
                       <div className="">
-                        <h5>{item.id === 4 ? selectedValue : item.value}</h5>
-                        <h5 className="flex items-center gap-1">
+                        <h5 className='dark-text-light'>{item.id === 4 ? selectedValue : item.value}</h5>
+                        <h5 className="flex dark-text items-center gap-1">
                           {item.label} <span>{item.arrow}</span>{' '}
                         </h5>
                       </div>
@@ -134,7 +134,7 @@ const Home = () => {
                 </div>
                 <div className="chart-footer h-12 flex justify-center items-center">
                   <Link to={'/reports'}>
-                    <h5 className="flex items-center gap-3 hover:text-green-700">
+                    <h5 className="flex items-center dark-text-light gap-3 hover:text-green-700">
                       المزيد من التقارير <FaAngleLeft size={12} />
                     </h5>
                   </Link>
@@ -148,9 +148,9 @@ const Home = () => {
         </div>
         <div className="col-span-12 md:col-span-12 lg:col-span-4">
           <div className="side-bx-container">
-            <div className="bx-sub-head">
+            <div className="bx-sub-head tb-head-dark">
               <img src="images/Home/group_20.png" alt="" />
-              <h2>التنبيهات</h2>
+              <h2 className='dark-text '>التنبيهات</h2>
             </div>
             <div className="overflow-y-scroll table-scrol scrollstyle">
               {notificationsData.map((notification, index) => (
@@ -182,10 +182,10 @@ const Home = () => {
         {/*  */}
         <div className="col-span-12 md:col-span-12 lg:col-span-8">
           <div className="panel">
-            <div className="panel-head px-8">
+            <div className="panel-head tb-head-dark px-8">
               <div className="flex items-center gap-4">
                 <img src="images/Home/box.svg" alt="" srcset="" />
-                <h5>أحدث الطلبات</h5>
+                <h5 className='dark-text'>أحدث الطلبات</h5>
               </div>
             </div>
             <div className="table-container overflow-y-auto scrollstyle">
@@ -232,9 +232,9 @@ const Home = () => {
         <div className="col-span-12 md:col-span-6 lg:col-span-4">
           <div className="side-bx-container">
             <div className="bx-container-head">
-              <div className="bx-sub-head">
+              <div className="bx-sub-head tb-head-dark">
                 <img src="images/Home/Error.png" alt="" />
-                <h2> منتجات نفدت</h2>
+                <h2 className='dark-text'> منتجات نفدت</h2>
               </div>
             </div>
             <div className="scrollstyle side-table overflow-y-scroll">

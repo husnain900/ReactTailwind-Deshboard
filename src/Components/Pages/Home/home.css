@@ -5,6 +5,7 @@
   font-weight: 400;
   line-height: normal;
 }
+
 #jscvalue:hover::after,
 #jscvalue:focus::after {
   content: none;
@@ -19,7 +20,8 @@
   display: inline-block;
   margin-left: 5px;
   position: relative;
-  top: -2px; /* Adjust as needed */
+  top: -2px;
+  /* Adjust as needed */
 }
 
 .alert-box .notification-label {
@@ -325,24 +327,28 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
-}
+@media screen and (min-width: 481px) and (max-width: 767px) {}
 
-@media screen and (min-width: 768px) and (max-width: 1367px) {
-}
+@media screen and (min-width: 768px) and (max-width: 1367px) {}
 
-@media screen and (min-width: 1024px) {
-}
+@media screen and (min-width: 1024px) {}
 
 
 /* darkmode  */
 
-.darkmode .bx-sub-head {
+.darkmode .tb-head-dark {
   background: #2C2C2C;
+
 }
 
-.darkmode .bx-container-head, .bx-sub-head h2 {
+.darkmode .dark-text {
   color: #A6A6A6;
+}
+.darkmode .bg-dark {
+  background: #272626;
+}
+.darkmode .dark-text-light {
+  color: #B1E6DA;
 }
 
 .darkmode .bx-cntn-text h1 {

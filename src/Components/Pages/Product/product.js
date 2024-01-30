@@ -119,7 +119,7 @@ const Product = () => {
               </button>
 
               {isPopupOpen && (
-                <ul className="popup-product shadow rounded-lg bg-white absolute z-10 w-64">
+                <ul className="dark-ul popup-product shadow rounded-lg bg-white absolute z-10 w-64">
                   {categories.map((category, index) => (
                     <li
                       key={index}
@@ -127,11 +127,11 @@ const Product = () => {
                         index === categories.length - 1
                           ? 'bg-gray-100 border-t border-gray-300 '
                           : ''
-                      }hover:bg-gray-100 p-1 hover:rounded`}
+                      }hover:bg-gray-100 p-1 hover:rounded dark-li`}
                     >
                       <a
                         href="#"
-                        className="text-gray-800 py-1 px-2 flex items-center gap-1"
+                        className="dark-a text-gray-800 py-1 px-2 flex items-center gap-1"
                         onClick={closePopup}
                       >
                         <span>
