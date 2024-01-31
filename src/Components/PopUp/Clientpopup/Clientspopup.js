@@ -130,7 +130,7 @@ export default function CustomizedDialogs() {
     <React.Fragment>
       <div className="">
         <div
-          className="client-bx cursor-pointer py-4 lg:py-7 lg:px14"
+          className="client-bx dark-border cursor-pointer py-4 lg:py-7 lg:px14"
           onClick={() => setOpen(true)}
         >
           <div className="client-sub-bx text-center">
@@ -156,8 +156,7 @@ export default function CustomizedDialogs() {
           <button
             className="background-transparent font-bold uppercase text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="button"
-            onClick={() => setOpen(false)}
-          >
+            onClick={() => setOpen(false)}>
             <FaTimes />
           </button>
         </div>

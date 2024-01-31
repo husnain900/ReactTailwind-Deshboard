@@ -373,7 +373,10 @@
 .darkmode .bx-cntn-text h1 {
   color: #ddd !important;
 }
+.darkmode .dark-border {
+  border: 1px solid #444444 !important;
 
+}
 .darkmode .scrollstyle::-webkit-scrollbar-track {
   background: #2c2c2c;
   padding: 5px 0;

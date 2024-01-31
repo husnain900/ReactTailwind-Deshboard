@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   FaUsers,
   FaChevronDown,
@@ -8,29 +8,29 @@ import {
   FaBell,
   FaShoppingCart,
   FaTimes,
-} from 'react-icons/fa';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
-import InputLabel from '@mui/material/InputLabel';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import { clientData } from '../../DevData/DevData';
-import ClientPopup from './Clientspopup';
+} from "react-icons/fa";
+import { styled } from "@mui/material/styles";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import { clientData } from "../../DevData/DevData";
+import ClientPopup from "./Clientspopup";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
+  "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
   },
-  '& .MuiDialogActions-root': {
+  "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
 }));
 
 export default function CustomizedDialogs() {
   const [open, setOpen] = React.useState(false);
-  const [selectedClientTitle, setSelectedClientTitle] = useState('');
+  const [selectedClientTitle, setSelectedClientTitle] = useState("");
   const handleClickOpen = (clientTitle) => {
     setSelectedClientTitle(clientTitle);
     setOpen(true);
@@ -54,27 +54,27 @@ export default function CustomizedDialogs() {
   };
 
   const removeRecord = (id) => {
-    const records = document.querySelectorAll('.tech-client-popup-fields-rec');
+    const records = document.querySelectorAll(".tech-client-popup-fields-rec");
     const recordToRemove = document.getElementById(`record-${id}`);
     recordToRemove.parentNode.removeChild(recordToRemove);
 
     if (records.length === 2) {
-      const removeRecButtons = document.querySelectorAll('.removeRec');
+      const removeRecButtons = document.querySelectorAll(".removeRec");
       removeRecButtons.forEach((button) => {
-        button.style.display = 'none';
+        button.style.display = "none";
       });
 
       records.forEach((record) => {
-        record.classList.add('first-rec');
+        record.classList.add("first-rec");
       });
     }
 
     if (records.length > 0) {
-      const removeRecButtons = document.querySelectorAll('.removeRec');
+      const removeRecButtons = document.querySelectorAll(".removeRec");
       removeRecButtons.forEach((button) => {});
 
       records.forEach((record) => {
-        record.classList.remove('first-rec');
+        record.classList.remove("first-rec");
       });
     }
   };
@@ -83,9 +83,9 @@ export default function CustomizedDialogs() {
     setDropdownOpen((prevState) => !prevState);
   };
 
-  const [age, setAge] = React.useState('');
+  const [age, setAge] = React.useState("");
   const [conditions, setConditions] = useState([
-    { id: 1, option: '', statement: '', value: '' },
+    { id: 1, option: "", statement: "", value: "" },
   ]);
 
   const handleChangeCondition = (event, index, field) => {
@@ -97,7 +97,7 @@ export default function CustomizedDialogs() {
   const addNewCondition = () => {
     setConditions((prevConditions) => [
       ...prevConditions,
-      { id: prevConditions.length + 1, option: '', statement: '', value: '' },
+      { id: prevConditions.length + 1, option: "", statement: "", value: "" },
     ]);
   };
 
@@ -111,16 +111,16 @@ export default function CustomizedDialogs() {
     setDropdownOpen(false);
 
     switch (iconName) {
-      case 'fa-building':
+      case "fa-building":
         setSelectedRecordIcon(<FaBuilding />);
         break;
-      case 'fa-bell':
+      case "fa-bell":
         setSelectedRecordIcon(<FaBell />);
         break;
-      case 'fa-shopping-cart':
+      case "fa-shopping-cart":
         setSelectedRecordIcon(<FaShoppingCart />);
         break;
-      case 'fa-users':
+      case "fa-users":
         setSelectedRecordIcon(<FaUsers />);
         break;
       default:
@@ -135,13 +135,12 @@ export default function CustomizedDialogs() {
         {clientData.map((client) => (
           <div key={client.id} className="">
             <div
-              className="client-bx cursor-pointer py-4 lg:py-7 lg:px-14"
+              className="client-bx dark-border cursor-pointer py-4 lg:py-7 lg:px-14"
               // onClick={handleClickOpen}
-              onClick={() => handleClickOpen(client.title)}
-            >
+              onClick={() => handleClickOpen(client.title)}>
               <div className="client-sub-bx text-center">
                 <img className="mx-auto" src={client.icon} alt={client.title} />
-                <h2>{client.title}</h2>
+                <h2 className="dark-text-light">{client.title}</h2>
                 <p>{client.count}</p>
               </div>
             </div>
@@ -154,8 +153,8 @@ export default function CustomizedDialogs() {
         open={open}
         PaperProps={{
           style: {
-            width: '57%',
-            maxWidth: 'none',
+            width: "57%",
+            maxWidth: "none",
           },
         }}
       >
@@ -208,16 +207,16 @@ export default function CustomizedDialogs() {
                   </a>
                 </div>
                 <div className="tech-icons-popup-dropdown" id="iconList">
-                  <a onClick={() => addIconToDropdown('fa-building')}>
+                  <a onClick={() => addIconToDropdown("fa-building")}>
                     <FaBuilding />
                   </a>
-                  <a onClick={() => addIconToDropdown('fa-bell')}>
+                  <a onClick={() => addIconToDropdown("fa-bell")}>
                     <FaBell />
                   </a>
-                  <a onClick={() => addIconToDropdown('fa-shopping-cart')}>
+                  <a onClick={() => addIconToDropdown("fa-shopping-cart")}>
                     <FaShoppingCart />
                   </a>
-                  <a onClick={() => addIconToDropdown('fa-users')}>
+                  <a onClick={() => addIconToDropdown("fa-users")}>
                     <FaUsers />
                   </a>
                 </div>
@@ -226,7 +225,7 @@ export default function CustomizedDialogs() {
 
             <div className="tech-client-popup-fields-main">
               <label>
-                إضافة العملاء تلقائياً للمجموعة عند تحقق الشرط التالي ({' '}
+                إضافة العملاء تلقائياً للمجموعة عند تحقق الشرط التالي ({" "}
                 <small>اختياري</small>)
               </label>
             </div>
@@ -248,7 +247,7 @@ export default function CustomizedDialogs() {
                           value={condition.option}
                           label="الخيار"
                           onChange={(e) =>
-                            handleChangeCondition(e, index, 'option')
+                            handleChangeCondition(e, index, "option")
                           }
                         >
                           {/* Your MenuItem options here */}
@@ -265,7 +264,7 @@ export default function CustomizedDialogs() {
                           value={condition.statement}
                           label="البيان"
                           onChange={(e) =>
-                            handleChangeCondition(e, index, 'statement')
+                            handleChangeCondition(e, index, "statement")
                           }
                         ></Select>
                       </FormControl>
@@ -278,7 +277,7 @@ export default function CustomizedDialogs() {
                         placeholder="قيمة الشرط"
                         value={condition.value}
                         onChange={(e) =>
-                          handleChangeCondition(e, index, 'value')
+                          handleChangeCondition(e, index, "value")
                         }
                       />
                     </li>
@@ -319,7 +318,7 @@ export default function CustomizedDialogs() {
           </div>
         </DialogContent>
         <DialogActions
-          style={{ justifyContent: 'start' }}
+          style={{ justifyContent: "start" }}
           className="py-3 px-4 bg-gray-200 border-t py-2 border-solid border-blueGray-200 rounded-b"
         >
           <button
