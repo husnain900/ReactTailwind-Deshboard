@@ -78,7 +78,7 @@ const QA = () => {
                               }
                               onClick={() => handleButtonClick(index)}
                             >
-                              <img src={button.icon} alt={button.label} />
+                           <span className='Q&A-Data'>  <img src={button.icon} alt={button.label} /></span>
                               {button.label}
                             </Button>
                           )

@@ -35,7 +35,7 @@ export default function Modal() {
             className="justify-center text-right items-center  flex overflow-x-hidden slideIn overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
             style={{ zIndex: '1000' }}
           >
-            <div className="relative my-6 mx-auto" style={{ width: '60%' }}>
+            <div className="relative  ProductNewStaticOrder my-6 mx-auto w-3/5 md:w-4/5">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="flex items-start items-center modal-header justify-between px-4 py-2 rounded-t">
                   <h3>إنشاء صفحة</h3>

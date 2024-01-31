@@ -206,12 +206,18 @@
     height: 30px !important;
   }
 }
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 380px) {
+  .qa-box-btm-col button {
+    padding: 2px 3px !important;
+    font-size: 10px !important;
+  }
+  .qa-box-btm-col button img {
+    margin-left: 4px !important;
+    height: 12px;
+    width: auto;
+  }
+  .qa-texarea-btn button {
+    font-size: 10px !important;
+    gap: 4px;
+  }
 }
