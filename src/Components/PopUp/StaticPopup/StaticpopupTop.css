@@ -1,8 +1,31 @@
 .scrollable-content {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .scrollable-content::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none;
+}
+.ProductNewStaticOrder {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .ProductNewStaticOrder {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .ProductNewStaticOrder {
+    width: 90%;
+  }
+  .tech-product-seo-preview a:nth-child(2) {
+    font-size: 12px;
+  }
 }
