@@ -39,7 +39,7 @@ export default function AlertDialogSlide() {
         maxWidth={false}
         PaperProps={{
           style: {
-            width: '35%',
+            // width: '35%',
             margin: 'auto',
             textAlign: 'center',
           },

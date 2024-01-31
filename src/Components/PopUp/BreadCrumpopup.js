@@ -71,30 +71,32 @@ const TecAccordion = () => {
         </a>
       </Button>
       <div
-        className="tc-helppanelcontainer absolute left-[26px] z-50"
+        className="tc-helppanelcontainer absolute left-[26px] z-50 "
         style={{ zIndex: '1000' }}
         id="tc-helppanelcontainer"
       >
-        <div className="tc-helppanelcontainer-sub bg-white">
+        <div className="tc-helppanelcontainer-sub bg-white ">
           <div className="tc-helppanel-head">
             <div className="tc-helppanel-head-sub">
               <h2 id="tc-head-text">المقالات</h2>
-              <button
-                className="tc-help-panel-wdh flex gap-3 ExpendedQ&A "
-                onClick={toggleWidth}
-              >
-                {isExpanded ? (
-                  <>
-                    <CiMinimize1 size={20} />
-                    تصغير
-                  </>
-                ) : (
-                  <>
-                    <BsArrowsAngleExpand size={17} />
-                    تكبير
-                  </>
-                )}
-              </button>
+              <div className="hidden md:flex gap-3">
+                <button
+                  className="tc-help-panel-wdh flex gap-3 "
+                  onClick={toggleWidth}
+                >
+                  {isExpanded ? (
+                    <>
+                      <CiMinimize1 size={20} />
+                      تصغير
+                    </>
+                  ) : (
+                    <>
+                      <BsArrowsAngleExpand size={17} />
+                      تكبير
+                    </>
+                  )}
+                </button>
+              </div>
             </div>
           </div>
           <div className="tc-helppanel-search">

@@ -41,8 +41,8 @@ export default function Modal() {
       {showModal && (
         <>
           <div className="justify-center text-right items-center  flex overflow-x-hidden slideIn overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-1/2 my-6 mx-auto">
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+            <div className="relative productData  my-6 mx-auto">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none ">
                 <div className="flex items-start items-center modal-header justify-between px-4 py-2 rounded-t">
                   <h3>بيانات المنتج (عغلق)</h3>
                   <button
@@ -177,7 +177,7 @@ export default function Modal() {
                             </div>
                           </div>
                           <div className="tech-productoption-col-2 column-design">
-                            <label>نهاية التخفيض (اختياري) </label>
+                            <label>نهاية التخفيض </label>
 
                             <div className="tech-productoption-input-group">
                               <Datepickerpopup />
@@ -448,7 +448,11 @@ export default function Modal() {
                             <a href="#" id="put_seo_title" target="_blank">
                               عغلق
                             </a>
-                            <a href="#" target="_blank">
+                            <a
+                              className="sallasaLinkProductPagepopup"
+                              href="#"
+                              target="_blank"
+                            >
                               https://salla.sa/sau57/
                               <span id="put_seo_link" dir="rtl">
                                 عغلق

@@ -75,12 +75,12 @@ const Reports = () => {
     <div>
       <BreadCrum />
       <section className="departure flex justify-between items-center">
-        <div className="border border-gray-300 rounded-md">
+        <div className="border border-gray-300 rounded-md DatePickerFIeld">
           <DatePicker />
         </div>
         <div className="flex gap-2 departure-btn">
-          <ReportsBtnPopup />
-          <Button className="flex gap-2 items-center ">
+        <div className='ReportPopupBtn'>   <ReportsBtnPopup /></div>
+          <Button className="flex gap-2 items-center ReportStudentButton ">
             <SlPrinter />
             طباعة
           </Button>

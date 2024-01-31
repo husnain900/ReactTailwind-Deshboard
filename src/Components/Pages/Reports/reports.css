@@ -136,27 +136,64 @@
   top: 45px !important;
 }
 
-.slick-slide {
-  /* width: 160px !important; */
-}
-
 @media screen and (max-width: 480px) {
-  .reportImageIcon {
-    width: 10px;
-  }
   .reportsTexticon {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .tech-report-p-type-items {
+    padding: 12px;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1024) and (max-width: 1330px) {
 }
 
 @media screen and (min-width: 1024px) {
   .slider-width {
     width: 970px !important;
+  }
+}
+
+.departure {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Styling for DatePickerField */
+.DatePickerFIeld {
+  width: 60%;
+}
+
+/* Styling for departure-btn */
+.departure-btn {
+  width: 35%;
+  display: flex;
+  justify-content: end; /* Center the buttons */
+  gap: 10px; /* Gap between buttons */
+}
+
+/* Styling for buttons inside departure-btn */
+.departure-btn > .ReportPopupBtn,
+.departure-btn > .ReportStudentButton {
+  /* Additional styling for buttons if needed */
+}
+
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  .departure {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .DatePickerFIeld,
+  .departure-btn {
+    width: 100%;
+  }
+  .departure-btn {
+    margin-top: 10px;
   }
 }

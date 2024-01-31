@@ -16,3 +16,28 @@
 .productOrderButton:visited {
   background-color: #76e8cd;
 }
+.productData {
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .productData {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productData {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .productData {
+    width: 90%;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  .sallasaLinkProductPagepopup {
+    font-size: 12px;
+  }
+}
