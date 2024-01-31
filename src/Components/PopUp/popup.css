@@ -1373,7 +1373,9 @@ i {
   color: #004d5a;
 }
 
-.tech-pro-op-custom-checkbox-btn:checked+.tech-pro-op-custom-checkbox .tech-pro-op-check-icon {
+.tech-pro-op-custom-checkbox-btn:checked
+  + .tech-pro-op-custom-checkbox
+  .tech-pro-op-check-icon {
   display: block;
 }
 
@@ -1490,6 +1492,9 @@ i {
   .tech-productoption-input-group.readonly input {
     width: 84%;
   }
+  .tc-helppanelcontainer-sub {
+    width: 320px !important;
+  }
 }
 
 .css-qfso29-MuiTypography-root-MuiDialogContentText-root {
@@ -1504,14 +1509,13 @@ i {
 }
 
 .darkmode .pr-side-acordin-sub-container label {
-  color: #C2C9CC;
+  color: #c2c9cc;
 }
 
 .darkmode .checkmark {
-  border: 1px solid rgba(186, 243, 230, .45);
+  border: 1px solid rgba(186, 243, 230, 0.45);
 }
 
 .darkmode .checkmark:after {
   border: 1px solid #baf3e6;
-
 }

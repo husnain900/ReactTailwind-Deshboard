@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Datepicker from "react-tailwindcss-datepicker";
+import React, { useState } from 'react';
+import Datepicker from 'react-tailwindcss-datepicker';
 
 const App = () => {
   const [value, setValue] = useState({
@@ -8,18 +8,20 @@ const App = () => {
   });
 
   const handleValueChange = (newValue) => {
-    console.log("newValue:", newValue);
+    console.log('newValue:', newValue);
     setValue(newValue);
   };
 
   return (
-    <Datepicker
-      useRange={false}
-      asSingle={true}
-      value={value}
-      placeholder={"نهاية التخفيض"}
-      onChange={handleValueChange}
-    />
+    <>
+      <Datepicker
+        useRange={false}
+        asSingle={true}
+        value={value}
+        placeholder={'نهاية التخفيض (اختياري) '}
+        onChange={handleValueChange}
+      />
+    </>
   );
 };
 

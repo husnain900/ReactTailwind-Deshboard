@@ -1,23 +1,24 @@
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import * as React from "react";
-import { FaTimes } from "react-icons/fa";
-import Button from "@mui/material/Button";
-import { styled } from "@mui/material/styles";
-import Dialog from "@mui/material/Dialog";
-import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
-import { CiCirclePlus } from "react-icons/ci";
-import CountrySelect from "./Countryinput";
-import Datepickerpopup from "../../Pages/Ui-components/Datepickerpopup";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import * as React from 'react';
+import { FaTimes } from 'react-icons/fa';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+import DialogActions from '@mui/material/DialogActions';
+import { CiCirclePlus } from 'react-icons/ci';
+import CountrySelect from './Countryinput';
+import Datepickerpopup from '../../Pages/Ui-components/Datepickerpopup';
+import './ClientBtnpopup.css';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  "& .MuiDialogContent-root": {
+  '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
   },
-  "& .MuiDialogActions-root": {
+  '& .MuiDialogActions-root': {
     padding: theme.spacing(1),
   },
 }));
@@ -31,7 +32,7 @@ export default function CustomizedDialogs() {
   const handleClose = () => {
     setOpen(false);
   };
-  const [age, setAge] = React.useState("");
+  const [age, setAge] = React.useState('');
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -74,7 +75,7 @@ export default function CustomizedDialogs() {
                 className="w-full"
               >
                 <InputLabel id="demo-select-small-label">
-                  {" "}
+                  {' '}
                   نوع العميل
                 </InputLabel>
                 <Select
@@ -143,7 +144,7 @@ export default function CustomizedDialogs() {
                 الدولة
               </label>
               <div className="flex gap-4">
-                <div className="wl-mdl-cntnt-form wl-smm-field">
+                <div className="wl-mdl-cntnt-form wl-smm-field ">
                   <CountrySelect />
                 </div>
                 <div className="wl-mdl-cntnt-form wl-smm-field">
@@ -180,7 +181,7 @@ export default function CustomizedDialogs() {
           </div>
         </DialogContent>
         <DialogActions
-          style={{ justifyContent: "right" }}
+          style={{ justifyContent: 'right' }}
           className="flex items-center py-3 px-4 bg-gray-200 border-t py-2  rounded-b"
         >
           <button

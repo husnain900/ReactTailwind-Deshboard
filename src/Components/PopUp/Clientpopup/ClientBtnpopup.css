@@ -1,0 +1,24 @@
+.wl-mdl-row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wl-mdl-row .flex {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .wl-mdl-cntnt-form {
+    flex: 1;
+  }
+  
+  @media (max-width: 576px) {
+    .wl-mdl-row .flex {
+      flex-direction: column;
+    }
+  
+    .wl-mdl-cntnt-form {
+      width: 100%;
+    }
+  }
+  

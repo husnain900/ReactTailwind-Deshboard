@@ -1,0 +1,22 @@
+.AddNewCategoryPopup {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%; /* Default width for small screens */
+}
+
+/* Medium screens (>= 768px) */
+@media (min-width: 768px) {
+  .AddNewCategoryPopup {
+    width: 70%;
+  }
+}
+
+/* Large screens (>= 1024px) */
+@media (min-width: 1024px) {
+  .AddNewCategoryPopup {
+    width: 50%;
+  }
+}

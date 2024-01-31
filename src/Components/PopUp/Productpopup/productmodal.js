@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { CiText } from 'react-icons/ci';
 import Productdrop from './Dropdown';
+import './Productmodal.css';
 
 export default function Modal({ addDataToToggle }) {
   const [showModal, setShowModal] = useState(false);
@@ -43,7 +44,7 @@ export default function Modal({ addDataToToggle }) {
             onClick={closeModal}
           >
             <div
-              className="relative w-1/2 my-6 mx-auto"
+              className="relative AddNewCategoryPopup "
               onClick={handleModalClick}
             >
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">

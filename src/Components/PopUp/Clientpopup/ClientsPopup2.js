@@ -130,7 +130,7 @@ export default function CustomizedDialogs() {
 
   return (
     <React.Fragment>
-      <section className="client-box grid lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1  gap-5 mb-16">
+      <section className="client-box grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2  gap-5 mb-16">
         <ClientPopup />
         {clientData.map((client) => (
           <div key={client.id} className="">

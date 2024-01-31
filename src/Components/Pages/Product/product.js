@@ -258,7 +258,7 @@ const Product = () => {
                 >
                   <div
                     className="fm-sub-fields-slc h-10 w-full product-select"
-                    style={{ maxWidth: '70%' }}
+                    // style={{ maxWidth: '70%' }}
                   >
                     <ProductSelect colorsOption={colorsOption} />
                   </div>
