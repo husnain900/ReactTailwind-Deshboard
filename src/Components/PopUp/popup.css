@@ -1504,13 +1504,8 @@ i {
 
 /* darkmode */
 
-<<<<<<< Updated upstream
 .darkmode .dark-gray-txt, .darkmode svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
   color: #C2C9CC;
-=======
-.darkmode .dark-gray-txt {
-  color: #c2c9cc;
->>>>>>> Stashed changes
 }
 
 .darkmode .pr-side-acordin-sub-container label {
@@ -1523,8 +1518,4 @@ i {
 
 .darkmode .checkmark:after {
   border: 1px solid #baf3e6;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 }
