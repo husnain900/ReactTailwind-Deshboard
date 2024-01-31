@@ -534,7 +534,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2" defaultExpanded>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -545,7 +545,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -559,7 +559,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -570,7 +570,7 @@ export default function AccordionUsage() {
             {items1.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
                   href="#"
                 >
                   {item}
@@ -584,7 +584,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -595,7 +595,7 @@ export default function AccordionUsage() {
             {items2.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -609,7 +609,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -620,7 +620,7 @@ export default function AccordionUsage() {
             {items3.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
                   href="#"
                 >
                   {item}
@@ -633,7 +633,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -644,7 +644,7 @@ export default function AccordionUsage() {
             {Object.keys(items4).map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
                   href="#"
                 >
                   {item}
@@ -658,7 +658,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -669,7 +669,7 @@ export default function AccordionUsage() {
             {Object.keys(items5).map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
                   href="#"
                 >
                   {item}
@@ -683,7 +683,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -694,7 +694,7 @@ export default function AccordionUsage() {
             {items6.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -707,7 +707,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -718,7 +718,7 @@ export default function AccordionUsage() {
             {items7.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -731,7 +731,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -742,7 +742,7 @@ export default function AccordionUsage() {
             {items8.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -755,7 +755,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -766,7 +766,7 @@ export default function AccordionUsage() {
             {items9.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -779,7 +779,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -790,7 +790,7 @@ export default function AccordionUsage() {
             {items10.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -803,7 +803,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -814,7 +814,7 @@ export default function AccordionUsage() {
             {items11.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -827,7 +827,7 @@ export default function AccordionUsage() {
       <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -838,7 +838,7 @@ export default function AccordionUsage() {
             {items12.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
@@ -851,7 +851,7 @@ export default function AccordionUsage() {
       {/* <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          className="hover:text-[#76E8D0] duration-200 cursor-pointer"
+          className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -862,7 +862,7 @@ export default function AccordionUsage() {
             {items.map((item, index) => (
               <li key={index}>
                 <a
-                  className="hover:text-[#76E8D0] duration-200 cursor-pointer mb-2"
+                  className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
                   href="#"
                 >
                   {item}
