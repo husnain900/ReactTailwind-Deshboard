@@ -136,12 +136,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-.icon-text-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
   color: #003c47;
   height: 45px;
 }
@@ -151,17 +145,9 @@
   height: 20px;
 }
 
-.icon-text-button p {
-  margin: 0;
-}
-
 .icon-text-button img {
   width: 20px;
   height: 20px;
-}
-
-.icon-text-button p {
-  margin: 0;
 }
 
 .ds-17-cntr-ftr-rw {
@@ -411,6 +397,9 @@
     flex-direction: column;
     margin-top: 24px !important;
     text-align: center;
+  }
+  .icon-text-button {
+    font-size: 12px;
   }
 
   .ds-17-cntnr-2-sub-rw-frst {

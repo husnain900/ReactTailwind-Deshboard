@@ -83,7 +83,9 @@ const Home = () => {
                         <img src={item.icon} alt="" />
                       </div>
                       <div className="">
-                        <h5 className='dark-text-light'>{item.id === 4 ? selectedValue : item.value}</h5>
+                        <h5 className="dark-text-light">
+                          {item.id === 4 ? selectedValue : item.value}
+                        </h5>
                         <h5 className="flex dark-text items-center gap-1">
                           {item.label} <span>{item.arrow}</span>{' '}
                         </h5>
@@ -140,17 +142,17 @@ const Home = () => {
                   </Link>
                 </div>
               </div>
-              <div className="chartbox w-full lg:w-[45%]">
+              <div className="chartbox w-full lg:w-[45%] ">
                 <ChartsBars />
               </div>
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-12 lg:col-span-4">
+        <div className="ALertTable col-span-12 md:col-span-12 lg:col-span-4">
           <div className="side-bx-container">
-            <div className="bx-sub-head tb-head-dark">
+            <div className=" bx-sub-head tb-head-dark">
               <img src="images/Home/group_20.png" alt="" />
-              <h2 className='dark-text '>التنبيهات</h2>
+              <h2 className="dark-text ">التنبيهات</h2>
             </div>
             <div className="overflow-y-scroll table-scrol scrollstyle">
               {notificationsData.map((notification, index) => (
@@ -185,7 +187,7 @@ const Home = () => {
             <div className="panel-head tb-head-dark px-8">
               <div className="flex items-center gap-4">
                 <img src="images/Home/box.svg" alt="" srcset="" />
-                <h5 className='dark-text'>أحدث الطلبات</h5>
+                <h5 className="dark-text">أحدث الطلبات</h5>
               </div>
             </div>
             <div className="table-container overflow-y-auto scrollstyle">
@@ -229,12 +231,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6 lg:col-span-4">
+        <div className="outOfstockProducts col-span-12 md:col-span-12 lg:col-span-4">
           <div className="side-bx-container">
             <div className="bx-container-head">
               <div className="bx-sub-head tb-head-dark">
                 <img src="images/Home/Error.png" alt="" />
-                <h2 className='dark-text'> منتجات نفدت</h2>
+                <h2 className="dark-text"> منتجات نفدت</h2>
               </div>
             </div>
             <div className="scrollstyle side-table overflow-y-scroll">

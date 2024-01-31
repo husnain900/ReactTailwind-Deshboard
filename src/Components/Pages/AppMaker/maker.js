@@ -268,7 +268,7 @@ const AppBuilder = () => {
                   </div>
                   <button class="icon-text-button">
                     <img src="images/Maker/chat-download-line.png" alt="Icon" />
-                    <p>عناصر تصميم المتجر</p>
+                    عناصر تصميم المتجر
                   </button>
                 </div>
               </div>
