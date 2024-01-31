@@ -152,18 +152,18 @@ const Product = () => {
               )}
             </div>
             <div className="flex relative items-center gap-4 lg:gap-7 sm:flex-row flex-col left-side">
-              <div className="">
+              <div className="dark-a">
                 <Filteringpopup />
               </div>
-              <div className="">
+              <div className="dark-a">
                 <Khidmatpopup />
               </div>
               <div className="hidden lg:block">
                 <div className="flex gap-3 items-center">
-                  <a href="#">
+                  <a className='dark-a' href="#">
                     <LuLayoutGrid />
                   </a>
-                  <a href="#">
+                  <a className='dark-a' href="#">
                     <IoIosList />
                   </a>
                 </div>

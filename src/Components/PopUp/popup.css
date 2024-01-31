@@ -1499,7 +1499,7 @@ i {
 
 /* darkmode */
 
-.darkmode .dark-gray-txt {
+.darkmode .dark-gray-txt, .darkmode svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
   color: #C2C9CC;
 }
 

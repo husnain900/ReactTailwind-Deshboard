@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FaChevronDown } from 'react-icons/fa';
 import { BsArrowsAngleExpand } from 'react-icons/bs';
 import { IoIosArrowDown } from 'react-icons/io';
 import { CiMinimize1 } from 'react-icons/ci';

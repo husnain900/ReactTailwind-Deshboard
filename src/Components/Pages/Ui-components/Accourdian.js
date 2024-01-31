@@ -95,7 +95,6 @@ const items3 = [
   'الإعلانات',
   'الربط مع Crazy Egg',
 ];
-
 const items4 = {
   'ثيم المنيو': null,
   'إدارة متجر الثيمات وتصميم المتجر': null,
@@ -115,7 +114,6 @@ const items4 = {
   'ثيم فريد': null,
   'ثيم نمو': null,
 };
-
 const items5 = {
   'التسويق والأدوات التسويقية': null,
   'كتابة مقالة جديد على مدونة متجرك': null,
@@ -533,7 +531,7 @@ const items12 = [
 export default function AccordionUsage() {
   return (
     <div>
-      <Accordion className="shadow-none py-2" defaultExpanded>
+      <Accordion className="shadow-none bg-dark py-2" defaultExpanded>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -558,7 +556,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
         <AccordionActions></AccordionActions>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -583,7 +581,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
         <AccordionActions></AccordionActions>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -608,7 +606,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
         <AccordionActions></AccordionActions>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -632,7 +630,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -657,7 +655,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -682,7 +680,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -706,7 +704,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -730,7 +728,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -754,7 +752,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -778,7 +776,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -802,7 +800,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -826,7 +824,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="shadow-none py-2">
+      <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"
@@ -850,7 +848,7 @@ export default function AccordionUsage() {
           </ul>
         </AccordionDetails>
       </Accordion>
-      {/* <Accordion className="shadow-none py-2">
+      {/* <Accordion className="shadow-none bg-dark py-2">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           className="hover:text-[#76E8D0] duration-200 cursor-pointer"

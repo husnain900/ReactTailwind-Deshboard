@@ -79,11 +79,11 @@ const Khidmatpopup = () => {
   return (
     <>
       <div
-        className="flex gap-2 items-center cursor-pointer"
+        className="flex gap-2  items-center cursor-pointer"
         onClick={toggleDropdown}
       >
         <RiShoppingBagLine />
-        <p>خدمات</p>
+        <p className="dark-a">خدمات</p>
       </div>
       {isDropdownOpen && (
         <ul className="popup-product dark-ul shadow rounded-lg right-0 top-9 bg-white absolute z-10">

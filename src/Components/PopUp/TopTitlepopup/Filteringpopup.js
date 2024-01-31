@@ -64,7 +64,7 @@ const SideAccordion = () => {
         href="#"
       >
         <CiFilter />
-        <p>تصفية</p>
+        <p className="dark-a">تصفية</p>
       </a>
       {isSideContainerClosed && (
         <>

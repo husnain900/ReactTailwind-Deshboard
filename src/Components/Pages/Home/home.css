@@ -286,6 +286,7 @@
     margin-top: 310px;
     margin-bottom: 100px;
   }
+
   .chartbox {
     border-radius: 10.488px;
   }
@@ -293,6 +294,7 @@
   .outOfstockProducts {
     margin-top: -100px;
   }
+
   .chart-footer {
     margin-bottom: 50px;
   }
@@ -343,17 +345,14 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
-}
+@media screen and (min-width: 481px) and (max-width: 767px) {}
 
-@media screen and (min-width: 768px) and (max-width: 1367px) {
-}
+@media screen and (min-width: 768px) and (max-width: 1367px) {}
 
-@media screen and (min-width: 1024px) {
-}
+@media screen and (min-width: 1024px) {}
 
-@media screen and (max-width: 1200px) {
-}
+@media screen and (max-width: 1200px) {}
+
 /* darkmode  */
 
 .darkmode .tb-head-dark {
@@ -363,6 +362,7 @@
 .darkmode .dark-text {
   color: #a6a6a6;
 }
+
 .darkmode .bg-dark {
   background: #272626;
 }

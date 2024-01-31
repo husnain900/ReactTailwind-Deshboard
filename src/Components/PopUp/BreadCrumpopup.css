@@ -3,3 +3,27 @@
     display: none;
   }
 }
+
+/* darkmode  */
+.darkmode .tc-helppanel-search-sub {
+  margin-top: 0;
+  background: #232323;
+}
+
+.darkmode .tc-helppanel-search-sub input {
+  border: 1px solid #444444;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #272626;
+}
+
+.darkmode .tc-helppanel-search-sub button {
+  border: 1px solid #444444;
+}
+
+.darkmode .accordian-body {
+  background: #232323;
+}
+
+.darkmode .accordian-body .bg-dark li a ,.darkmode .MuiAccordionSummary-content {
+  color: #BAF3E6;
+}

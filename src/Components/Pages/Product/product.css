@@ -88,7 +88,7 @@
   width: 100%;
 }
 
-.fm-sub-fields-slc > select {
+.fm-sub-fields-slc>select {
   color: #c2c2c2;
   font-size: 9.803px;
   font-style: normal;
@@ -125,7 +125,7 @@
   width: 40px;
 }
 
-.fm-sub-fields-btn-2 > button {
+.fm-sub-fields-btn-2>button {
   border: 1px solid #cecece;
   outline: none;
   cursor: pointer;
@@ -145,7 +145,7 @@
   border-right: 0;
 }
 
-.fm-sub-fields-slc > select {
+.fm-sub-fields-slc>select {
   border-radius: 0px 7px 7px 0px;
   border: 1px solid #cecece;
   padding: 6px 8px 6px 8px;
@@ -159,7 +159,7 @@
   display: flex;
 }
 
-.fm-sub-fields-btn-3 > button {
+.fm-sub-fields-btn-3>button {
   border: 1px solid #cecece !important;
   outline: none !important;
   border-right: 0 !important;
@@ -242,16 +242,65 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
-}
+@media screen and (min-width: 481px) and (max-width: 767px) {}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-}
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
 
-@media screen and (min-width: 1024px) {
-}
+@media screen and (min-width: 1024px) {}
 
 .darkmode .fm-fields-lr-in {
   background-color: #272626;
+  color: #cccccc;
+}
+
+.darkmode .fm-fields-lr-in {
+  border: 1px solid #444444;
+}
+
+.darkmode .fm-sub-fields-btn-1 button {
+  border: 1px solid #444444;
+}
+
+.darkmode .fm-sub-fields-btn-2>button {
+  border: 1px solid #444444;
+  background-color: #333333 !important;
+}
+
+.darkmode .select__control.select__control--is-focused.css-19jxva4-control {
+  background: #272626;
+  border: 1px solid #444444 !important;
+
+}
+
+.darkmode .select__control {
+  background: #272626 !important;
+  border: 1px solid #444444 !important;
+
+}
+
+.darkmode .fm-sub-fields-btn-3 button {
+  border: 1px solid #444444 !important;
+  background-color: #333333 !important;
+}
+
+.darkmode .fm-main-btn-block button {
+  background-color: #666 !important;
+  color: #cccccc !important;
+}
+
+.darkmode .fm-main-btn-block .btn-hover {
+  background-color: #666 !important;
+}
+
+.darkmode .fm-box-container {
+  border: 0.817px solid #444444;
+}
+
+.darkmode .fm-box-footer {
+  border-top: 1px solid #444444;
+}
+
+.darkmode .fm-head-pr-btn button {
+  background: #333333;
   color: #cccccc;
 }
