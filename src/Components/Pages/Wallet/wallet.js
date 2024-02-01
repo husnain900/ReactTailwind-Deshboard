@@ -46,7 +46,7 @@ const Wallet = () => {
     <div>
       <BreadCrum />
       <div className="wp-tp-row">
-        <a href="/#">
+        <a href="#">
           <div className="wp-tp-sub-row">
             <div className="wp-tp-row-col">
               <div className="wp-tp-row-inr-col">
@@ -215,7 +215,7 @@ const Wallet = () => {
                             >
                               <ul>
                                 <li className="hover:bg-gray-200 hover:rounded">
-                                  <a href="/#">
+                                  <a href="#">
                                     <span
                                       className="flex items-center gap-2"
                                       style={{ color: '#003c47' }}
@@ -226,7 +226,7 @@ const Wallet = () => {
                                   </a>
                                 </li>
                                 <li className="hover:bg-gray-200 hover:rounded">
-                                  <a href="/#">
+                                  <a href="#">
                                     <span
                                       className="flex items-center gap-2"
                                       style={{ color: '#003c47' }}
@@ -306,7 +306,7 @@ const Wallet = () => {
                             <div className="tech-static-p-more-popup">
                               <ul>
                                 <li className="hover:bg-gray-200 hover:rounded">
-                                  <a href="/#">
+                                  <a href="#">
                                     <span
                                       className="flex items-center gap-2"
                                       style={{ color: '#003c47' }}
@@ -317,7 +317,7 @@ const Wallet = () => {
                                   </a>
                                 </li>
                                 <li>
-                                  <a href="/#">
+                                  <a href="#">
                                     <span
                                       className="flex items-center gap-2"
                                       style={{ color: '#003c47' }}

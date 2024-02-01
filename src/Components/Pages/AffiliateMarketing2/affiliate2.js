@@ -34,7 +34,7 @@ const Affiliate2 = () => {
       <BreadCrum />
       <div className="top-title">
         <Button className="btn-hover common-btn">
-          <a className="flex gap-2 items-center" href="/#">
+          <a className="flex gap-2 items-center" href="#">
             <CiCirclePlus size={27} /> إضافة رابط
           </a>
         </Button>

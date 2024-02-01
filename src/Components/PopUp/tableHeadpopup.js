@@ -24,7 +24,7 @@ const PopupContent = ({ items }) => (
   <ul className="popup-product shadow rounded-lg right-[-140px] top-0 bg-white absolute z-10">
     {items.map((item, index) => (
       <li key={index} className="hover:bg-gray-100 p-1 hover:rounded relative">
-        <a className="text-gray-800 p-1 flex items-center gap-2" href="/#">
+        <a className="text-gray-800 p-1 flex items-center gap-2" href="#">
           {item.text}
           {item.icon && <span>{item.icon}</span>}
         </a>
@@ -66,7 +66,7 @@ const TableHead = () => {
             >
               <a
                 className="text-gray-800 text-sm font-light p-1 flex items-center justify-end gap-2"
-                href="/#"
+                href="#"
               >
                 {item.arrow}
                 <span className="flex items-center gap-2">

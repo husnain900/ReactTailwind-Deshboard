@@ -115,7 +115,7 @@ export default function Modal() {
                               أدخل الوزن الفعلي للمنتج ليتم معالجته بشكل صحيح من
                               قبل شركة الشحن، وفي حال كانت منتجاتك ذات حجم كبير
                               الرجاء الانتباه للوزن الحجمي
-                              <a href="/#" target="_blank">
+                              <a href="#" target="_blank">
                                 تفاصيل أكثر
                               </a>
                             </small>
@@ -445,12 +445,12 @@ export default function Modal() {
                             </div>
                           </div>
                           <div className="tech-product-seo-preview">
-                            <a href="/#" id="put_seo_title" target="_blank">
+                            <a href="#" id="put_seo_title" target="_blank">
                               عغلق
                             </a>
                             <a
                               className="sallasaLinkProductPagepopup"
-                              href="/#"
+                              href="#"
                               target="_blank"
                             >
                               https://salla.sa/sau57/
@@ -483,9 +483,9 @@ export default function Modal() {
                               {/* Dropdown menu items go here */}
                               {/* <ul>
                                 {' '}
-                                <li href="/#">Menu Item 1</li>
-                                <li href="/#">Menu Item 2</li>
-                                <li href="/#">Menu Item 3</li>
+                                <li href="#">Menu Item 1</li>
+                                <li href="#">Menu Item 2</li>
+                                <li href="#">Menu Item 3</li>
                               </ul> */}
                             </div>
                           )}

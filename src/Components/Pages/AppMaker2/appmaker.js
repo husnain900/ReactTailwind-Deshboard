@@ -49,7 +49,7 @@ const AppMaker = () => {
       </div>
       <div className="top-title">
         <Button className="btn-hover common-btn">
-          <a className="flex gap-2 items-center" href="/#">
+          <a className="flex gap-2 items-center" href="#">
             جميع التطبيقات (37)
           </a>
         </Button>

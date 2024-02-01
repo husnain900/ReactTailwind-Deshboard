@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <div>
       <div className="alert-msg my-3">
-        <a href="/#" className="alert-box alert-box--linked alert-box--danger">
+        <a href="#" className="alert-box alert-box--linked alert-box--danger">
           <span className="notification-label">1</span>
           <article className="flex justify-between items-center w-full">
             <p>

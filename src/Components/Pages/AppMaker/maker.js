@@ -245,7 +245,7 @@ const AppBuilder = () => {
                             className="hover:bg-gray-100 p-1 hover:rounded"
                           >
                             <a
-                              href="/#"
+                              href="#"
                               className="text-gray-800 py-1 px-2 flex items-center gap-1"
                             >
                               <span>

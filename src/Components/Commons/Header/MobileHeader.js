@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const MenuItem = ({ icon, label }) => (
   <li>
-    <a href="/#">
+    <a href="#">
       {icon} {label}
     </a>
   </li>

@@ -22,7 +22,7 @@ export default function Modal() {
         className="btn-hover common-btn"
         onClick={() => setShowModal(true)}
       >
-        <a className="flex gap-2 items-center" href="/#">
+        <a className="flex gap-2 items-center" href="#">
           <CiCirclePlus size={27} /> طلب جديد
         </a>
       </button>
@@ -166,10 +166,10 @@ export default function Modal() {
                         </div>
                       </div>
                       <div className="tech-product-seo-preview">
-                        <a href="/#" id="put_seo_title">
+                        <a href="#" id="put_seo_title">
                           عغلق
                         </a>
-                        <a href="/#">
+                        <a href="#">
                           https://salla.sa/sau57/
                           <span id="put_seo_link" dir="rtl">
                             عغلق

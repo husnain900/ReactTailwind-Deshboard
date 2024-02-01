@@ -60,7 +60,7 @@ const PageStatic = () => {
                           <div className="tech-static-p-more-popup">
                             <ul>
                               <li>
-                                <a href="/#">
+                                <a href="#">
                                   <span className="flex items-center gap-2">
                                     <FaRegCopy />
                                     {page.moreLink}

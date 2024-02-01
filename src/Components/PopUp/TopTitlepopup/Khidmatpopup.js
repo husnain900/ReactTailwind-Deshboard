@@ -39,7 +39,7 @@ const PopupContent = ({ items }) => (
       <li key={index} className="hover:bg-gray-100 dark-li p-1 hover:rounded relative">
         <a
           className="text-gray-800 p-2 flex items-center dark-a gap-2 text-sm"
-          href="/#" 
+          href="#" 
         >
           {item.icon && <span>{item.icon}</span>}
           {item.text}
@@ -96,7 +96,7 @@ const Khidmatpopup = () => {
             >
               <a
                 className="text-gray-800 dark-a p-2 flex items-center justify-between"
-                href="/#"
+                href="#"
                 onClick={toggleDropdownClose}
               >
                 <span className="flex items-center gap-2 text-sm">

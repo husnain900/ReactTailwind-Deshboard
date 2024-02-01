@@ -66,7 +66,7 @@ const AppMakerCards = ({ count }) => {
                   <ul className="popup-product shadow rounded-lg  bg-white absolute top-[60px] z-10 w-64">
                     <li className="hover:bg-gray-100 p-1 hover:rounded">
                       <a
-                        href="/#"
+                        href="#"
                         className="text-gray-800 py-1 px-2 flex items-center gap-1"
                         style={{ display: 'flex' }}
                       >
@@ -86,7 +86,7 @@ const AppMakerCards = ({ count }) => {
                     </li>
                     <li className="hover:bg-gray-100 p-1 hover:rounded">
                       <a
-                        href="/#"
+                        href="#"
                         className="text-gray-800 py-1 px-2 flex items-center gap-1"
                       >
                         {' '}
@@ -106,7 +106,7 @@ const AppMakerCards = ({ count }) => {
                     </li>
                     <li className="hover:bg-gray-100 p-1 hover:rounded">
                       <a
-                        href="/#"
+                        href="#"
                         className="text-gray-800 py-1 px-2 flex items-center gap-1"
                       >
                         {' '}

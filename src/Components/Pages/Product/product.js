@@ -102,7 +102,7 @@ const Product = () => {
           <div className="top-title relative">
             <div className="">
               <button className="btn-hover common-btn" onClick={togglePopup}>
-                <a className="flex gap-2 items-center" href="/#">
+                <a className="flex gap-2 items-center" href="#">
                   <CiCirclePlus size={27} /> إضافة منتج جديد{' '}
                   <span
                     className={`transition-transform duration-300 ${
@@ -130,7 +130,7 @@ const Product = () => {
                       }hover:bg-gray-100 p-1 hover:rounded dark-li`}
                     >
                       <a
-                        href="/#"
+                        href="#"
                         className="dark-a text-gray-800 py-1 px-2 flex items-center gap-1"
                         onClick={closePopup}
                       >
@@ -160,10 +160,10 @@ const Product = () => {
               </div>
               <div className="hidden lg:block">
                 <div className="flex gap-3 items-center">
-                  <a className='dark-a' href="/#">
+                  <a className='dark-a' href="#">
                     <LuLayoutGrid />
                   </a>
-                  <a className='dark-a' href="/#">
+                  <a className='dark-a' href="#">
                     <IoIosList />
                   </a>
                 </div>

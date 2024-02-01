@@ -33,7 +33,7 @@ export default function CustomizedDialogs() {
           <a
             onClick={handleClickOpen}
             className="Hover:text-[#78E8CE] text-[#004956] p-2 flex gap-2 items-center "
-            href="/#"
+            href="#"
           >
             <BiSolidCoupon size={12} />
             كوبون جديد
@@ -43,7 +43,7 @@ export default function CustomizedDialogs() {
           <a
             onClick={handleClickOpen}
             className="Hover:text-[#78E8CE] text-[#004956] p-2 flex gap-2 items-center "
-            href="/#"
+            href="#"
           >
             <BiSolidCoupon size={12} />
             مجموعة كوبونات

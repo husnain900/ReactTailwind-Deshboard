@@ -147,27 +147,27 @@ const Giftpopup = () => {
                 <div className="tech-home-gift-popup-box-social">
                   <ul>
                     <li>
-                      <a href="/#">
+                      <a href="#">
                         <FaWhatsapp />
                       </a>
                     </li>
                     <li>
-                      <a href="/#">
+                      <a href="#">
                         <FaTwitter />
                       </a>
                     </li>
                     <li>
-                      <a href="/#">
+                      <a href="#">
                         <FaFacebookF />
                       </a>
                     </li>
                     <li>
-                      <a href="/#">
+                      <a href="#">
                         <FaTelegramPlane />
                       </a>
                     </li>
                     <li>
-                      <a href="/#">@</a>
+                      <a href="#">@</a>
                     </li>
                   </ul>
                   <p>نقاط الولاء الحالية</p>
@@ -348,7 +348,7 @@ const Giftpopup = () => {
                             </div>
                             <div className="media-left">
                               <div className="order-customer-name">
-                                <a href="/#" target="_blank">
+                                <a href="#" target="_blank">
                                   {item.name}
                                 </a>
                               </div>

@@ -176,11 +176,11 @@ export default function CustomizedDialogs() {
               {dropdownOpen && (
                 <div className="tech-icons-popup-dropdown-main top-16">
                   <div className="tech-icons-popup-dropdown-pagination">
-                    <a href="/#" onClick={nextPage}>
+                    <a href="#" onClick={nextPage}>
                       <FaChevronRight />
                     </a>
                     <span id="pageNumber"></span>
-                    <a href="/#" onClick={prevPage}>
+                    <a href="#" onClick={prevPage}>
                       <FaChevronLeft />
                     </a>
                   </div>
@@ -219,10 +219,10 @@ export default function CustomizedDialogs() {
               </p>
               <ul>
                 <li>
-                  <a href="/#">الحماية من الإحتيال</a>
+                  <a href="#">الحماية من الإحتيال</a>
                 </li>
                 <li>
-                  <a href="/#">قيود شركات الشحن</a>
+                  <a href="#">قيود شركات الشحن</a>
                 </li>
               </ul>
             </div>
