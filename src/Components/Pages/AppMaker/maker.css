@@ -464,4 +464,7 @@
     margin-right: -15px;
     margin-left: -15px;
   }
+  .ds-17-cntnr-2-rw-fth-sub-col-btn button {
+    font-size: 12px !important;
+  }
 }

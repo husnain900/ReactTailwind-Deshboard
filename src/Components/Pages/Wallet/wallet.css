@@ -286,9 +286,26 @@
     margin-top: 20px !important;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .addCreditBtn {
+    padding: 10px 36px;
+  }
+  .balanceWithdrawBtn {
+    padding: 10px 10px;
+  }
+}
 @media screen and (max-width: 452px) {
   .addCreditBtn {
     padding: 10px 36px;
+  }
+  .balanceWithdrawBtn {
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .addCreditBtn {
+    padding: 10px 25px;
   }
   .balanceWithdrawBtn {
     padding: 10px 10px;

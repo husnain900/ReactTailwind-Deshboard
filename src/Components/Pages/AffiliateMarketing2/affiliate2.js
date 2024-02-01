@@ -58,11 +58,11 @@ const Affiliate2 = () => {
           </div>
           <div className="d13-btm-col h-10">
             <div className="d13-btm-form">
-              <form className="p-1">
+              <form>
                 <input
                   type="text"
                   name=""
-                  className="w-15 lg:w-32"
+                  className="inputaffiliate2  w-32"
                   placeholder={`العدد الحالي ${
                     currentCounts['سنتين 7176 ر.س 5980 ر.س'] || 0
                   }`}

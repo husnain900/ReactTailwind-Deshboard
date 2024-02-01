@@ -64,20 +64,24 @@ const Store = () => {
             <h3>رالإضافات</h3>
           </div>
           {addons.map((addon, index) => (
-            <div key={index} className="d13-btm-section-rows">
+            <div key={index} className="d13-btm-section-rows" id>
               <div className="d13-btm-col">
-                <div className="d13-btm-sub-col">
+                <div className="d13-btm-sub-col" >
                   <div className="d13-btm-col-img">
                     <img src={addon.icon} alt="" />
                   </div>
-                  <div className="d13-btm-col-text">
+                  <div
+                    className="d13-btm-col-text "
+                 
+                   
+                  >
                     <h3>{addon.title}</h3>
-                    <p>{addon.description}</p>
+                    <p className="text-wrap">{addon.description}</p>
                   </div>
                 </div>
               </div>
               <div className="d13-btm-form">
-                <form>
+                <form >
                   <input
                     type="text"
                     name=""

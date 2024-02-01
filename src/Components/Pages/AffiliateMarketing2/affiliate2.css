@@ -1,3 +1,11 @@
+@media screen and (max-width: 540px) {
+    .tech-static-p-title h6 {
+        font-size: 20px;
+    }
+    .tech-static-p-title h6 span {
+        font-size: 10px;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .d13-btm-form button {
@@ -9,10 +17,10 @@
         width: 75px !important;
     }
     .tech-static-p-title h6 {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     .tech-static-p-title h6 span {
-        font-size: 11px !important;
+        font-size: 10px !important;
     }
     .tech-static-p-table {
         padding: 6px 0 !important;
