@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import {
   FaBuilding,
   FaBell,
@@ -8,21 +8,21 @@ import {
   FaChevronRight,
   FaChevronLeft,
   FaTimes,
-} from 'react-icons/fa';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
+} from "react-icons/fa";
+import { styled } from "@mui/material/styles";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
+  "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
   },
-  '& .MuiDialogActions-root': {
+  "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
-  '& .MuiDialog-paper': {
-    maxWidth: '60%', // Adjust the percentage as needed
+  "& .MuiDialog-paper": {
+    maxWidth: "60%", // Adjust the percentage as needed
   },
 }));
 
@@ -37,16 +37,16 @@ export default function CustomizedDialogs() {
 
     // Set the selected icon based on the clicked icon
     switch (iconName) {
-      case 'fa-building':
+      case "fa-building":
         setSelectedIcon(<FaBuilding />);
         break;
-      case 'fa-bell':
+      case "fa-bell":
         setSelectedIcon(<FaBell />);
         break;
-      case 'fa-shopping-cart':
+      case "fa-shopping-cart":
         setSelectedIcon(<FaShoppingCart />);
         break;
-      case 'fa-users':
+      case "fa-users":
         setSelectedIcon(<FaUsers />);
         break;
       // Add more cases for other icons if needed
@@ -61,10 +61,10 @@ export default function CustomizedDialogs() {
   useEffect(() => {
     // Move selectOption into useEffect if needed
     const selectOption = (optionValue, iconClass) => {
-      const selectedOption = document.getElementById('techclientselectedicon');
+      const selectedOption = document.getElementById("techclientselectedicon");
       selectedOption.innerText = optionValue;
-      selectedOption.className = '';
-      selectedOption.classList.add('fa', iconClass);
+      selectedOption.className = "";
+      selectedOption.classList.add("fa", iconClass);
 
       closeIconPopup();
     };
@@ -81,15 +81,15 @@ export default function CustomizedDialogs() {
     if (iconListRef.current) {
       const totalItems = iconListRef.current.children.length;
       const totalPages = Math.ceil(totalItems / itemsPerPage);
-      document.getElementById('pageNumber').innerText =
-        totalPages + ' / ' + currentPage;
+      document.getElementById("pageNumber").innerText =
+        totalPages + " / " + currentPage;
     }
   };
 
   const showCurrentPage = () => {
     if (iconListRef.current) {
       for (let i = 0; i < iconListRef.current.children.length; i++) {
-        iconListRef.current.children[i].style.display = 'none';
+        iconListRef.current.children[i].style.display = "none";
       }
 
       const start = (currentPage - 1) * itemsPerPage;
@@ -100,10 +100,10 @@ export default function CustomizedDialogs() {
         i < end && i < iconListRef.current.children.length;
         i++
       ) {
-        iconListRef.current.children[i].style.display = 'flex';
+        iconListRef.current.children[i].style.display = "flex";
       }
 
-      const activeIcon = iconListRef.current.querySelector('.active');
+      const activeIcon = iconListRef.current.querySelector(".active");
       if (activeIcon) {
         activeIcon.scrollIntoView();
       }
@@ -156,7 +156,8 @@ export default function CustomizedDialogs() {
           <button
             className="background-transparent font-bold uppercase text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="button"
-            onClick={() => setOpen(false)}>
+            onClick={() => setOpen(false)}
+          >
             <FaTimes />
           </button>
         </div>
@@ -175,25 +176,25 @@ export default function CustomizedDialogs() {
               {dropdownOpen && (
                 <div className="tech-icons-popup-dropdown-main top-16">
                   <div className="tech-icons-popup-dropdown-pagination">
-                    <a href="#" onClick={nextPage}>
+                    <a href="/#" onClick={nextPage}>
                       <FaChevronRight />
                     </a>
                     <span id="pageNumber"></span>
-                    <a href="#" onClick={prevPage}>
+                    <a href="/#" onClick={prevPage}>
                       <FaChevronLeft />
                     </a>
                   </div>
                   <div className="tech-icons-popup-dropdown" ref={iconListRef}>
-                    <a onClick={() => addIconToDropdown('fa-building')}>
+                    <a onClick={() => addIconToDropdown("fa-building")}>
                       <FaBuilding />
                     </a>
-                    <a onClick={() => addIconToDropdown('fa-bell')}>
+                    <a onClick={() => addIconToDropdown("fa-bell")}>
                       <FaBell />
                     </a>
-                    <a onClick={() => addIconToDropdown('fa-shopping-cart')}>
+                    <a onClick={() => addIconToDropdown("fa-shopping-cart")}>
                       <FaShoppingCart />
                     </a>
-                    <a onClick={() => addIconToDropdown('fa-users')}>
+                    <a onClick={() => addIconToDropdown("fa-users")}>
                       <FaUsers />
                     </a>
                   </div>
@@ -218,17 +219,17 @@ export default function CustomizedDialogs() {
               </p>
               <ul>
                 <li>
-                  <a href="#">الحماية من الإحتيال</a>
+                  <a href="/#">الحماية من الإحتيال</a>
                 </li>
                 <li>
-                  <a href="#">قيود شركات الشحن</a>
+                  <a href="/#">قيود شركات الشحن</a>
                 </li>
               </ul>
             </div>
           </div>
         </DialogContent>
         <DialogActions
-          style={{ justifyContent: 'start' }}
+          style={{ justifyContent: "start" }}
           className="py-3 px-4 bg-gray-200 border-t py-2 border-solid border-blueGray-200 rounded-b"
         >
           <button

@@ -41,7 +41,7 @@ export default function CustomizedDialogs() {
   return (
     <React.Fragment>
       <Button onClick={handleClickOpen} className="btn-hover common-btn">
-        <a className="flex gap-2 items-center" href="#">
+        <a className="flex gap-2 items-center" href="/#">
           <CiCirclePlus size={27} /> عميل جديد
         </a>
       </Button>

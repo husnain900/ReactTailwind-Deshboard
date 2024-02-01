@@ -59,7 +59,7 @@ const TecAccordion = () => {
           toggleIconDirection();
         }}
       >
-        <a className="flex items-center gap-1" href="#">
+        <a className="flex items-center gap-1" href="/#">
           مساعدة ؟{' '}
           <span
             className={`transition-transform duration-300 ${

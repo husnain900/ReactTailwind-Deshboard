@@ -41,7 +41,7 @@ const Sidebar = () => {
                   className="share-icon flex justify-center items-center p-2"
                   onClick={togglePopup}
                 >
-                  <a href="#">
+                  <a href="/#">
                     <img src="images/sidebar/Vector.png" alt="" />
                   </a>
                 </button>
@@ -51,7 +51,7 @@ const Sidebar = () => {
               <ul className="dark-ul tech-user-menu-drop-popup absolute left-6 top-[105px] rounded bg-white popup ">
                 <li className="hover:bg-gray-100 dark-li p-1 hover:rounded ">
                   <a
-                    href="#"
+                    href="/#"
                     className="text-gray-800 p-2 flex dark-a items-center gap-1 ShareD"
                     onClick={togglePopup}
                   >
@@ -61,7 +61,7 @@ const Sidebar = () => {
                 </li>
                 <li className="hover:bg-gray-100 dark-li p-1 hover:rounded">
                   <a
-                    href="#"
+                    href="/#"
                     className="text-gray-800 dark-a flex items-center gap-1 ShareD"
                     onClick={togglePopup}
                   >

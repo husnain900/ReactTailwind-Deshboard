@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { FaTimes } from 'react-icons/fa';
-import TextEditor from '../../Pages/Ui-components/TextEditor';
-import Datepickerpopup from '../../Pages/Ui-components/Datepickerpopup';
-import { CiCircleList } from 'react-icons/ci';
-import { RiFileList2Line } from 'react-icons/ri';
-import './productpopup3.css';
-import { CiCirclePlus } from 'react-icons/ci';
-import { FaAngleDown, FaAngleUp } from 'react-icons/fa6';
-import Button from '@mui/material/Button';
+import React, { useState } from "react";
+import { FaTimes } from "react-icons/fa";
+import TextEditor from "../../Pages/Ui-components/TextEditor";
+import Datepickerpopup from "../../Pages/Ui-components/Datepickerpopup";
+import { CiCircleList } from "react-icons/ci";
+import { RiFileList2Line } from "react-icons/ri";
+import "./productpopup3.css";
+import { CiCirclePlus } from "react-icons/ci";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import Button from "@mui/material/Button";
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
   const [hideAndDisplay, sethideAndDisplay] = useState(true);
-  const percent = '{present}';
-  const discount = '{discount}';
+  const percent = "{present}";
+  const discount = "{discount}";
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -34,7 +34,7 @@ export default function Modal() {
         className="fm-ft-col-1 cursor-pointer"
         onClick={() => setShowModal(true)}
       >
-        <img src="images/Product/group-54.png" alt="Group 54" />
+        <img src="images/Product/group-54.png" alt="Group 54" alt="" />
 
         <p>بيانات المنتج</p>
       </div>
@@ -63,32 +63,32 @@ export default function Modal() {
                   <div className="tech-prooptionspopup-box-content">
                     <div
                       style={{
-                        display: 'flex',
-                        border: '2px solid #76E8CD ',
-                        marginBottom: '10px',
+                        display: "flex",
+                        border: "2px solid #76E8CD ",
+                        marginBottom: "10px",
                       }}
                     >
                       <div
                         className="ProductdataButton"
-                        style={{ width: '50%' }}
+                        style={{ width: "50%" }}
                       >
                         <button
                           className="productOrderButton"
                           onClick={changeHideAndDisplay}
                         >
                           <RiFileList2Line
-                            style={{ marginLeft: '5px', width: '17px' }}
+                            style={{ marginLeft: "5px", width: "17px" }}
                           />
                           بيانات المنتج
                         </button>
                       </div>
-                      <div style={{ width: '50%' }}>
+                      <div style={{ width: "50%" }}>
                         <button
                           className="productOrderButton"
                           onClick={changeHide}
                         >
                           <CiCircleList
-                            style={{ marginLeft: '5px', width: '17px' }}
+                            style={{ marginLeft: "5px", width: "17px" }}
                           />
                           نموذج الطلب
                         </button>
@@ -100,7 +100,7 @@ export default function Modal() {
                           <div className="tech-productoption-col-1">
                             <label>يتطلب شحن / توصيل ؟</label>
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/truck.png" alt="truck" />
+                              <img src="images/PopUp/truck.png" alt="truck" alt="" />
                               <select>
                                 <option>نعم، يتطلب شحن</option>
                                 <option>لا يتطلب شحن</option>
@@ -115,7 +115,7 @@ export default function Modal() {
                               أدخل الوزن الفعلي للمنتج ليتم معالجته بشكل صحيح من
                               قبل شركة الشحن، وفي حال كانت منتجاتك ذات حجم كبير
                               الرجاء الانتباه للوزن الحجمي
-                              <a href="#" target="_blank">
+                              <a href="/#" target="_blank">
                                 تفاصيل أكثر
                               </a>
                             </small>
@@ -137,9 +137,9 @@ export default function Modal() {
                             <small
                               id="weight_error_message"
                               style={{
-                                display: 'block',
-                                fontSize: '12px',
-                                marginTop: '7px',
+                                display: "block",
+                                fontSize: "12px",
+                                marginTop: "7px",
                               }}
                             >
                               قيمة الوزن غير صحيحة
@@ -151,7 +151,7 @@ export default function Modal() {
                             <label>سعر التكلفة</label>
 
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/weight.png" alt="cost" />
+                              <img src="images/PopUp/weight.png" alt="cost" alt="" />
                               <input
                                 type="text"
                                 name=""
@@ -168,7 +168,7 @@ export default function Modal() {
                             <label>السعر المخفض</label>
 
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/weight.png" />
+                              <img src="images/PopUp/weight.png" alt="" />
                               <input
                                 type="text"
                                 name=""
@@ -190,7 +190,7 @@ export default function Modal() {
                             <label>رمز التخزين</label>
 
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/weight.png" />
+                              <img src="images/PopUp/weight.png" alt="" />
                               <input
                                 type="text"
                                 name=""
@@ -202,16 +202,16 @@ export default function Modal() {
                             <label>MPN</label>
 
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/weight.png" />
-                              <input type="text" name="" placeholder="MPN" />
+                              <img src="images/PopUp/weight.png" alt="" />
+                              <input type="text" name="" placeholder="MPN" alt="" />
                             </div>
                           </div>
                           <div className="tech-productoption-col-3 column-design">
                             <label>GTIN</label>
 
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/weight.png" />
-                              <input type="text" name="" placeholder="GTIN" />
+                              <img src="images/PopUp/weight.png" alt="" />
+                              <input type="text" name="" placeholder="GTIN" alt="" />
                             </div>
                           </div>
                         </div>
@@ -220,7 +220,7 @@ export default function Modal() {
                           <div className="tech-productoption-col-1 column-design">
                             <label>أقصى كمية لكل عميل</label>
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/truck.png" />
+                              <img src="images/PopUp/truck.png" alt="" />
                               <input
                                 type="text"
                                 name=""
@@ -233,7 +233,7 @@ export default function Modal() {
                           <div className="tech-productoption-col-1 readonly-main">
                             <label>العنوان الفرعي</label>
                             <div className="tech-productoption-input-group readonly">
-                              <img src="images/PopUp/truck.png" />
+                              <img src="images/PopUp/truck.png" alt="" />
                               <input
                                 type="text"
                                 id="get_subtitle_val"
@@ -269,7 +269,7 @@ export default function Modal() {
                           <div className="tech-productoption-col-1 readonly-main">
                             <label>العنوان الترويجي</label>
                             <div className="tech-productoption-input-group readonly">
-                              <img src="images/PopUp/truck.png" />
+                              <img src="images/PopUp/truck.png" alt="" />
                               <input
                                 type="text"
                                 id="get_promotion_val"
@@ -306,7 +306,7 @@ export default function Modal() {
                           <div className="tech-productoption-col-1">
                             <label>تحديد كمية المنتج</label>
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/truck.png" />
+                              <img src="images/PopUp/truck.png" alt="" />
                               <select>
                                 <option>تحديد كمية المنتج</option>
                                 <option>تفعيل خيار تحديد الكمية</option>
@@ -322,7 +322,7 @@ export default function Modal() {
                               <small>قم بتحديد قنوات عرض المنتج</small>
                             </label>
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/truck.png" />
+                              <img src="images/PopUp/truck.png" alt="" />
                               <select>
                                 <option>اظهار في موقع المتجر</option>
                                 <option>قم بتحديد قنوات عرض المنتج</option>
@@ -388,7 +388,7 @@ export default function Modal() {
                           <div className="tech-productoption-col-1">
                             <label>ادخل الوسوم هنا</label>
                             <div className="tech-productoption-input-group product-tag">
-                              <img src="images/PopUp/truck.png" />
+                              <img src="images/PopUp/truck.png" alt="" />
                               <input
                                 type="text"
                                 id="product_tag"
@@ -410,7 +410,7 @@ export default function Modal() {
                             <div className="tech-productoption-col-1">
                               <label>عنوان صفحة المنتج (Page Title)</label>
                               <div className="tech-productoption-input-group product-tag">
-                                <img src="images/PopUp/truck.png" />
+                                <img src="images/PopUp/truck.png" alt="" />
                                 <input
                                   type="text"
                                   id="get_pro_seo_title"
@@ -423,7 +423,7 @@ export default function Modal() {
                             <div className="tech-productoption-col-1">
                               <label>رابط صفحة المنتج (SEO Page URL)</label>
                               <div className="tech-productoption-input-group product-tag">
-                                <img src="images/PopUp/truck.png" />
+                                <img src="images/PopUp/truck.png" alt="" />
                                 <input
                                   type="text"
                                   id="get_pro_seo_url"
@@ -436,7 +436,7 @@ export default function Modal() {
                             <div className="tech-productoption-col-1">
                               <label>وصف صفحة المنتج (Page Description)</label>
                               <div className="tech-productoption-input-group product-tag">
-                                <img src="images/PopUp/truck.png" />
+                                <img src="images/PopUp/truck.png" alt="" />
                                 <textarea
                                   id="get_pro_seo_desc"
                                   placeholder="وصف صفحة المنتج (Page Description)"
@@ -445,12 +445,12 @@ export default function Modal() {
                             </div>
                           </div>
                           <div className="tech-product-seo-preview">
-                            <a href="#" id="put_seo_title" target="_blank">
+                            <a href="/#" id="put_seo_title" target="_blank">
                               عغلق
                             </a>
                             <a
                               className="sallasaLinkProductPagepopup"
-                              href="#"
+                              href="/#"
                               target="_blank"
                             >
                               https://salla.sa/sau57/
@@ -474,7 +474,7 @@ export default function Modal() {
                           >
                             <div className="flex gap-2 items-center">
                               <CiCirclePlus size={27} />
-                              أضافة جمل جديدة{' '}
+                              أضافة جمل جديدة{" "}
                               {dropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
                             </div>
                           </Button>
@@ -483,9 +483,9 @@ export default function Modal() {
                               {/* Dropdown menu items go here */}
                               {/* <ul>
                                 {' '}
-                                <li href="#">Menu Item 1</li>
-                                <li href="#">Menu Item 2</li>
-                                <li href="#">Menu Item 3</li>
+                                <li href="/#">Menu Item 1</li>
+                                <li href="/#">Menu Item 2</li>
+                                <li href="/#">Menu Item 3</li>
                               </ul> */}
                             </div>
                           )}
@@ -500,7 +500,7 @@ export default function Modal() {
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    اضافة المنتج{' '}
+                    اضافة المنتج{" "}
                   </button>
                   <button
                     className="text-gray-500 bg-gray-300 hover:shadow-md px-6 py-2 rounded-md text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"

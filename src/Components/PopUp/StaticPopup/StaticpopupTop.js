@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import { FaTimes } from 'react-icons/fa';
-import TextEditor from '../../Pages/Ui-components/TextEditor';
-import { CiCirclePlus } from 'react-icons/ci';
-import './StaticpopupTop.css';
+import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import { FaTimes } from "react-icons/fa";
+import TextEditor from "../../Pages/Ui-components/TextEditor";
+import { CiCirclePlus } from "react-icons/ci";
+import "./StaticpopupTop.css";
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
-  const percent = '{present}';
-  const discount = '{discount}';
-  const [age, setAge] = React.useState('');
+  const [age, setAge] = React.useState("");
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -25,7 +22,7 @@ export default function Modal() {
         className="btn-hover common-btn"
         onClick={() => setShowModal(true)}
       >
-        <a className="flex gap-2 items-center" href="#">
+        <a className="flex gap-2 items-center" href="/#">
           <CiCirclePlus size={27} /> طلب جديد
         </a>
       </button>
@@ -33,11 +30,11 @@ export default function Modal() {
         <>
           <div
             className="justify-center text-right items-center  flex overflow-x-hidden slideIn overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-            style={{ zIndex: '1000' }}
+            style={{ zIndex: "1000" }}
           >
             <div className="relative  ProductNewStaticOrder my-6 mx-auto w-3/5 md:w-4/5">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start items-center modal-header justify-between px-4 py-2 rounded-t">
+                <div className="flex items-start modal-header justify-between px-4 py-2 rounded-t">
                   <h3>إنشاء صفحة</h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -71,7 +68,7 @@ export default function Modal() {
                     <div className="tech-productoption-row">
                       <div className="tech-productoption-col-1">
                         <div className="tech-productoption-input-group">
-                          <img src="images/PopUp/weight.png" />
+                          <img src="images/PopUp/weight.png" alt="" />
                           <Box sx={{ minWidth: 120 }}>
                             <FormControl
                               sx={{ m: 1, minWidth: 120, font: 14 }}
@@ -134,7 +131,7 @@ export default function Modal() {
                         <div className="tech-productoption-col-1">
                           <label>عنوان صفحة المنتج (Page Title)</label>
                           <div className="tech-productoption-input-group product-tag">
-                            <img src="images/PopUp/truck.png" />
+                            <img src="images/PopUp/truck.png" alt="" />
                             <input
                               type="text"
                               id="get_pro_seo_title"
@@ -147,7 +144,7 @@ export default function Modal() {
                         <div className="tech-productoption-col-1">
                           <label>رابط صفحة المنتج (SEO Page URL)</label>
                           <div className="tech-productoption-input-group product-tag">
-                            <img src="images/PopUp/truck.png" />
+                            <img src="images/PopUp/truck.png" alt="" />
                             <input
                               type="text"
                               id="get_pro_seo_url"
@@ -160,7 +157,7 @@ export default function Modal() {
                         <div className="tech-productoption-col-1">
                           <label>وصف صفحة المنتج (Page Description)</label>
                           <div className="tech-productoption-input-group product-tag">
-                            <img src="images/PopUp/truck.png" />
+                            <img src="images/PopUp/truck.png" alt="" />
                             <textarea
                               id="get_pro_seo_desc"
                               placeholder="وصف صفحة المنتج (Page Description)"
@@ -169,10 +166,10 @@ export default function Modal() {
                         </div>
                       </div>
                       <div className="tech-product-seo-preview">
-                        <a href="#" id="put_seo_title" target="_blank">
+                        <a href="/#" id="put_seo_title">
                           عغلق
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="/#">
                           https://salla.sa/sau57/
                           <span id="put_seo_link" dir="rtl">
                             عغلق
@@ -192,7 +189,7 @@ export default function Modal() {
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    اضافة المنتج{' '}
+                    اضافة المنتج{" "}
                   </button>
                   <button
                     className="text-gray-500 bg-gray-300 hover:shadow-md px-6 py-2 rounded-md text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"

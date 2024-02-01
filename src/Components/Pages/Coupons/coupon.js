@@ -21,7 +21,7 @@ const Coupon = () => {
       <div className="top-title mb-6 relative">
         <div>
           <Button className="btn-hover common-btn" onClick={handleButtonClick}>
-            <a className="flex gap-2 items-center" href="#">
+            <a className="flex gap-2 items-center" href="/#">
               <CiCirclePlus size={27} /> طلب جديد
             </a>
           </Button>

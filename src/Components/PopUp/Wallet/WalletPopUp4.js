@@ -133,7 +133,7 @@ export default function CustomizedDialogs() {
               <div className="flex gap-1" style={{ marginTop: '10px' }}>
                 <label className="text-gray-600">لتغير الرقم الضريبي</label>
                 <a
-                  href="#"
+                  href="/#"
                   className=" text-decoration-none"
                   style={{ color: '#004956' }}
                 >

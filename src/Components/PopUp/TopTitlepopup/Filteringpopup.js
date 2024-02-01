@@ -61,7 +61,7 @@ const SideAccordion = () => {
       <a
         onClick={toggleSideContainer}
         className="flex gap-1 items-center"
-        href="#"
+        href="/#"
       >
         <CiFilter />
         <p className="dark-a">تصفية</p>

@@ -25,7 +25,7 @@ const Affilliate = () => {
       <BreadCrum />
       <div className="top-title">
         <Button className="btn-hover common-btn">
-          <a className="flex gap-2 items-center" href="#">
+          <a className="flex gap-2 items-center" href="/#">
             <CiCirclePlus size={27} /> إضافة رابط
           </a>
         </Button>
@@ -63,7 +63,7 @@ const Affilliate = () => {
                           <div className="tech-static-p-more-popup">
                             <ul>
                               <li>
-                                <a href="#">
+                                <a href="/#">
                                   <span className="flex items-center gap-2">
                                     <FaRegCopy />
                                     {page.moreLink}

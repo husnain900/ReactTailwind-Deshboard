@@ -198,11 +198,11 @@ export default function CustomizedDialogs() {
             {dropdownOpen && (
               <div className="tech-icons-popup-dropdown-main ">
                 <div className="tech-icons-popup-dropdown-pagination">
-                  <a href="#" onClick={addNewRecord}>
+                  <a href="/#" onClick={addNewRecord}>
                     <FaChevronRight />
                   </a>
                   <span id="pageNumber"></span>
-                  <a href="#" onClick={removeRecord}>
+                  <a href="/#" onClick={removeRecord}>
                     <FaChevronLeft />
                   </a>
                 </div>
@@ -307,10 +307,10 @@ export default function CustomizedDialogs() {
                 </p>
                 <ul>
                   <li>
-                    <a href="#">الحماية من الإحتيال</a>
+                    <a href="/#">الحماية من الإحتيال</a>
                   </li>
                   <li>
-                    <a href="#">قيود شركات الشحن</a>
+                    <a href="/#">قيود شركات الشحن</a>
                   </li>
                 </ul>
               </div>

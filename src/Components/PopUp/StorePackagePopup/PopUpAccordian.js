@@ -26,7 +26,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 تسجيل حساب جديد في سلة
               </a>
@@ -34,7 +34,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer my-2"
-                href="#"
+                href="/#"
               >
                 إنشاء متجر جديد على سلة
               </a>
@@ -42,7 +42,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 الأسئلة الشائعة حول متجرك الجديد على سلة
               </a>
@@ -64,7 +64,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 تسجيل حساب جديد في سلة
               </a>
@@ -72,7 +72,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer my-2"
-                href="#"
+                href="/#"
               >
                 إنشاء متجر جديد على سلة
               </a>
@@ -80,7 +80,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 الأسئلة الشائعة حول متجرك الجديد على سلة
               </a>
@@ -101,7 +101,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 تسجيل حساب جديد في سلة
               </a>
@@ -109,7 +109,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer my-2"
-                href="#"
+                href="/#"
               >
                 إنشاء متجر جديد على سلة
               </a>
@@ -117,7 +117,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 الأسئلة الشائعة حول متجرك الجديد على سلة
               </a>
@@ -138,7 +138,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 تسجيل حساب جديد في سلة
               </a>
@@ -146,7 +146,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer my-2"
-                href="#"
+                href="/#"
               >
                 إنشاء متجر جديد على سلة
               </a>
@@ -154,7 +154,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 الأسئلة الشائعة حول متجرك الجديد على سلة
               </a>
@@ -175,7 +175,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 تسجيل حساب جديد في سلة
               </a>
@@ -183,7 +183,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer my-2"
-                href="#"
+                href="/#"
               >
                 إنشاء متجر جديد على سلة
               </a>
@@ -191,7 +191,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 الأسئلة الشائعة حول متجرك الجديد على سلة
               </a>
@@ -212,7 +212,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 تسجيل حساب جديد في سلة
               </a>
@@ -220,7 +220,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer my-2"
-                href="#"
+                href="/#"
               >
                 إنشاء متجر جديد على سلة
               </a>
@@ -228,7 +228,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 الأسئلة الشائعة حول متجرك الجديد على سلة
               </a>
@@ -249,7 +249,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 تسجيل حساب جديد في سلة
               </a>
@@ -257,7 +257,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer my-2"
-                href="#"
+                href="/#"
               >
                 إنشاء متجر جديد على سلة
               </a>
@@ -265,7 +265,7 @@ export default function AccordionUsage() {
             <li>
               <a
                 className="hover:text-[#76E8D0] duration-200 cursor-pointer"
-                href="#"
+                href="/#"
               >
                 الأسئلة الشائعة حول متجرك الجديد على سلة
               </a>

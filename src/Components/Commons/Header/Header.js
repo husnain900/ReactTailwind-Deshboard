@@ -80,14 +80,14 @@ const Header = () => {
             </div>
             <div className="tech-topbar-menu-items">
               <div className="tech-topbar-headsup">
-                <a className='dark-a' href="#">تحديثات المنصة</a>
+                <a className='dark-a' href="/#">تحديثات المنصة</a>
               </div>
             </div>
             <div className="tech-topbar-user-menu tech-topbar-menu-items ">
               <ul className=''>
                 <li className=''>
                   <a
-                    href="#"
+                    href="/#"
                     className="tech-user-menu-drop-open dark-a"
                     ref={dropOpenRef}
                     onClick={(e) => {
@@ -105,7 +105,7 @@ const Header = () => {
                   >
                     {headerItems.map((item, index) => (
                       <li className='dark-li' key={index}>
-                        <a className='dark-a' href="#" onClick={togglePopup}>
+                        <a className='dark-a' href="/#" onClick={togglePopup}>
                           {item.icon}
                           {item.text}
                         </a>

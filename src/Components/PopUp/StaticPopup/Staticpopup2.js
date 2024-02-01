@@ -166,10 +166,10 @@ export default function Modal() {
                         </div>
                       </div>
                       <div className="tech-product-seo-preview">
-                        <a href="#" id="put_seo_title" target="_blank">
+                        <a href="/#" id="put_seo_title" target="_blank">
                           عغلق
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="/#" target="_blank">
                           https://salla.sa/sau57/
                           <span id="put_seo_link" dir="rtl">
                             عغلق

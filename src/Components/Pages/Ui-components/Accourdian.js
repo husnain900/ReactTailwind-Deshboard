@@ -546,7 +546,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -571,7 +571,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -596,7 +596,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -621,7 +621,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -645,7 +645,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -670,7 +670,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -695,7 +695,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -719,7 +719,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -743,7 +743,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -767,7 +767,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -791,7 +791,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -815,7 +815,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -839,7 +839,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
@@ -863,7 +863,7 @@ export default function AccordionUsage() {
               <li key={index}>
                 <a
                   className="hover:text-[#6ED4BC] duration-200 cursor-pointer mb-2"
-                  href="#"
+                  href="/#"
                 >
                   {item}
                 </a>
