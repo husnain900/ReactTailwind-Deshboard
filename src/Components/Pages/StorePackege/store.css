@@ -194,9 +194,10 @@
     }
 
     .d13-btm-form form {
-        height: 40px !important;
+        height: 35px !important;
+        justify-content: space-between;
+        margin: 0 20px;
     }
-
     .d13-btm-form form button {
         padding: 3px 7px !important;
     }
@@ -208,9 +209,23 @@
     .d13-btm-sub-col {
         margin-bottom: 15px !important;
     }
+    .d13-btm-form {
+        height: 35px !important;
+        width: 100% !important;
+    }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .d13-tp-section {
+        width: 100%;
+    }
+    .tp-col-br {
+        border: none !important;
+    }
+    .d13-btm-form input {
+        width: 130px !important;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {}
 

@@ -23,7 +23,9 @@
     border: 1px solid #444444 !important;
 
 }
-
+.darkmode .dark-text3 {
+    color: #9D9FA1 !important;
+}
 .darkmode .dark-a {
     color: #ddd !important;
 }

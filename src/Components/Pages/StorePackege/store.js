@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import './store.css';
-import { plans } from '../../DevData/DevData';
-import { addons } from '../../DevData/DevData';
-import { Radio } from '@material-tailwind/react';
-import { Button } from '@material-tailwind/react';
-import BreadCrum from '../../Commons/BreadCrum/BreadCrum';
-import StorePackagePopup from '../../PopUp/StorePackagePopup/StorePackagePopup';
+import React, { useState } from "react";
+import "./store.css";
+import { plans } from "../../DevData/DevData";
+import { addons } from "../../DevData/DevData";
+import { Radio } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
+import BreadCrum from "../../Commons/BreadCrum/BreadCrum";
+import StorePackagePopup from "../../PopUp/StorePackagePopup/StorePackagePopup";
 
 const Store = () => {
   const [currentCounts, setCurrentCounts] = useState({
-    'سنتين 7176 ر.س 5980 ر.س': -600,
+    "سنتين 7176 ر.س 5980 ر.س": -600,
   });
 
   const handleAddCount = (addon, event) => {
@@ -66,22 +66,18 @@ const Store = () => {
           {addons.map((addon, index) => (
             <div key={index} className="d13-btm-section-rows" id>
               <div className="d13-btm-col">
-                <div className="d13-btm-sub-col" >
+                <div className="d13-btm-sub-col">
                   <div className="d13-btm-col-img">
                     <img src={addon.icon} alt="" />
                   </div>
-                  <div
-                    className="d13-btm-col-text "
-                 
-                   
-                  >
+                  <div className="d13-btm-col-text ">
                     <h3>{addon.title}</h3>
                     <p className="text-wrap">{addon.description}</p>
                   </div>
                 </div>
               </div>
               <div className="d13-btm-form">
-                <form >
+                <form>
                   <input
                     type="text"
                     name=""
@@ -112,8 +108,19 @@ const Store = () => {
               </div>
             </div>
             <div className="d13-btm-col">
-              <div className="d13-btm-form h-10">
-                <Button className="px-2 text-black" variant="filled">
+              <div className="h-10 w-full text-center">
+                <Button
+                  style={{
+                    borderRadius: "8px",
+                    background: "#C8F6EB",
+                    padding: "3px 14px",
+                    border: "none",
+                    height: "100%",
+                    cursor: "pointer",
+                  }}
+                  className="px-2 text-black"
+                  variant="filled"
+                >
                   تثبيت التطبيق
                 </Button>
               </div>

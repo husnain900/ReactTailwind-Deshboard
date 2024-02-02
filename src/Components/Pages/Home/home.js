@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
-import { FaChevronLeft } from 'react-icons/fa';
-import { FaAngleLeft } from 'react-icons/fa6';
-import ChartsBars from '../Ui-components/Charts';
+import React, { useState } from "react";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaAngleLeft } from "react-icons/fa6";
+import ChartsBars from "../Ui-components/Charts";
 import {
   chartsData,
   ordersData,
   notificationsData,
   expiredProductsData,
-} from '../../DevData/DevData';
-import './home.css';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
-import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
+} from "../../DevData/DevData";
+import "./home.css";
+import { styled } from "@mui/material/styles";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
+  "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
   },
-  '& .MuiDialogActions-root': {
+  "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
-  '& .MuiPaper-root': {
-    maxWidth: '45%',
-    width: '45%',
+  "& .MuiPaper-root": {
+    maxWidth: "45%",
+    width: "45%",
   },
 }));
 
@@ -75,7 +75,7 @@ const Home = () => {
                     <div
                       key={index}
                       className={`flex items-center gap-3 ${
-                        index === 3 ? 'cursor-pointer' : ''
+                        index === 3 ? "cursor-pointer" : ""
                       }`}
                       onClick={() => handleBoxClick(index)}
                     >
@@ -87,7 +87,7 @@ const Home = () => {
                           {item.id === 4 ? selectedValue : item.value}
                         </h5>
                         <h5 className="flex dark-text items-center gap-1">
-                          {item.label} <span>{item.arrow}</span>{' '}
+                          {item.label} <span>{item.arrow}</span>{" "}
                         </h5>
                       </div>
                     </div>
@@ -113,7 +113,7 @@ const Home = () => {
                         </form>
                       </DialogContent>
                       <DialogActions
-                        style={{ justifyContent: 'space-between' }}
+                        style={{ justifyContent: "space-between" }}
                         className="py-2 px-4 bg-gray-200 border-t rounded-b"
                       >
                         <button
@@ -135,7 +135,7 @@ const Home = () => {
                   )}
                 </div>
                 <div className="chart-footer h-12 flex justify-center items-center">
-                  <Link to={'/reports'}>
+                  <Link to={"/reports"}>
                     <h5 className="flex items-center dark-text-light gap-3 hover:text-green-700">
                       المزيد من التقارير <FaAngleLeft size={12} />
                     </h5>
@@ -160,8 +160,8 @@ const Home = () => {
                   key={notification.id}
                   className={`bx-container-body ${
                     index === notificationsData.length - 1
-                      ? ''
-                      : 'border-b border-gray-300'
+                      ? ""
+                      : "border-b border-gray-300"
                   }`}
                 >
                   <div className="bx-sub-body">
@@ -204,14 +204,16 @@ const Home = () => {
                       </td>
                       <td>
                         <p>
-                          {order.status === 'تم الشحن' && (
+                          {order.status === "تم الشحن" && (
                             <span className="status-icon"></span>
                           )}
                           {order.status}
                         </p>
                       </td>
                       <td>
-                        <p className="b-para">{order.amount}</p>
+                        <p className="text-[#003c47] dark-text3">
+                          {order.amount}
+                        </p>
                       </td>
                       <td>
                         <p>{order.timeElapsed}</p>
@@ -222,7 +224,10 @@ const Home = () => {
               </table>
               <div className="flex justify-center items-center w-full my-3">
                 <Button>
-                  <Link className="flex gap-2 items-center" to={'/orders'}>
+                  <Link
+                    className="flex gap-2 items-center dark-text3"
+                    to={"/orders"}
+                  >
                     المزيد من الطلبات <FaAngleLeft size={12} />
                   </Link>
                 </Button>
@@ -245,8 +250,8 @@ const Home = () => {
                   key={product.id}
                   className={`bx-container-body ${
                     index === expiredProductsData.length - 1
-                      ? ''
-                      : 'border-b border-gray-300'
+                      ? ""
+                      : "border-b border-gray-300"
                   }`}
                 >
                   <div className="flex gap-4 py-1 px-5 w-full">
