@@ -15,6 +15,11 @@
   padding: 8px 15px;
   flex-direction: column;
 }
+.ProductFirstdropIcon svg {
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+}
 
 .fm-pr-img {
   width: 100%;

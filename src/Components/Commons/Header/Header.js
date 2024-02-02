@@ -5,6 +5,7 @@ import { FaChevronDown } from 'react-icons/fa';
 import { headerItems } from '../../DevData/DevData';
 import Headerform from './ui/headerform';
 import Giftpopup from '../../PopUp/Giftpopup';
+import PulsingCircleIcon from './PulsingCircleIcon';
 
 const Header = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -80,6 +81,7 @@ const Header = () => {
             </div>
             <div className="tech-topbar-menu-items">
               <div className="tech-topbar-headsup">
+                <PulsingCircleIcon/>
                 <a className='dark-a' href="#">تحديثات المنصة</a>
               </div>
             </div>

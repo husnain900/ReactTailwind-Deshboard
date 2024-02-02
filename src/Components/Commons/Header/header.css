@@ -83,6 +83,7 @@
     width: 39.011px;
     height: 39.011px;
     display: flex;
+    margin-right: 5px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid #BAF3E6;
@@ -369,4 +370,18 @@
 
 .darkmode .tech-topbar-menu button svg {
     color: white !important;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .tech-topbar-menu-buttons ul {
+        gap: 3px;
+    }
+    .tech-topbar-menu-items a {
+        font-size: 16px;
+    }
+    .tech-topbar-menu-buttons ul li a img {
+        width: 45px;
+    }
+
 }
