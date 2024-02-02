@@ -169,6 +169,9 @@
 .order-table tbody tr {
     border-bottom: 1px solid #D2D2D2;
 }
+.order-table tbody tr:last-child {
+    border-bottom: 0 !important;
+}
 
 tbody td {
     padding: 7px 0;

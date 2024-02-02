@@ -135,7 +135,7 @@ export default function CustomizedDialogs() {
         >
           <div className="client-sub-bx text-center">
             <img className="mx-auto" src="images/Clients/Users.png" alt="" />
-            <h2>جميع العملاء</h2>
+            <h2 className="dark-text-light">جميع العملاء</h2>
             <p>7817 عميل</p>
           </div>
         </div>
