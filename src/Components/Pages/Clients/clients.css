@@ -44,3 +44,7 @@
     font-weight: 300;
     margin: 0;
 }
+/* darkmode */
+.darkmode .order-table tbody tr {
+    border-bottom: 1px solid #444444;
+}

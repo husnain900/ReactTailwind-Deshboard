@@ -37,7 +37,7 @@ const Clients = () => {
       <BreadCrum />
       <div className="top-title-clients my-3">
         <div>
-          <h4 className="flex items-center gap-2">
+          <h4 className="flex dark-text2 items-center gap-2">
             <FaUsers /> مجموعات العملاء{" "}
             <span className="pr-2">(4 مجموعات)</span>
           </h4>
@@ -55,9 +55,9 @@ const Clients = () => {
           </div>
         </div>
       </div>
-      <section className="order-table mt-3 mb-18">
+      <section className="order-table dark-border rounded-md mt-3 mb-18">
         <table dir="rtl" cellpadding="0" cellspacing="0">
-          <thead>
+          <thead className="bg-dark-head">
             <tr>
               <th className="checkbox-flex">
                 <label
@@ -73,10 +73,10 @@ const Clients = () => {
                 </label>
               </th>
               <th>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center dark-a gap-2">
                   <FaUsers />{" "}
                   <p>
-                    <b> العملاء</b>(7817 عميل)
+                    <b className="dark-a"> العملاء</b>(7817 عميل)
                   </p>
                 </div>
               </th>
@@ -106,7 +106,7 @@ const Clients = () => {
                     <img src={order.userImageSrc} alt="User" />
                   </td>
                   <td>
-                    <h2 className="ps-3">{order.userName}</h2>
+                    <h2 className="ps-3 dark-text-light">{order.userName}</h2>
                   </td>
                 </td>
                 <td dir="ltr">

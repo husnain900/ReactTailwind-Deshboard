@@ -1,9 +1,9 @@
-import React from 'react';
-import './mahally.css';
-import { boxesData } from '../../DevData/DevData';
-import BreadCrum from '../../Commons/BreadCrum/BreadCrum';
-import MahallyPopUp from '../../PopUp/Mahally/MahallyPopUp';
-import { Button } from '@mui/material';
+import React from "react";
+import "./mahally.css";
+import { boxesData } from "../../DevData/DevData";
+import BreadCrum from "../../Commons/BreadCrum/BreadCrum";
+import MahallyPopUp from "../../PopUp/Mahally/MahallyPopUp";
+import { Button } from "@mui/material";
 
 const mahally = () => {
   return (
@@ -18,7 +18,7 @@ const mahally = () => {
         <h3>انطلق بتجارتك لأبعد من حدود متجرك</h3>
         <p>
           محلي من سلة هي قناة بيع متكاملة تُمكِّن تجار سلة من عرض وتسويق
-          منتجاتهم مجانًا لآلاف العملاء الجدد في مكان واحد.<u> اعرف المزيد</u>{' '}
+          منتجاتهم مجانًا لآلاف العملاء الجدد في مكان واحد.<u> اعرف المزيد</u>{" "}
         </p>
       </section>
       <section className="MainSectionMahally ">
@@ -28,8 +28,8 @@ const mahally = () => {
               <div key={index} className="mahally-box h-56 w-full">
                 <div>
                   <img className="mx-auto mb-1" src={box.imageSrc} alt="" />
-                  <h4 style={{ fontWeight: '700' }}>{box.title}</h4>
-                  <p style={{ fontWeight: '300' }}>{box.description}</p>
+                  <h4 style={{ fontWeight: "700" }}>{box.title}</h4>
+                  <p style={{ fontWeight: "300" }}>{box.description}</p>
                   {box.appLinks && (
                     <div className="stores flex gap-2">
                       {box.appLinks.map((appLink, appIndex) => (

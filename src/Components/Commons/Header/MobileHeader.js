@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import "./header.css";
 import Headerform from "./ui/headerform";
 import Sidebar from "../SideBar/Sidebar";
-import { FaBars, FaAngleDown, FaPenAlt, FaGift, FaPowerOff } from "react-icons/fa";
-import { FaRegMoon , FaRegMoonV6 } from "react-icons/fa6";
+import {
+  FaBars,
+  FaAngleDown,
+  FaPenAlt,
+  FaGift,
+  FaPowerOff,
+} from "react-icons/fa";
+import { FaRegMoon } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { PiNotificationBold } from "react-icons/pi";
 import { LuPartyPopper } from "react-icons/lu";
 import { Link } from "react-router-dom";
-
 
 const MenuItem = ({ icon, label }) => (
   <li>
@@ -21,31 +26,32 @@ const MenuItem = ({ icon, label }) => (
 const MobileHeader = () => {
   const menuItems = [
     {
-      icon: <CiUser/>,
+      icon: <CiUser />,
       label: "الملف الشخصي",
     },
-    { icon: <PiNotificationBold/>, label: "التنبيهات" },
+    { icon: <PiNotificationBold />, label: "التنبيهات" },
     {
-      icon: <LuPartyPopper/>,
+      icon: <LuPartyPopper />,
       label: "تحديثات المنصة",
     },
-    { icon: <FaPenAlt/>, label: "الاقتراحات" },
+    { icon: <FaPenAlt />, label: "الاقتراحات" },
     {
-      icon:<FaGift/>,
+      icon: <FaGift />,
       label: "نقاط الولاء",
     },
     {
-      icon: <FaRegMoon/>,
+      icon: <FaRegMoon />,
       label: "الوضع الليلي",
     },
     {
-      icon: <FaPowerOff/>,
+      icon: <FaPowerOff />,
       label: "تسجيل الخروج",
     },
   ];
 
   const [isMenuVisible, setMenuVisible] = useState(false);
   const [isUserMenuVisible, setUserMenuVisible] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setMenuVisible(!isMenuVisible);
@@ -55,8 +61,13 @@ const MobileHeader = () => {
     setUserMenuVisible(!isUserMenuVisible);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkMode);
+    document.body.classList.toggle("darkmode", !isDarkMode);
+  };
+
   return (
-    <div className="mobileHeader">
+    <div className={`mobileHeader ${isDarkMode ? "darkmode" : ""}`}>
       <div className="nv-container">
         <div className="nv-sub-container">
           <div className="nv-container-col tec-nv-toggle" onClick={toggleMenu}>
@@ -72,7 +83,11 @@ const MobileHeader = () => {
             id="tec-nv-user"
             onClick={toggleUserMenu}
           >
-            <img className="h-auto w-8" src="images/Navbar/mobile/Group 6.png" alt="User" />
+            <img
+              className="h-auto w-8"
+              src="images/Navbar/mobile/Group 6.png"
+              alt="User"
+            />
             <FaAngleDown size={18} className="text-white" />
           </div>
         </div>
@@ -80,7 +95,7 @@ const MobileHeader = () => {
           <Sidebar />
         </div>
         <div
-        className={`ttb-slide-menu ${isUserMenuVisible ? "show" : "hide"}`}
+          className={`ttb-slide-menu ${isUserMenuVisible ? "show" : "hide"}`}
         >
           <div className="ttb-slide-menu-sub">
             <ul>

@@ -337,10 +337,6 @@
 
 /* darkmode */
 
-.darkmode .bg-color {
-    background-color: #212121;
-}
-
 .darkmode .tech-topbar-form-fields select {
     background: #272626;
 }
@@ -350,23 +346,6 @@
 
 }
 
-.darkmode .dark-a {
-    color: #ddd !important;
-}
-
-.darkmode .dark-ul {
-    background: #333333;
-}
-
-.darkmode .dark-li:hover {
-    background: #2C2C2C !important;
-    border-radius: 6px;
-}
-
-.darkmode .dark-li a:hover {
-    background: #2C2C2C;
-    border-radius: 7px;
-}
 
 .darkmode .tech-topbar-menu button svg {
     color: white !important;
