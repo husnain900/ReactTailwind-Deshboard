@@ -15,6 +15,18 @@ import Productpopup3 from '../../PopUp/Productpopup/productpopup3';
 import ProductCardPopUps from '../../PopUp/Productpopup/ProductCardpopups';
 import ProductSelect from './ProductSelect';
 import { Button } from '@mui/material';
+import { LuBox } from "react-icons/lu";
+import { LuFrame } from "react-icons/lu";
+import { MdOutlineCake } from "react-icons/md";
+import { IoGameControllerOutline } from "react-icons/io5";
+import { PiBarcode } from "react-icons/pi";
+import { HiOutlineInboxStack } from "react-icons/hi2";
+
+
+
+
+
+
 
 const colourOptions = [
   { value: 'red', label: 'قسم الملابس' },
@@ -66,31 +78,40 @@ const Product = () => {
     {
       title: 'منتج جاهز',
       description: 'المنتجات الملموسة والقابلة للشحن',
+    icon: <LuBox />
+
     },
     {
       title: 'خدمة حسب الطلب',
       description: 'التصميم، الطباعة، البحوث، الكتابة',
+      icon:<LuFrame />
     },
     {
       title: 'أكل',
       description: 'المأكولات والمشروبات التي تتطلب شحن خاص',
+      icon: <MdOutlineCake  />
     },
     {
       title: 'منتج رقمي',
       description: 'الكتب الإلكترونية، الدورات، ملفات للتحميل',
+      icon: <IoGameControllerOutline   />
     },
     {
       title: 'بطاقة رقمية',
       description: 'بطاقات شحن، حسابات للبيع',
+      icon: <PiBarcode   />
     },
     {
       title: 'مجموعة منتجات',
       description: 'أكثر من منتج في منتج واحد',
+      icon: <HiOutlineInboxStack   />
     },
     {
       title: 'استخدام نماذج جاهزة!',
       description: 'اضافة منتج بسرعه وسهولة',
       isNew: true,
+      icon: <LuLayoutGrid   />
+     
     },
   ];
 
@@ -134,7 +155,8 @@ const Product = () => {
                         className="dark-a text-gray-800 py-1 px-2 flex items-center gap-1"
                         onClick={closePopup}
                       >
-                        <span>
+                     <span className='ProductFirstdropIcon'>  {category.icon}</span>  <span>
+                       
                           <h4 className="flex gap-2">
                             <b>{category.title}</b>
                             {category.isNew && (

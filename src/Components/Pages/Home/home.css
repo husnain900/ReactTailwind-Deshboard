@@ -90,7 +90,7 @@
   border-radius: 10.488px 0px 0px 10.488px;
   background: #cff7ee;
   height: 100%;
-  padding: 12px;
+  /* padding: 12px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -289,6 +289,7 @@
 
   .chartbox {
     border-radius: 10.488px;
+   
   }
 
   .outOfstockProducts {
@@ -345,13 +346,17 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
 
-@media screen and (min-width: 768px) and (max-width: 1367px) {}
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+}
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+}
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+}
 
 /* darkmode  */
 .darkmode .tb-head-dark {
@@ -362,7 +367,9 @@
 .darkmode .bx-cntn-text h1 {
   color: #ddd !important;
 }
-
+.darkmode .dark-border {
+  border: 1px solid #444444 !important;
+}
 .darkmode .scrollstyle::-webkit-scrollbar-track {
   background: #2c2c2c;
   padding: 5px 0;

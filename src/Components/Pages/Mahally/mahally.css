@@ -94,7 +94,7 @@
 
   #mahallyBoxImg {
     /* width: 250px; */
-    width: 130%;
+    width: 120%;
   }
 }
 @media screen and (max-width: 768px) {
