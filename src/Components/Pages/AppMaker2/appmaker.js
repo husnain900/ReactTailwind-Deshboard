@@ -10,7 +10,7 @@ const AppMaker = () => {
   return (
     <div>
       <BreadCrum />
-      <div className="bannar-1 h-[218.563px] bg-[#004D5A] rounded-xl p-5 flex items-center justify-between ">
+      <div className="bannar-1 h-[218.563px] bg-[#004D5A] rounded-xl p-5 flex items-center justify-between recommendedApps">
         <div className="flex items-center gap-5 flex-wrap">
           <div className="bn-icon">
             <img src="images/AppMaker/banner-Icon.png" />
@@ -29,7 +29,7 @@ const AppMaker = () => {
           تصفح متجر تطبيقات سلة
         </button>
       </div>
-      <div className="bannar-2 flex justify-between items-center rounded-xl border border-[#BDBDBD] p-5 h-[150px] my-5">
+      <div className="bannar-2 flex justify-between items-center rounded-xl border border-[#BDBDBD] p-5 h-[150px] my-5 recommendedApps2">
         <div className="flex flex-wrap gap-5">
           <div className="bn-icon">
             <img src="images/AppMaker/img.png" />

@@ -21,9 +21,9 @@ const mahally = () => {
           منتجاتهم مجانًا لآلاف العملاء الجدد في مكان واحد.<u> اعرف المزيد</u>{" "}
         </p>
       </section>
-      <section className="grid grid-cols-12 sm:grid-cols-12 gap-8 sm:mx-auto my-10 lg:my-20 w-10/12">
-        <div className="lg:col-span-7 md:col-span-8 col-span-12">
-          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <section className="MainSectionMahally ">
+        <div className="lg:col-span-7 md:col-span-4 col-span-12">
+          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 col-span-6 gap-4 mahalyFourTabs">
             {boxesData.map((box, index) => (
               <div key={index} className="mahally-box h-56 w-full">
                 <div>
@@ -45,7 +45,7 @@ const mahally = () => {
           </div>
         </div>
         <div className="box-2 lg:col-span-5 md:col-span-4 col-span-12">
-          <div className="mahally-box h-full">
+          <div className="mahally-box h-full" id="mahallyBoxImg">
             <div>
               <img
                 className="mx-auto mb-1"
