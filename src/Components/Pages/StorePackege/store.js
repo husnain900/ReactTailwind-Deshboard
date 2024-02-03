@@ -64,22 +64,23 @@ const Store = () => {
             <h3>رالإضافات</h3>
           </div>
           {addons.map((addon, index) => (
-            <div key={index} className="d13-btm-section-rows" id>
+            <div key={index} className="d13-btm-section-rows" >
               <div className="d13-btm-col">
-                <div className="d13-btm-sub-col">
+                <div className="d13-btm-sub-col" >
                   <div className="d13-btm-col-img">
                     <img src={addon.icon} alt="" />
                   </div>
                   <div className="d13-btm-col-text ">
                     <h3>{addon.title}</h3>
-                    <p className="text-wrap">{addon.description}</p>
+                    <p className="text-wrap addonParagraph">{addon.description}</p>
                   </div>
                 </div>
               </div>
-              <div className="d13-btm-form">
+              <div className="d13-btm-form"  >
                 <form>
                   <input
                     type="text"
+                    style={{width:'150px'}}
                     name=""
                     placeholder={`العدد الحالي ${
                       currentCounts[addon.title] || 0
@@ -95,7 +96,7 @@ const Store = () => {
           <div className="d13-btm-section-rows mb-7 lg:mb-52">
             <div className="d13-btm-col">
               <div className="d13-btm-sub-col">
-                <div className="d13-btm-col-img">
+                <div className="d13-btm-col-img" >
                   <img src="images/StorePackages/call.png" alt="" />
                 </div>
                 <div className="d13-btm-col-text">
@@ -107,7 +108,7 @@ const Store = () => {
                 </div>
               </div>
             </div>
-            <div className="d13-btm-col">
+            <div className="d13-btm-col" >
               <div className="h-10 w-full text-center">
                 <Button
                   style={{

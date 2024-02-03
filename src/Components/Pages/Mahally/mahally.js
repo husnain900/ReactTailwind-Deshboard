@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 
 const mahally = () => {
   return (
-    <div>
+    <>
       <BreadCrum />
       <section className="mahally-logo text-center">
         <img
@@ -22,16 +22,16 @@ const mahally = () => {
         </p>
       </section>
       <section className="MainSectionMahally ">
-        <div className="lg:col-span-7 md:col-span-4 col-span-12">
-          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 col-span-6 gap-4 mahalyFourTabs">
+        <div className="lg:col-span-7 md:col-span-7 col-span-12 MahalySectionDiv">
+          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 col-span-6 gap-4 mahalyFourTabs">
             {boxesData.map((box, index) => (
-              <div key={index} className="mahally-box h-56 w-full">
+              <div key={index} className="mahally-box ">
                 <div>
                   <img className="mx-auto mb-1" src={box.imageSrc} alt="" />
                   <h4 style={{ fontWeight: "700" }}>{box.title}</h4>
                   <p style={{ fontWeight: "300" }}>{box.description}</p>
                   {box.appLinks && (
-                    <div className="stores flex gap-2">
+                    <div className="stores flex gap-2 " >
                       {box.appLinks.map((appLink, appIndex) => (
                         <a key={appIndex} href={appLink.href}>
                           <img src={appLink.imageSrc} alt={appLink.alt} />
@@ -44,8 +44,8 @@ const mahally = () => {
             ))}
           </div>
         </div>
-        <div className="box-2 lg:col-span-5 md:col-span-4 col-span-12">
-          <div className="mahally-box h-full" id="mahallyBoxImg">
+        <div className="box-2 lg:col-span-5 md:col-span-5 col-span-12">
+          <div className="mahally-box2 h-full" id="mahallyBoxImg">
             <div>
               <img
                 className="mx-auto mb-1"
@@ -71,7 +71,7 @@ const mahally = () => {
           <MahallyPopUp />
         </Button>
       </div>
-    </div>
+    </>
   );
 };
 

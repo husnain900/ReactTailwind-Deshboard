@@ -30,6 +30,34 @@
   align-items: center;
   padding: 40px;
 }
+.mahally-box2 {
+  border-radius: 5.907px;
+  border: 0.738px solid #cecece;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.mahally-box2 h4 {
+  color: var(--Gray-1, #333);
+  font-size: 13.894px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mahally-box2 p {
+  color: var(--a-7-a-7-a-7, #a7a7a7);
+  font-size: 13.894px;
+  font-style: normal;
+  font-weight: 300;
+  width: 184.43px;
+  margin: 0 auto 10px;
+  line-height: normal;
+  padding: 5px;
+}
+.mahally-box2 > div {
+  text-align: center;
+}
 
 .mahally-box h4 {
   color: var(--Gray-1, #333);
@@ -93,8 +121,33 @@
   }
 
   #mahallyBoxImg {
-    /* width: 250px; */
     width: 120%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mahally-box p {
+    color: var(--a-7-a-7-a-7, #a7a7a7);
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mahally-box p {
+    color: var(--a-7-a-7-a-7, #a7a7a7);
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+  }
+  .mahally-box {
+    border-radius: 5.907px;
+    border: 0.738px solid #cecece;
+    display: flex;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    
   }
 }
 @media screen and (max-width: 768px) {
@@ -102,4 +155,42 @@
     display: flex;
     flex-direction: row;
   }
+  .mahally-box {
+    border-radius: 5.907px;
+    border: 0.738px solid #cecece;
+    display: flex;
+    width: 100%;
+    padding: 40px 20px;
+  }
+ .MahalySectionDiv{
+  margin-right: 50px;
+ }
+ .mahally-box2 {
+  border-radius: 5.907px;
+  border: 0.738px solid #cecece;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+#mahallyBoxImg {
+  width: 100%;
+}
+}
+@media screen and (max-width: 576px) {
+  .mahally-box2 {
+    border-radius: 5.907px;
+    border: 0.738px solid #cecece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+   
+  }
+  #mahallyBoxImg {
+    width: 100%;
+  }
+  .MahalySectionDiv{
+    margin-right: 0px;
+   }
 }

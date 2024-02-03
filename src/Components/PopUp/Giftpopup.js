@@ -9,6 +9,7 @@ import {
   FaWhatsapp,
 } from 'react-icons/fa';
 import { BiSolidDiscount } from 'react-icons/bi';
+import "./Giftpopup1.css"
 
 const Giftpopup = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -108,12 +109,17 @@ const Giftpopup = () => {
     };
   }, [isPopupOpen]);
 
+
+  
+
   return (
     <section className="tech-home-gift-main">
+      
       <CiGift id="open-popup" onClick={openPopup} />
 
       {isPopupOpen && (
-        <div className="tech-home-gift-popup-main absolute left-[18%]">
+        
+        <div className="tech-home-gift-popup-main absolute ">
           <div className="tech-home-gift-bg" style={{ zIndex: '1000' }}></div>
           <div className="tech-home-gift-row">
             <div className="tech-home-gift-popup-box slideIn" id="gift-popup">
