@@ -1,0 +1,18 @@
+/* PopupStyles.css */
+
+.tech-home-gift-popup-main {
+    position: absolute;
+    left: 18%; /* Default, for screens 1200px and above */
+}
+
+@media (max-width: 1199px) and (min-width: 1101px) {
+    .tech-home-gift-popup-main {
+        left: 14%;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1024px) {
+    .tech-home-gift-popup-main {
+        left: 12%;
+    }
+}

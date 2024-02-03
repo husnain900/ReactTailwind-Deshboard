@@ -83,7 +83,7 @@
     width: 39.011px;
     height: 39.011px;
     display: flex;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid #BAF3E6;
@@ -363,4 +363,9 @@
         width: 45px;
     }
 
+}
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+    .tech-topbar-menu-buttons ul li a img {
+        width: 60px;
+    }
 }
