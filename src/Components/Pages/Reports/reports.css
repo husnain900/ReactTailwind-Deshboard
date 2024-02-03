@@ -185,3 +185,26 @@
     margin-top: 10px;
   }
 }
+
+/* darkmode  */
+.darkmode .table-container-report tbody tr td p {
+  color: #ddd !important;
+}
+.darkmode .departure-btn button:nth-child(-n + 2) {
+  border: 1px solid #444444 !important;
+  color: var(--Gray-1, #ddd) !important;
+  background: #333333 !important;
+
+}
+.darkmode input.relative.transition-all.duration-300.py-2\.5.pl-4.pr-14.w-full.border-gray-300.dark\:bg-slate-800.dark\:text-white\/80.dark\:border-slate-600.rounded-lg.tracking-wide.font-light.text-sm.placeholder-gray-400.bg-white.focus\:ring.disabled\:opacity-40.disabled\:cursor-not-allowed.focus\:border-teal-500.focus\:ring-teal-500\/20 {
+  text-align: left;
+  color: var(--a-7-a-7-a-7, #ddd);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  background: #333333;
+  line-height: normal;
+}
+.darkmode .table-container-report table thead {
+  border-bottom: 0;
+}

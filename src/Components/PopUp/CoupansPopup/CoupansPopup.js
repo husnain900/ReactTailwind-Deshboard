@@ -28,21 +28,21 @@ export default function CustomizedDialogs() {
 
   return (
     <React.Fragment>
-      <ul className="top-11 right-0 absolute bg-white rounded-lg shadow-lg p-1 w-44">
-        <li className="hover:bg-gray-200 border-b border-gray-300 Hover:rounded-lg ">
+      <ul className="top-11 dark-ul right-0 absolute bg-white rounded-lg shadow-lg p-1 w-44">
+        <li className="hover:bg-gray-200 dark-li border-b border-gray-300 Hover:rounded-lg ">
           <a
             onClick={handleClickOpen}
-            className="Hover:text-[#78E8CE] text-[#004956] p-2 flex gap-2 items-center "
+            className="Hover:text-[#78E8CE] text-[#004956] dark-a p-2 flex gap-2 items-center "
             href="#"
           >
             <BiSolidCoupon size={12} />
             كوبون جديد
           </a>
         </li>
-        <li className="hover:bg-gray-200  Hover:rounded-lg ">
+        <li className="hover:bg-gray-200 dark-li Hover:rounded-lg ">
           <a
             onClick={handleClickOpen}
-            className="Hover:text-[#78E8CE] text-[#004956] p-2 flex gap-2 items-center "
+            className="Hover:text-[#78E8CE] text-[#004956] dark-a p-2 flex gap-2 items-center "
             href="#"
           >
             <BiSolidCoupon size={12} />

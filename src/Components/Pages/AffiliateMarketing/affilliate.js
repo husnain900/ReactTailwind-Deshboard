@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./affiliate.css";
-import { RiShoppingBagLine } from "react-icons/ri";
 import { CiCirclePlus } from "react-icons/ci";
 import CommonCheckbox from "../Ui-components/SwitchBtn";
 import BreadCrum from "../../Commons/BreadCrum/BreadCrum";
 import { FaRegCopy } from "react-icons/fa6";
 import Khidmatpopup from "../../PopUp/TopTitlepopup/Khidmatpopup";
 import { Button } from "@mui/material";
+import { BsThreeDots } from "react-icons/bs";
 
 const Affilliate = () => {
   const [activePopup, setActivePopup] = useState(null);
@@ -59,7 +59,7 @@ const Affilliate = () => {
                           }`}
                           onClick={() => handlePopupClick(index)}
                         >
-                          <img src="images/static/Menu.png" alt="Menu Icon" />
+                        <BsThreeDots />
                           <div className="tech-static-p-more-popup">
                             <ul>
                               <li>

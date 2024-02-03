@@ -26,7 +26,7 @@ export default function AlertDialogSlide() {
 
   return (
     <React.Fragment>
-      <Button onClick={handleClickOpen} className="flex gap-2 items-center">
+      <Button onClick={handleClickOpen} className="flex dark-border dark-a gap-2 items-center">
         <IoArrowRedoOutline />
         تاريخ التقرير
       </Button>

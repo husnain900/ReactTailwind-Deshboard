@@ -204,7 +204,7 @@ const Wallet = () => {
                             }`}
                             onClick={() => handlePopupClick(index, 'group1')}
                           >
-                            <img src="images/static/Menu.png" alt="Menu Icon" />
+                            
                             <div
                               className="tech-static-p-more-popup"
                               style={{
@@ -302,7 +302,7 @@ const Wallet = () => {
                             }`}
                             onClick={() => handlePopupClick(index, 'group2')}
                           >
-                            <img src="images/static/Menu.png" alt="Menu Icon" />
+                            
                             <div className="tech-static-p-more-popup">
                               <ul>
                                 <li className="hover:bg-gray-200 hover:rounded">
