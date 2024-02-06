@@ -1,27 +1,33 @@
-import React, { useState } from "react";
-import { FaTimes } from "react-icons/fa";
-import TextEditor from "../../Pages/Ui-components/TextEditor";
-import Datepickerpopup from "../../Pages/Ui-components/Datepickerpopup";
-import { CiCircleList } from "react-icons/ci";
-import { RiFileList2Line } from "react-icons/ri";
-import "./productpopup3.css";
-import { CiCirclePlus } from "react-icons/ci";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
-import Button from "@mui/material/Button";
-import { LuBox, LuFrame, LuLayoutGrid } from "react-icons/lu";
-import { MdOutlineCake } from "react-icons/md";
-import { IoGameControllerOutline } from "react-icons/io5";
-import { PiBarcode } from "react-icons/pi";
-import { HiOutlineInboxStack } from "react-icons/hi2";
+import React, { useState } from 'react';
+import { FaTimes } from 'react-icons/fa';
+import TextEditor from '../../Pages/Ui-components/TextEditor';
+import Datepickerpopup from '../../Pages/Ui-components/Datepickerpopup';
+import { CiCircleList } from 'react-icons/ci';
+import { RiFileList2Line } from 'react-icons/ri';
+import './productpopup3.css';
+import { CiCirclePlus } from 'react-icons/ci';
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa6';
+import Button from '@mui/material/Button';
+import { MdTextFormat } from 'react-icons/md';
+import { TbSquareRoundedLetterA } from 'react-icons/tb';
+import { Bs3Square } from 'react-icons/bs';
+import { GoChecklist } from 'react-icons/go';
+import { VscChecklist } from 'react-icons/vsc';
+import { CiImageOn } from 'react-icons/ci';
+import { SlCalender } from 'react-icons/sl';
+import { WiTime9 } from 'react-icons/wi';
+import { CiLocationOn } from 'react-icons/ci';
+import { AiOutlinePaperClip } from 'react-icons/ai';
+import { MdOutlineBorderColor } from 'react-icons/md';
+import { FaMinus } from 'react-icons/fa6';
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
   const [hideAndDisplay, sethideAndDisplay] = useState(true);
-  const percent = "{present}";
-  const discount = "{discount}";
+  const percent = '{present}';
+  const discount = '{discount}';
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -34,7 +40,6 @@ export default function Modal() {
     sethideAndDisplay(false);
   };
 
-
   const closePopup = () => {
     setShowModal(false);
   };
@@ -42,58 +47,58 @@ export default function Modal() {
   const categories = [
     {
       title: 'حقل نصي صغير',
-      icon: <LuBox />
+      icon: <MdTextFormat />,
     },
     {
       title: 'حقل نصي كبير',
-      icon: <LuFrame />
+      icon: <TbSquareRoundedLetterA />,
     },
     {
       title: 'حقل رقمي',
-      icon: <MdOutlineCake />
+      icon: <Bs3Square />,
     },
     {
       title: 'خيارات (اختيار واحد)',
-      icon: <IoGameControllerOutline />
+      icon: <GoChecklist />,
     },
     {
       title: 'خيارات (عدة اختيارات)',
-      icon: <PiBarcode />
+      icon: <VscChecklist />,
     },
     {
       title: 'رفع صورة',
-      icon: <HiOutlineInboxStack />
+      icon: <CiImageOn />,
     },
     {
       title: 'حقل تاريخ',
-      icon: <LuLayoutGrid />
+      icon: <SlCalender />,
     },
     {
       title: 'حقل وقت',
-      icon: <LuBox /> // Assuming a default or placeholder icon here as the original list didn't have specific icons for these new titles.
+      icon: <WiTime9 />, // Assuming a default or placeholder icon here as the original list didn't have specific icons for these new titles.
     },
     {
       title: 'حقل موعد (تاريخ ووقت)',
-      icon: <LuFrame /> // Placeholder icon
+      icon: <SlCalender />, // Placeholder icon
     },
     {
       title: 'تحديد موقع',
-      icon: <MdOutlineCake /> // Placeholder icon
+      icon: <CiLocationOn />, // Placeholder icon
     },
     {
       title: 'رفع ملف',
-      icon: <IoGameControllerOutline /> // Placeholder icon
+      icon: <AiOutlinePaperClip />, // Placeholder icon
     },
     {
       title: 'تحديد لون',
-      icon: <PiBarcode /> // Placeholder icon
+      icon: <MdOutlineBorderColor />, // Placeholder icon
     },
     {
       title: 'فاصل',
-      icon: <HiOutlineInboxStack /> // Placeholder icon
+      icon: <FaMinus />, // Placeholder icon
     },
   ];
-  
+
   return (
     <>
       <div
@@ -106,7 +111,10 @@ export default function Modal() {
       </div>
       {showModal && (
         <>
-          <div className="justify-center text-right items-center  flex overflow-x-hidden slideIn overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"  style={{zIndex: 1000}}>
+          <div
+            className="justify-center text-right items-center  flex overflow-x-hidden slideIn overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+            style={{ zIndex: 1000 }}
+          >
             <div className="relative productData  my-6 mx-auto ">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none ">
                 <div className="flex items-start items-center modal-header justify-between px-4 py-2 rounded-t">
@@ -129,32 +137,32 @@ export default function Modal() {
                   <div className="tech-prooptionspopup-box-content">
                     <div
                       style={{
-                        display: "flex",
-                        border: "2px solid #76E8CD ",
-                        marginBottom: "10px",
+                        display: 'flex',
+                        border: '2px solid #76E8CD ',
+                        marginBottom: '10px',
                       }}
                     >
                       <div
                         className="ProductdataButton"
-                        style={{ width: "50%" }}
+                        style={{ width: '50%' }}
                       >
                         <button
                           className="productOrderButton"
                           onClick={changeHideAndDisplay}
                         >
                           <RiFileList2Line
-                            style={{ marginLeft: "5px", width: "17px" }}
+                            style={{ marginLeft: '5px', width: '17px' }}
                           />
                           بيانات المنتج
                         </button>
                       </div>
-                      <div style={{ width: "50%" }}>
+                      <div style={{ width: '50%' }}>
                         <button
                           className="productOrderButton"
                           onClick={changeHide}
                         >
                           <CiCircleList
-                            style={{ marginLeft: "5px", width: "17px" }}
+                            style={{ marginLeft: '5px', width: '17px' }}
                           />
                           نموذج الطلب
                         </button>
@@ -166,7 +174,7 @@ export default function Modal() {
                           <div className="tech-productoption-col-1">
                             <label>يتطلب شحن / توصيل ؟</label>
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/truck.png" alt="truck"  />
+                              <img src="images/PopUp/truck.png" alt="truck" />
                               <select>
                                 <option>نعم، يتطلب شحن</option>
                                 <option>لا يتطلب شحن</option>
@@ -203,9 +211,9 @@ export default function Modal() {
                             <small
                               id="weight_error_message"
                               style={{
-                                display: "block",
-                                fontSize: "12px",
-                                marginTop: "7px",
+                                display: 'block',
+                                fontSize: '12px',
+                                marginTop: '7px',
                               }}
                             >
                               قيمة الوزن غير صحيحة
@@ -217,7 +225,7 @@ export default function Modal() {
                             <label>سعر التكلفة</label>
 
                             <div className="tech-productoption-input-group">
-                              <img src="images/PopUp/weight.png" alt="cost"  />
+                              <img src="images/PopUp/weight.png" alt="cost" />
                               <input
                                 type="text"
                                 name=""
@@ -245,9 +253,11 @@ export default function Modal() {
                           <div className="tech-productoption-col-2 column-design">
                             <label>نهاية التخفيض </label>
 
-                            <div className="tech-productoption-input-group " id="tech-productoption-input-group">
-                             
-                             <Datepickerpopup  />
+                            <div
+                              className="tech-productoption-input-group "
+                              id="tech-productoption-input-group"
+                            >
+                              <Datepickerpopup />
                             </div>
                           </div>
                         </div>
@@ -270,7 +280,12 @@ export default function Modal() {
 
                             <div className="tech-productoption-input-group">
                               <img src="images/PopUp/weight.png" alt="" />
-                              <input type="text" name="" placeholder="MPN" alt="" />
+                              <input
+                                type="text"
+                                name=""
+                                placeholder="MPN"
+                                alt=""
+                              />
                             </div>
                           </div>
                           <div className="tech-productoption-col-3 column-design">
@@ -278,7 +293,12 @@ export default function Modal() {
 
                             <div className="tech-productoption-input-group">
                               <img src="images/PopUp/weight.png" alt="" />
-                              <input type="text" name="" placeholder="GTIN" alt="" />
+                              <input
+                                type="text"
+                                name=""
+                                placeholder="GTIN"
+                                alt=""
+                              />
                             </div>
                           </div>
                         </div>
@@ -534,50 +554,48 @@ export default function Modal() {
                       </>
                     ) : (
                       <>
-                              <div>
-          <Button
-            className="btn-hover common-btn"
-            onClick={toggleDropdown}
-          >
-            <div className="flex gap-2 items-center">
-              <CiCirclePlus size={27} />
-              أضافة جمل جديدة{" "}
-              {dropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
-            </div>
-          </Button>
-          {dropdownOpen && (
-            <div className="dropdown-content">
-              {/* Dropdown menu items go here */}
-              <ul className="dark-ul popup-product shadow rounded-lg bg-white absolute z-10 w-64">
-                {categories.map((category, index) => (
-                  <li
-                    key={index}
-                    className={`${
-                      index === categories.length - 1
-                        ? 'bg-gray-100 border-t border-gray-300 '
-                        : ''
-                    }hover:bg-gray-100 p-1 hover:rounded dark-li`}
-                  >
-                    <a
-                      href="#"
-                      className="dark-a text-gray-800 py-1 px-2 flex items-center gap-1"
-                      onClick={closePopup}
-                    >
-                      <span className='ProductFirstdropIcon'>{category.icon}</span>
-                      <span>
-                        <h4 className="flex gap-2">
-                          <b>{category.title}</b>
-                        </h4>
-                        
-                      </span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-
+                        <div>
+                          <Button
+                            className="btn-hover common-btn"
+                            onClick={toggleDropdown}
+                          >
+                            <div className="flex gap-2 items-center">
+                              <CiCirclePlus size={27} />
+                              أضافة جمل جديدة{' '}
+                              {dropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
+                            </div>
+                          </Button>
+                          {dropdownOpen && (
+                            <div className="dropdown-content">
+                              {/* Dropdown menu items go here */}
+                              <ul className="dark-ul popup-product shadow rounded-lg bg-white absolute z-10 w-64">
+                                {categories.map((category, index) => (
+                                  <li
+                                    key={index}
+                                    className={`${
+                                      index === categories.length - 1 ? ' ' : ''
+                                    }hover:bg-gray-100 p-1 hover:rounded dark-li`}
+                                  >
+                                    <a
+                                      href="#"
+                                      className="dark-a text-gray-800 py-1 px-2 flex items-center gap-1"
+                                      onClick={closePopup}
+                                    >
+                                      <span className="ProductFirstdropIcon">
+                                        {category.icon}
+                                      </span>
+                                      <span>
+                                        <p className="flex gap-2">
+                                          <b>{category.title}</b>
+                                        </p>
+                                      </span>
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+                        </div>
                       </>
                     )}
                   </div>
@@ -588,7 +606,7 @@ export default function Modal() {
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    اضافة المنتج{" "}
+                    اضافة المنتج{' '}
                   </button>
                   <button
                     className="text-gray-500 bg-gray-300 hover:shadow-md px-6 py-2 rounded-md text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
