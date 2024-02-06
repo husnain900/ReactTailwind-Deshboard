@@ -25,6 +25,10 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiPaper-root": {
     maxWidth: "45%",
     width: "45%",
+    '@media (max-width: 786px)': {
+      maxWidth: "70%",
+      width: "70%",
+    },
   },
 }));
 

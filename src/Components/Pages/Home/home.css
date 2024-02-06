@@ -281,7 +281,7 @@
 } */
 
 /* responsive  */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .ALertTable {
     margin-top: 310px;
     margin-bottom: 100px;
@@ -344,15 +344,27 @@
   .chart {
     height: 100% !important;
   }
+  .ALertTable {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .outOfstockProducts {
+    margin-top: 0px;
+  }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
 }
 
-@media screen and (min-width: 768px) and (max-width: 1367px) {
+@media screen and (min-width: 1024px) and (max-width: 1180px) {
+  .tech-topbar-user-menu ul li a {
+    gap: 0px;
+}
 }
 
 @media screen and (min-width: 1024px) {
+
 }
 
 @media screen and (max-width: 1200px) {

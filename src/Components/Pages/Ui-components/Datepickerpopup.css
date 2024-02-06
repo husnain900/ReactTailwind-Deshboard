@@ -1,0 +1,9 @@
+/* Global stylesheet (e.g., App.css) */
+.datepicker-icon {
+    margin-right: 10px; /* Adjust the icon positioning */
+  }
+  
+  .datepicker-input::placeholder {
+    padding-left: 10px; /* Add if you need extra space inside the input */
+  }
+  

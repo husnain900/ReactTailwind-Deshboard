@@ -160,15 +160,14 @@
 .departure-btn {
   width: 35%;
   display: flex;
-  justify-content: end; /* Center the buttons */
+  justify-content: flex-end;
   gap: 10px; /* Gap between buttons */
 }
 
 /* Styling for buttons inside departure-btn */
-.departure-btn > .ReportPopupBtn,
+/* .departure-btn > .ReportPopupBtn,
 .departure-btn > .ReportStudentButton {
-  /* Additional styling for buttons if needed */
-}
+} */
 
 /* Media query for screens smaller than 576px */
 @media screen and (max-width: 576px) {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Datepicker from 'react-tailwindcss-datepicker';
+import "./Datepickerpopup.css"
 
 const App = () => {
   const [value, setValue] = useState({
@@ -20,6 +21,8 @@ const App = () => {
         value={value}
         placeholder={'نهاية التخفيض (اختياري) '}
         onChange={handleValueChange}
+        className="pl-2"
+        
       />
     </>
   );

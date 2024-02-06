@@ -1288,6 +1288,12 @@ i {
   width: 100%;
   padding: 9px 5px 9px 10px;
 }
+#tech-productoption-input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 9px 40px 9px 10px;
+}
 
 .tech-productoption-row.column-design {
   display: flex;
@@ -1504,8 +1510,10 @@ i {
 
 /* darkmode */
 
-.darkmode .dark-gray-txt, .darkmode svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
-  color: #C2C9CC;
+.darkmode .dark-gray-txt,
+.darkmode
+  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  color: #c2c9cc;
 }
 
 .darkmode .pr-side-acordin-sub-container label {
