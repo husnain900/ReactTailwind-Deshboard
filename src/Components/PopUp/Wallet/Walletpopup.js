@@ -1,21 +1,21 @@
-import * as React from 'react';
-import { FaAngleLeft, FaTimes } from 'react-icons/fa';
-import { GoAlert } from 'react-icons/go';
-import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import * as React from "react";
+import { FaAngleLeft, FaTimes } from "react-icons/fa";
+import { GoAlert } from "react-icons/go";
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
+  "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
   },
-  '& .MuiDialogActions-root': {
+  "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
 }));
@@ -29,20 +29,20 @@ export default function CustomizedDialogs() {
   const handleClose = () => {
     setOpen(false);
   };
-  const [age, setAge] = React.useState('');
+  const [age, setAge] = React.useState("");
 
   const handleChange = (event) => {
     setAge(event.target.value);
   };
   const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-    '& .MuiDialogContent-root': {
+    "& .MuiDialogContent-root": {
       padding: theme.spacing(2),
     },
-    '& .MuiDialogActions-root': {
+    "& .MuiDialogActions-root": {
       padding: theme.spacing(1),
     },
-    width: '80%', // Set the width to 70%
-    margin: 'auto', // Center the dialog
+    width: "80%", // Set the width to 70%
+    margin: "auto", // Center the dialog
   }));
 
   return (
@@ -54,20 +54,20 @@ export default function CustomizedDialogs() {
         <div className="flex items-center gap-4">
           <img src="images/Wallet/sound-module-line.png" alt="" />
           <div className="wp-md-sc-row-body-sb-row-col">
-            <h3>طريقة الدفع الإفتراضية</h3>
+            <h3 className="dark-a">طريقة الدفع الإفتراضية</h3>
             <p>البطاقة الإئتمانية</p>
           </div>
         </div>
-        <FaAngleLeft />
+        <FaAngleLeft className="dark-a" />
       </div>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
         maxWidth={false}
-        PaperProps={{ style: { width: '70%', margin: 'auto' } }}
+        PaperProps={{ style: { width: "70%", margin: "auto" } }}
       >
-        {' '}
+        {" "}
         <div className="flex items-start items-center modal-header justify-between px-4 py-2 rounded-t">
           <h3>طريقة الدفع الإفتراضية</h3>
           <button
@@ -97,7 +97,7 @@ export default function CustomizedDialogs() {
           <div className="wl-mdl-row">
             <div className="wl-mdl-cntnt">
               <p>اختر طريقة الدفع الأساسية</p>
-              <FormControl sx={{ width: '100%' }} size="small">
+              <FormControl sx={{ width: "100%" }} size="small">
                 <InputLabel id="demo-simple-select-label">
                   لبطاقة الإئتمانية
                 </InputLabel>
@@ -121,7 +121,7 @@ export default function CustomizedDialogs() {
           <div className="wl-mdl-row">
             <div className="wl-mdl-cntnt">
               <p>اختر طريقة الدفع البديلة</p>
-              <FormControl sx={{ width: '100%' }} size="small">
+              <FormControl sx={{ width: "100%" }} size="small">
                 <InputLabel id="demo-simple-select-label">المحفظة</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
@@ -144,7 +144,7 @@ export default function CustomizedDialogs() {
           </div>
         </DialogContent>
         <DialogActions
-          style={{ justifyContent: 'space-between' }}
+          style={{ justifyContent: "space-between" }}
           className="py-3 px-4 bg-gray-200 border-t py-2 rounded-b"
         >
           <button

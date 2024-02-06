@@ -1,53 +1,53 @@
-import React, { useState, useEffect } from 'react';
-import './maker.css';
-import { featuresData } from '../../DevData/DevData';
-import BreadCrum from '../../Commons/BreadCrum/BreadCrum';
-import Makerpopup from '../../PopUp/Makerpopup';
+import React, { useState, useEffect } from "react";
+import "./maker.css";
+import { featuresData } from "../../DevData/DevData";
+import BreadCrum from "../../Commons/BreadCrum/BreadCrum";
+import Makerpopup from "../../PopUp/Makerpopup";
 const products = [
   {
-    title: 'بطاقة رقمية',
-    description: 'بطاقات شحن، حسابات للبيع',
+    title: "بطاقة رقمية",
+    description: "بطاقات شحن، حسابات للبيع",
   },
   {
-    title: 'مجموعة منتجات',
-    description: 'أكثر من منتج في منتج واحد',
+    title: "مجموعة منتجات",
+    description: "أكثر من منتج في منتج واحد",
   },
   {
-    title: 'استخدام نماذج جاهزة!',
-    description: 'اضافة منتج بسرعه وسهولة',
+    title: "استخدام نماذج جاهزة!",
+    description: "اضافة منتج بسرعه وسهولة",
     special: true,
   },
 ];
 const tabsData = [
   {
-    imageSrc: 'images/Maker/smartphone-line.png',
-    alt: 'Home',
-    label: 'الصفحة الرئيسية',
+    imageSrc: "images/Maker/smartphone-line.png",
+    alt: "Home",
+    label: "الصفحة الرئيسية",
     content: <p>Content for Home Tab</p>,
   },
   {
-    imageSrc: 'images/Maker/dashboard-line.png',
-    alt: 'Categories',
-    label: 'التصنيفات',
+    imageSrc: "images/Maker/dashboard-line.png",
+    alt: "Categories",
+    label: "التصنيفات",
     content: <p>Content for Categories Tab</p>,
   },
 
   {
-    imageSrc: 'images/Maker/smartphone-line.png',
-    alt: 'Top Bar & Tabs',
-    label: 'الشريط العلوي والتبويبات',
+    imageSrc: "images/Maker/smartphone-line.png",
+    alt: "Top Bar & Tabs",
+    label: "الشريط العلوي والتبويبات",
     content: <p>Content for Top Bar & Tabs Tab</p>,
   },
   {
-    imageSrc: 'images/Maker/smartphone-line.png',
-    alt: 'Home Screens',
-    label: 'شاشات البداية',
+    imageSrc: "images/Maker/smartphone-line.png",
+    alt: "Home Screens",
+    label: "شاشات البداية",
     content: <p>Content for Home Screens Tab</p>,
   },
   {
-    imageSrc: 'images/Maker/switch-line.png',
-    alt: 'General Settings',
-    label: 'إعدادات عامة',
+    imageSrc: "images/Maker/switch-line.png",
+    alt: "General Settings",
+    label: "إعدادات عامة",
     content: <p>Content for General Settings Tab</p>,
   },
 ];
@@ -55,8 +55,8 @@ const tabsData = [
 const AppBuilder = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [isPopupOpen, setPopupOpen] = useState(false);
-  const [activeButton, setActiveButton] = useState('شهر');
-  const [text, setText] = useState('');
+  const [activeButton, setActiveButton] = useState("شهر");
+  const [text, setText] = useState("");
 
   const handleButtonClick = (value) => {
     setText(value);
@@ -72,19 +72,21 @@ const AppBuilder = () => {
   };
 
   useEffect(() => {
-    setText('250ر.س');
+    setText("250ر.س");
   }, []);
 
   return (
     <div>
       <BreadCrum />
       <div className="ds-17-container">
-        <div className="ds-17-sub-container">
+        <div className="ds-17-sub-container dark-border">
           <div className="ds-17-sub-innr-container">
-            <div className="ds-17-cntr-frst-rw">
-              <h2>صانع التطبيقات</h2>
-              <h4>اصنع لمتجرك تطبيق إحترافي خلال 72 ساعة وبدون مبرمج!</h4>
-              <p>
+            <div className="ds-17-cntr-frst-rw ">
+              <h2 className="dark-a">صانع التطبيقات</h2>
+              <h4 className="dark-text3">
+                اصنع لمتجرك تطبيق إحترافي خلال 72 ساعة وبدون مبرمج!
+              </h4>
+              <p className="dark-a">
                 في حالة تم انشاء حساب المطورين في متاجر التطبيقات (App Store,
                 Google Play)
               </p>
@@ -94,14 +96,18 @@ const AppBuilder = () => {
                 <p>{text}</p>
                 <div className=" p-1 border border-black bg-white">
                   <button
-                    className={` ${activeButton === '250ر.س' ? 'active' : ''}`}
-                    onClick={() => handleButtonClick('250ر.س')}
+                    className={` ${
+                      activeButton === "250ر.س" ? "active" : "dark-border"
+                    }`}
+                    onClick={() => handleButtonClick("250ر.س")}
                   >
                     شهر
                   </button>
                   <button
-                    className={` ${activeButton === '2550ر.س' ? 'active' : ''}`}
-                    onClick={() => handleButtonClick('2550ر.س')}
+                    className={` ${
+                      activeButton === "2550ر.س" ? "active" : "dark-border"
+                    }`}
+                    onClick={() => handleButtonClick("2550ر.س")}
                   >
                     يسنوي
                   </button>
@@ -110,35 +116,39 @@ const AppBuilder = () => {
             </div>
             <div className="ds-17-cntr-trd-rw">
               <div className="ds-17-cntr-trd-rw-col">
-                <h5>
+                <h5 className="dark-a">
                   يمنحك إنشاء تطبيق لمتجرك فرصة كبيرة لتقوية علاقتك مع العملاء
                   وزيادة تفاعلهم ، وأيضًا وسيلة فعالة لتقديم قيمة لعملائك
                   .وزيادة ولائهم, وبالتالي زيادة المبيعات ونمو متجرك
                 </h5>
                 <div className="ds-17-cntr-trd-rw-col-btn">
                   <button
-                    style={{ backgroundColor: '#BBF3E5', border: 'none' }}
+                    className=""
+                    style={{ backgroundColor: "#BBF3E5", border: "none" }}
                   >
                     اشترك
                   </button>
-                  <button>جرب الآن</button>
+                  <button className="dark-text-light">جرب الآن</button>
                 </div>
               </div>
               <div className="ds-17-cntr-trd-rw-col">
                 <img
-                  style={{ width: '1000px' }}
+                  style={{ width: "1000px" }}
                   src="images/Maker/app-builder-marketing 1.png"
                 />
               </div>
             </div>
             <div className="ds-17-cntr-ftr-rw overflow-x-auto">
-              <div className="flex gap-2 py-4  min-w-max">
+              <div className="flex gap-2 py-4  min-w-max dark-ul">
                 {featuresData.map((feature, index) => (
-                  <div key={index} className="ds-17-cntr-ftr-rw-col">
+                  <div
+                    key={index}
+                    className="ds-17-cntr-ftr-rw-col dark-ul dark-border"
+                  >
                     <img src={feature.icon} alt={feature.title} />
                     <div className="ds-17-cntr-ftr-rw-txt-col">
-                      <h4>{feature.title}</h4>
-                      <p>{feature.description}</p>
+                      <h4 className="dark-text">{feature.title}</h4>
+                      <p className="dark-text">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -147,16 +157,18 @@ const AppBuilder = () => {
           </div>
         </div>
 
-        <div className="ds-17-sub-container-2">
-          <div className="ds-17-cntnr-2-rw-frst">
+        <div className="ds-17-sub-container-2 dark-border">
+          <div className="ds-17-cntnr-2-rw-frst bg-dark-head">
             <div className="ds-17-cntnr-2-sub-rw-frst">
-              <h1>تصميم التطبيق</h1>
-              <button>بيانات قابلة للتعديل</button>
+              <h1 className="dark-a">تصميم التطبيق</h1>
+              <button className="dark-ul dark-text">
+                بيانات قابلة للتعديل
+              </button>
             </div>
           </div>
           <div className="ds-17-cntnr-2-rw-scnd">
             <div className="ds-17-cntnr-2-sub-rw-scnd">
-              <p>
+              <p className="dark-text">
                 القالب المستخدم:<span> الافتراضي </span>
               </p>
               <Makerpopup />
@@ -182,7 +194,7 @@ const AppBuilder = () => {
                   id="apllicationDesignBtn"
                   key={index}
                   className={`cursor-pointer ${
-                    activeTab === index ? 'active' : ''
+                    activeTab === index ? "active" : "dark-ul dark-text"
                   }`}
                   onClick={() => handleTabClick(index)}
                 >
@@ -194,21 +206,25 @@ const AppBuilder = () => {
           </div>
           <div className="ds-17-cntnr-2-rw-frth-btn">
             <div className="ds-17-cntnr-2-rw-frth-btn-sub">
-              <div className="ds-frth-swith-btn">
+              <div className="ds-frth-swith-btn dark-border">
                 <button
                   className={`switch-button ${
-                    activeButton === 'محاكي تطبيقات سلة' ? 'active' : ''
+                    activeButton === "محاكي تطبيقات سلة"
+                      ? "active"
+                      : "dark-ul dark-text dark-border"
                   }`}
-                  onClick={() => handleButtonClick('محاكي تطبيقات سلة')}
+                  onClick={() => handleButtonClick("محاكي تطبيقات سلة")}
                 >
                   محاكي تطبيقات سلة
                 </button>
                 <button
-                  style={{ marginRight: '10px' }}
+                  style={{ marginRight: "10px" }}
                   className={`switch-button ${
-                    activeButton === 'معاينة التطبيق' ? 'active' : ''
+                    activeButton === "معاينة التطبيق"
+                      ? "active"
+                      : "dark-ul dark-text dark-border"
                   }`}
-                  onClick={() => handleButtonClick('معاينة التطبيق')}
+                  onClick={() => handleButtonClick("معاينة التطبيق")}
                 >
                   معاينة التطبيق
                 </button>
@@ -224,29 +240,32 @@ const AppBuilder = () => {
               >
                 <img src="images/Maker/image 2.png" />
                 <p
-                  class="icon-text-button"
-                  style={{ textAlign: 'center', marginBottom: '30px' }}
+                  className="icon-text-button dark-text"
+                  style={{ textAlign: "center", marginBottom: "30px" }}
                 >
                   قم بتخصيص واجهة التطبيق الخاص بك من خلال اضافة عناصر متعددة و
                   متميزة <br></br>انقر على عنصر جديد للبدأ
                 </p>
                 <div className="ds-17-cntnr-2-rw-fth-sub-col-btn relative">
                   <div>
-                    <button onClick={togglePopup} class="icon-text-button">
+                    <button
+                      onClick={togglePopup}
+                      class="icon-text-button dark-text-light"
+                    >
                       <img src="images/Maker/Vector.png" alt="New Element" />
                       عنصر جديد
                     </button>
 
                     {isPopupOpen && (
-                      <ul className="popup-product shadow rounded-md bg-white absolute bottom-19 z-10">
+                      <ul className="popup-product shadow rounded-md dark-ul bg-white absolute bottom-19 z-10">
                         {products.map((product, index) => (
                           <li
                             key={index}
-                            className="hover:bg-gray-100 p-1 hover:rounded"
+                            className="hover:bg-gray-100 dark-li p-1 hover:rounded"
                           >
                             <a
                               href="#"
-                              className="text-gray-800 py-1 px-2 flex items-center gap-1"
+                              className="text-gray-800 py-1 dark-a px-2 flex items-center gap-1"
                             >
                               <span>
                                 {product.special ? (
@@ -256,7 +275,7 @@ const AppBuilder = () => {
                                 ) : (
                                   <b>{product.title}</b>
                                 )}
-                                <p style={{ margin: '0' }}>
+                                <p style={{ margin: "0" }}>
                                   {product.description}
                                 </p>
                               </span>
@@ -266,9 +285,9 @@ const AppBuilder = () => {
                       </ul>
                     )}
                   </div>
-                  <button class="icon-text-button">
+                  <button classNamr="icon-text-button">
                     <img src="images/Maker/chat-download-line.png" alt="Icon" />
-                    عناصر تصميم المتجر
+                    <span className="dark-text-light">عناصر تصميم المتجر</span>
                   </button>
                 </div>
               </div>

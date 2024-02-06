@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { reportTypesbox } from '../../DevData/DevData';
-import './reports.css';
-import BreadCrum from '../../Commons/BreadCrum/BreadCrum';
-import DatePicker from '../Ui-components/DatePicker';
-import { Button } from '@mui/material';
-import { SlPrinter } from 'react-icons/sl';
-import ReportsBtnPopup from '../../PopUp/ReportsBtnPopup';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import ReportsTable from './ReportsTable';
+import React, { useState } from "react";
+import { reportTypesbox } from "../../DevData/DevData";
+import "./reports.css";
+import BreadCrum from "../../Commons/BreadCrum/BreadCrum";
+import DatePicker from "../Ui-components/DatePicker";
+import { Button } from "@mui/material";
+import { SlPrinter } from "react-icons/sl";
+import ReportsBtnPopup from "../../PopUp/ReportsBtnPopup";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ReportsTable from "./ReportsTable";
 const Reports = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -19,37 +19,37 @@ const Reports = () => {
   const reportTypes = [
     {
       id: 1,
-      label: 'Tab 1',
+      label: "Tab 1",
       content: <ReportsTable />,
     },
     {
       id: 2,
-      label: 'Tab 2',
+      label: "Tab 2",
       content: <ReportsTable />,
     },
     {
       id: 3,
-      label: 'Tab 3',
+      label: "Tab 3",
       content: <ReportsTable />,
     },
     {
       id: 4,
-      label: 'Tab 4',
+      label: "Tab 4",
       content: <ReportsTable />,
     },
     {
       id: 5,
-      label: 'Tab 5',
+      label: "Tab 5",
       content: <ReportsTable />,
     },
     {
       id: 6,
-      label: 'Tab 6',
+      label: "Tab 6",
       content: <ReportsTable />,
     },
     {
       id: 7,
-      label: 'Tab 7',
+      label: "Tab 7",
       content: <ReportsTable />,
     },
   ];
@@ -75,35 +75,34 @@ const Reports = () => {
     <div>
       <BreadCrum />
       <section className="departure flex justify-between items-center">
-        <div className="border border-gray-300 rounded-md DatePickerFIeld">
+        <div className="border border-gray-300 dark-border rounded-md DatePickerFIeld">
           <DatePicker />
         </div>
         <div className="flex gap-2 departure-btn">
-        <div className='ReportPopupBtn'>   <ReportsBtnPopup /></div>
-          <Button className="flex gap-2 items-center ReportStudentButton ">
+          <div className="ReportPopupBtn">
+            {" "}
+            <ReportsBtnPopup />
+          </div>
+          <Button className="flex gap-2 dark-border dark-a items-center ReportStudentButton ">
             <SlPrinter />
             طباعة
           </Button>
         </div>
       </section>
       <section className="tech-report-p-type-main my-8">
-        <div className="tech-report-p-type-items">
-          <h2>نوع التقرير</h2>
+        <div className="tech-report-p-type-items dark-border">
+          <h2 className="dark-a">نوع التقرير</h2>
           <div className="mt-4">
             <Slider className="slider-width" {...sliderSettings}>
               {reportTypesbox.map((type, index) => (
                 <div key={type.id} className="tech-report-p-type-item">
                   <button
                     className={`tab-button ${
-                      activeTab === index ? 'active-tab' : ''
+                      activeTab === index ? "active-tab" : "dark-border dark-a"
                     }`}
                     onClick={() => handleTabClick(index)}
                   >
-                    <img
-                      className="reportImageIcon"
-                      src={type.icon}
-                      alt={type.label}
-                    />
+                    {type.icon}
                     <span className="reportsTexticon"> {type.label}</span>
                   </button>
                 </div>

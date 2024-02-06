@@ -5,12 +5,12 @@ const ReportsTable = () => {
   return (
     <div>
       {" "}
-      <div className="table-container-report report-table mb-12">
+      <div className="table-container-report dark-border report-table mb-12">
         <table dir="rtl" className="min-w-full ">
-          <thead>
+          <thead className="bg-dark-head">
             <tr>
               <th colSpan="11">
-                <h1>مبيعات المنتجات</h1>
+                <h1 className="dark-a">مبيعات المنتجات</h1>
               </th>
             </tr>
           </thead>

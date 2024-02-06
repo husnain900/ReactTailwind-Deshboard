@@ -6,14 +6,14 @@ const loyalty = () => {
   return (
     <div>
       <BreadCrum />
-      <div className="lp-container">
+      <div className="lp-container dark-border">
         <div className="lp-top-section grid grid-cols-12 gap-3 lg:gap-9">
           <div className="lp-top-col lg:col-span-8 col-span-12 ">
             <div className="lp-top-col-row">
-              <h1>نظام الولاء</h1>
-              <h3>روُج لمتجرك بطريقة يحبها عملاءك</h3>
+              <h1 className='dark-a'>نظام الولاء</h1>
+              <h3 className='dark-text3'>روُج لمتجرك بطريقة يحبها عملاءك</h3>
             </div>
-            <p>
+            <p className='dark-text'>
               نظام ولاء متكامل خاص بمتجرك يقدم لعملائك نقاط يمكنهم استبدالها
               بمكافآت محددة من قبلك، مقابل عمليات الشراء وتقييم المتجر وإكمال
               الملف الشخصي ومشاركة رابط متجرك لأهلهم وأصدقائهم.يمكن للعملاء
@@ -31,15 +31,15 @@ const loyalty = () => {
             </div>
           </div>
         </div>
-        <div className="lp-btm-section grid lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 gap-5">
+        <div className="lp-btm-section grid lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 gap-5 bg-color">
           {loyaltyCards.map((card, index) => (
-            <div className="lp-btm-sec-cards" key={index}>
+            <div className="lp-btm-sec-cards dark-ul" key={index}>
               <div className="lf-btm-cr-col">
                 <img src={card.icon} alt="" />
               </div>
               <div className="lf-btm-cr-col">
-                <h5 style={{ fontWeight: 700 }}>{card.title}</h5>
-                <p style={{ fontWeight: 300 }}>{card.description}</p>
+                <h5 className='dark-a' style={{ fontWeight: 700 }}>{card.title}</h5>
+                <p className='dark-text' style={{ fontWeight: 300 }}>{card.description}</p>
               </div>
             </div>
           ))}

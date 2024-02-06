@@ -221,3 +221,9 @@
     gap: 4px;
   }
 }
+/* darkmode  */
+
+.darkmode .GreyButton {
+  border: 1px solid #444444 !important;
+  color: #ddd !important;
+}

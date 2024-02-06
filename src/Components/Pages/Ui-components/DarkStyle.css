@@ -1,37 +1,49 @@
-
 .darkmode .dark-text {
     color: #a6a6a6;
 }
+
 .darkmode .dark-text2 {
     color: #4D4D4D;
 }
-.darkmode .bg-dark {
-    background: #272626;
+
+.darkmode .dark-text3 {
+    color: #9D9FA1 !important;
 }
-.darkmode .bg-color {
-    background-color: #212121;
-}
-.darkmode .bg-dark-head {
-    background-color: #2C2C2C !important;
+
+.darkmode .dark-a {
+    color: #ddd !important;
 }
 
 .darkmode .dark-text-light {
     color: #b1e6da;
 }
-
-.darkmode .dark-border {
-    border: 1px solid #444444 !important;
-
+/*  */
+.darkmode .bg-dark-content {
+    background: #282828;
 }
-.darkmode .dark-text3 {
-    color: #9D9FA1 !important;
+.darkmode .bg-dark {
+    background: #272626;
 }
-.darkmode .dark-a {
-    color: #ddd !important;
+.darkmode .bg-dark4 {
+    background-color: #666666;
+}
+.darkmode .bg-color {
+    background-color: #212121;
+}
+
+.darkmode .bg-dark-head {
+    background-color: #2C2C2C !important;
 }
 
 .darkmode .dark-ul {
     background: #333333;
+}
+/*  */
+.darkmode .dark-border {
+    border: 1px solid #444444 !important;
+}
+.darkmode .dark-border-t {
+    border-top: 1px solid #444444 !important;
 }
 
 .darkmode .dark-li:hover {
@@ -40,6 +52,14 @@
 }
 
 .darkmode .dark-li a:hover {
-    background: #2C2C2C;
+    background: #2C2C2C !important;
     border-radius: 7px;
+}
+
+.border-b-0 {
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+.border-x-0 {
+    border-bottom: 0 !important;
 }

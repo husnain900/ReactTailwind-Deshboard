@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BsThreeDots } from "react-icons/bs";
 import "./static.css";
 import { FaRegCopy } from "react-icons/fa6";
 import Commoncheckbox from "../Ui-components/SwitchBtn";
@@ -8,7 +9,6 @@ import Khidmatpopup from "../../PopUp/TopTitlepopup/Khidmatpopup";
 import Staticpopup1 from "../../PopUp/StaticPopup/Staticpopup1";
 import Staticpopup2 from "../../PopUp/StaticPopup/Staticpopup2";
 
-
 const PageStatic = () => {
   const [activePopup, setActivePopup] = useState(null);
 
@@ -17,8 +17,8 @@ const PageStatic = () => {
   };
 
   const staticPages = [
-    { title: <Staticpopup1/>, link: "#", moreLink: "نسخ الرابط" },
-    { title: <Staticpopup2/>, link: "#", moreLink: "نسخ الرابط" },
+    { title: <Staticpopup1 />, link: "#", moreLink: "نسخ الرابط" },
+    { title: <Staticpopup2 />, link: "#", moreLink: "نسخ الرابط" },
   ];
 
   return (
@@ -30,12 +30,12 @@ const PageStatic = () => {
           <Khidmatpopup />
         </div>
       </div>
-      <section className="tech-static-p-main my-5">
-        <div className="tech-static-p-title flex gap-3">
+      <section className="tech-static-p-main my-5 dark-border">
+        <div className="tech-static-p-title flex gap-3 bg-dark-head">
           <img src="images/static/file-list-3-line.png" alt="File List Icon" />
-          <h6>
+          <h6 className="dark-a">
             الصفحات التعريفية
-            <span className="ps-2">(صفحتان)</span>
+            <span className="ps-2 text-dark">(صفحتان)</span>
           </h6>
         </div>
         <div className="tech-static-p-table">
@@ -44,7 +44,7 @@ const PageStatic = () => {
               {staticPages.map((page, index) => (
                 <tr key={index}>
                   <td className="tech-static-p-table-td-title">
-                    <a href={page.link}>{page.title}</a>
+                    <a className="dark-text-light" href={page.link}>{page.title}</a>
                   </td>
                   <td colSpan="2">
                     <div className="tech-static-p-buttons">
@@ -52,15 +52,16 @@ const PageStatic = () => {
                       <div className="tech-static-p-more-btn-main">
                         <button
                           className={`tech-static-more-btn-open ${
-                            index === activePopup ? "tech-active-popup" : ""
+                            index === activePopup ? "tech-active-popup" : "dark-a"
                           }`}
                           onClick={() => handlePopupClick(index)}
                         >
-                          <img src="images/static/Menu.png" alt="Menu Icon" />
+                          <BsThreeDots size={27} />
+
                           <div className="tech-static-p-more-popup">
-                            <ul>
-                              <li>
-                                <a href="#">
+                            <ul className="dark-ul">
+                              <li className="dark-li">
+                                <a href="#" className="dark-a">
                                   <span className="flex items-center gap-2">
                                     <FaRegCopy />
                                     {page.moreLink}

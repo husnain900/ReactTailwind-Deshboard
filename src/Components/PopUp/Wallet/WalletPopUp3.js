@@ -34,11 +34,10 @@ export default function CustomizedDialogs() {
         <div className="flex items-center gap-4">
           <img src="images/Wallet/discuss-line.png" alt="" />
           <div className="wp-md-sc-row-body-sb-row-col">
-            <h3>البريد الإلكتروني لاستلام الفواتير</h3>
+            <h3 className='dark-a'>البريد الإلكتروني لاستلام الفواتير</h3>
             <p>demo@salla.sa</p>
           </div>
-        </div>
-        <FaAngleLeft />
+        </div><FaAngleLeft  className="dark-a" />
       </div>
       <BootstrapDialog
         onClose={handleClose}

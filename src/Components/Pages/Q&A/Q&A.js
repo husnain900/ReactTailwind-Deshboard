@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import './Q&A.css';
-import { QaData } from '../../DevData/DevData';
-import BreadCrum from '../../Commons/BreadCrum/BreadCrum';
-import Filteringpopup from '../../PopUp/TopTitlepopup/Filteringpopup';
-import DeletePopup from '../../PopUp/Q&ADeletePopup';
-import { RxCrossCircled } from 'react-icons/rx';
-import { BsCheckCircle } from 'react-icons/bs';
-import { Button } from '@mui/material';
+import React, { useState } from "react";
+import "./Q&A.css";
+import { QaData } from "../../DevData/DevData";
+import BreadCrum from "../../Commons/BreadCrum/BreadCrum";
+import Filteringpopup from "../../PopUp/TopTitlepopup/Filteringpopup";
+import DeletePopup from "../../PopUp/Q&ADeletePopup";
+import { RxCrossCircled } from "react-icons/rx";
+import { BsCheckCircle } from "react-icons/bs";
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const QA = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -27,7 +28,7 @@ const QA = () => {
       <BreadCrum />
       <div className="top-title-clients flex justify-between items-center my-4">
         <div>
-          <h4>الاسئلة والتقييمات (195)</h4>
+          <h4 className="dark-a">الاسئلة والتقييمات (195)</h4>
         </div>
         <div>
           <Filteringpopup />
@@ -36,21 +37,23 @@ const QA = () => {
       <section>
         <div className="qa-box-container">
           {QaData.map((question) => (
-            <div key={question.id} className="qa-box mb-6 mt-1">
-              <div className="qa-box-head">
+            <div key={question.id} className="qa-box mb-6 mt-1 dark-border">
+              <div className="qa-box-head bg-dark-head">
                 <div className="qa-box-sub-head">
                   <div className="qa-head-col-1">
                     <img src="images/Q&A/bag.png" alt="Category Image" />
-                    <button>{question.category}</button>
+                    <button className="dark-text-light">
+                      <Link to="/static">{question.category}</Link>
+                    </button>
                   </div>
                   <div className="qa-head-col-2">
-                    <h2>{question.timeAgo}</h2>
-                    <div className="qa-head-icon-bx">
+                    <h2 className="dark-text3">{question.timeAgo}</h2>
+                    <div className="qa-head-icon-bx bg-dark4">
                       <img
                         src="images/Q&A/question mark.png"
                         alt="Question Icon"
                       />
-                      <p>سؤال</p>
+                      <p className="dark-a">سؤال</p>
                     </div>
                   </div>
                 </div>
@@ -61,8 +64,8 @@ const QA = () => {
                     <div className="qa-user-info">
                       <img src={question.user.userImage} alt="User Image" />
                       <div className="qa-user-info-cntn">
-                        <p>{question.user.userType}</p>
-                        <p>{question.user.userName}</p>
+                        <p className="dark-text">{question.user.userType}</p>
+                        <p className="dark-text">{question.user.userName}</p>
                       </div>
                     </div>
                   </div>
@@ -74,11 +77,11 @@ const QA = () => {
                             <Button
                               key={index}
                               className={
-                                index === 1 ? 'clickRed' : 'GreyButton'
+                                index === 1 ? "clickRed" : "GreyButton"
                               }
                               onClick={() => handleButtonClick(index)}
                             >
-                           <span className='Q&A-Data'>  <img src={button.icon} alt={button.label} /></span>
+                              <span className="Q&A-Data"> {button.icon}</span>
                               {button.label}
                             </Button>
                           )
@@ -95,7 +98,7 @@ const QA = () => {
                   <textarea
                     name=""
                     id=""
-                    className="h-14 over p-3 outline-none w-full border border-[#eee] rounded-md"
+                    className="h-14 over p-3 outline-none w-full border border-[#eee] rounded-md bg-dark-head dark-border dark-a"
                     placeholder="الرد على العميل .."
                     cols="30"
                     rows="10"
@@ -103,8 +106,8 @@ const QA = () => {
                   <div className="flex gap-5 qa-texarea-btn">
                     <Button
                       style={{
-                        background: '#baf3e6',
-                        color: '#004d5a',
+                        background: "#baf3e6",
+                        color: "#004d5a",
                       }}
                       onClick={() => {
                         setPopupOpen(false);
@@ -116,8 +119,8 @@ const QA = () => {
                     </Button>
                     <Button
                       style={{
-                        background: '#F55157',
-                        color: 'white',
+                        background: "#F55157",
+                        color: "white",
                       }}
                       onClick={() => {
                         setPopupOpen(false);

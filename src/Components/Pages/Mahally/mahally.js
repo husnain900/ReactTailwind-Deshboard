@@ -15,7 +15,7 @@ const mahally = () => {
           src="images/Mohally/logo-wide%201.svg"
           alt=""
         />
-        <h3>انطلق بتجارتك لأبعد من حدود متجرك</h3>
+        <h3 className="dark-a">انطلق بتجارتك لأبعد من حدود متجرك</h3>
         <p>
           محلي من سلة هي قناة بيع متكاملة تُمكِّن تجار سلة من عرض وتسويق
           منتجاتهم مجانًا لآلاف العملاء الجدد في مكان واحد.<u> اعرف المزيد</u>{" "}
@@ -25,10 +25,10 @@ const mahally = () => {
         <div className="lg:col-span-7 md:col-span-7 col-span-12 MahalySectionDiv">
           <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 col-span-6 gap-4 mahalyFourTabs">
             {boxesData.map((box, index) => (
-              <div key={index} className="mahally-box ">
+              <div key={index} className="mahally-box dark-border">
                 <div>
                   <img className="mx-auto mb-1" src={box.imageSrc} alt="" />
-                  <h4 style={{ fontWeight: "700" }}>{box.title}</h4>
+                  <h4 className="dark-a" style={{ fontWeight: "700" }}>{box.title}</h4>
                   <p style={{ fontWeight: "300" }}>{box.description}</p>
                   {box.appLinks && (
                     <div className="stores flex gap-2 " >
@@ -45,14 +45,14 @@ const mahally = () => {
           </div>
         </div>
         <div className="box-2 lg:col-span-5 md:col-span-5 col-span-12">
-          <div className="mahally-box2 h-full" id="mahallyBoxImg">
+          <div className="mahally-box2 h-full dark-border" id="mahallyBoxImg">
             <div>
               <img
                 className="mx-auto mb-1"
                 src="images/Mohally/mahally_app_showcase%201.png"
                 alt=""
               />
-              <h4>خذ نظرة على منتجاتك</h4>
+              <h4 className="dark-a">خذ نظرة على منتجاتك</h4>
               <p>سجِّل في تطبيق محلي وعيش تجربة عملاءك..</p>
               <div className="stores flex gap-2">
                 <a href="https://apps.apple.com/sa/app/%D8%B3%D9%84%D8%A9-%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9-%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D8%B3%D9%87%D9%84%D8%A9/id1148458340">

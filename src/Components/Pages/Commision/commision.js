@@ -24,7 +24,7 @@ const commision = () => {
         </div>
       </div>
       <section className="my-5">
-        <div className="coupons-tbl-container">
+        <div className="coupons-tbl-container dark-border">
           <div className="coupons-row">
             <div className="coupons-row-col">
               <img
@@ -33,7 +33,7 @@ const commision = () => {
               />
             </div>
             <div className="coupons-row-col">
-              <h1>
+              <h1 className='dark-a'>
                 العروض الخاصة
                 <span className="ps-2 pb-1">(عرض واحد)</span>
               </h1>
@@ -41,10 +41,10 @@ const commision = () => {
           </div>
           <div className="commisionTable">
             <table cellPadding="0" cellSpacing="0">
-              <thead>
+              <thead className='bg-color'>
                 <tr>
                   <th colSpan={5}>
-                    <h1>عنوان الكوبون</h1>
+                    <h1 className='dark-a'>عنوان الكوبون</h1>
                   </th>
                 </tr>
               </thead>
@@ -56,7 +56,7 @@ const commision = () => {
                         <tr>
                           <td className="tbl-scg-rmv">
                             <div className="flex gap-3 items-center w-72">
-                              <p>
+                              <p className='dark-a'>
                                 <span className="underline">
                                   عبائة عليك وعبائة علينا
                                 </span>
@@ -77,7 +77,7 @@ const commision = () => {
                             <div className="flex items-center justify-end gap-3">
                               {/* <FaChartBar /> */}
                               <img src="images/bar.png" alt="bar" />
-                              <p>احصائيات</p>
+                              <p className='dark-text-light'>احصائيات</p>
                             </div>
                           </td>
                         </tr>

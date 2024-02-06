@@ -42,8 +42,8 @@ const Affiliate2 = () => {
           <Khidmatpopup />
         </div>
       </div>
-      <section className="tech-static-p-main my-5">
-        <div className="tech-static-p-title justify-between">
+      <section className="tech-static-p-main my-5 dark-border">
+        <div className="tech-static-p-title justify-between bg-dark-head">
           <div className="flex gap-1 lg:gap-3 items-center">
             {/* <img
               src="images/static/file-list-3-line.png"
@@ -51,14 +51,14 @@ const Affiliate2 = () => {
             /> */}
             <SlCursor />
 
-            <h6>
+            <h6 className='dark-a'>
               التسويق بالعمولة
-              <span className="ps-3">((رابط واحد))</span>
+              <span className="ps-3 dark-text3">((رابط واحد))</span>
             </h6>
           </div>
           <div className="d13-btm-col h-10">
             <div className="d13-btm-form">
-              <form>
+              <form className='dark-border'>
                 <input
                   type="text"
                   name=""
@@ -84,7 +84,7 @@ const Affiliate2 = () => {
               {staticPages.map((page, index) => (
                 <tr key={index}>
                   <td className="tech-static-p-table-td-title">
-                    <a href={page.link}>{page.title}</a>
+                    <a className='dark-text' href={page.link}>{page.title}</a>
                   </td>
                 </tr>
               ))}

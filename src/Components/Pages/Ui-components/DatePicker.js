@@ -14,11 +14,11 @@ const App = () => {
 
   return (
     <div className="relative">
-      <h5 className="text-[14px] leading-normal text-[#003C47] absolute top-[11px] right-10 z-50 font-normal">
+      <h5 className="text-[14px] leading-normal text-[#003C47] absolute top-[11px] right-10 z-50 font-normal dark-a">
         تاريخ التقرير
       </h5>
       <Datepicker
-        classNames="text-right"
+        classNames="text-right input-dark"
         primaryColor={'teal'}
         value={value}
         onChange={handleValueChange}
