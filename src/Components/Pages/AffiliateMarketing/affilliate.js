@@ -33,12 +33,12 @@ const Affilliate = () => {
           <Khidmatpopup />
         </div>
       </div>
-      <section className="tech-static-p-main my-5">
-        <div className="tech-static-p-title flex gap-3 items-center">
+      <section className="tech-static-p-main my-5 dark-border">
+        <div className="tech-static-p-title flex gap-3 items-center bg-dark-head">
           <img src="images/static/file-list-3-line.png" alt="File List Icon" />
-          <h6>
+          <h6 className="dark-a">
             التسويق بالعمولة
-            <span className="ps-3">((رابط واحد))</span>
+            <span className="ps-3 dark-text">((رابط واحد))</span>
           </h6>
         </div>
         <div className="tech-static-p-table">
@@ -47,7 +47,9 @@ const Affilliate = () => {
               {staticPages.map((page, index) => (
                 <tr key={index}>
                   <td className="tech-static-p-table-td-title">
-                    <a href={page.link}>{page.title}</a>
+                    <a className="dark-text" href={page.link}>
+                      {page.title}
+                    </a>
                   </td>
                   <td colSpan="2">
                     <div className="tech-static-p-buttons">
@@ -59,11 +61,11 @@ const Affilliate = () => {
                           }`}
                           onClick={() => handlePopupClick(index)}
                         >
-                        <BsThreeDots />
+                          <BsThreeDots className="dark-a" />
                           <div className="tech-static-p-more-popup">
-                            <ul>
-                              <li>
-                                <a href="#">
+                            <ul className="dark-ul">
+                              <li className="dark-li">
+                                <a href="#" className="dark-a">
                                   <span className="flex items-center gap-2">
                                     <FaRegCopy />
                                     {page.moreLink}

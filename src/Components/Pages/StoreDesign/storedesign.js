@@ -46,22 +46,22 @@ const storedesign = () => {
           </div>
         </div>
       </section>
-      <div className="storeBox mb-4">
-        <h1>الثيمات المثبتة</h1>
+      <div className="storeBox mb-4 dark-border">
+        <h1 className='dark-a'>الثيمات المثبتة</h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 gap-6">
           {stylistsData.map((stylist, index) => (
-            <div key={index} className="st-bx-container">
+            <div key={index} className="st-bx-container dark-border bg-color">
               <div className="st-mn-img">
                 <img src="images/StoreDesign/mn.png" alt="Stylist" />
               </div>
               <div className="st-mn-body">
                 <div className="st-mn-heading">
-                  <h2>{stylist.name}</h2>
+                  <h2 className='dark-text-light'>{stylist.name}</h2>
                 </div>
                 <div className="st-txt-rtng-cntn flex justify-between my-4">
                   <div className="st-txt-rtng-cntn-col flex gap-1 items-center">
                     <img src="images/StoreDesign/Star.png" alt="Star" />
-                    <h4>{stylist.rating}</h4>
+                    <h4 className='dark-a'>{stylist.rating}</h4>
                     <p>({stylist.reviews} تقييمات)</p>
                   </div>
                   <div className="st-txt-rtng-cntn-col">
@@ -70,7 +70,7 @@ const storedesign = () => {
                 </div>
               </div>
               <div className="st-mn-btm-btn">
-                <button>
+                <button className='dark-text-light'>
                   <img
                     src="images/StoreDesign/settings-3-line.png"
                     alt="Settings Icon"
@@ -82,17 +82,18 @@ const storedesign = () => {
           ))}
         </div>
       </div>
-      <div className="storeBox">
+
+      <div className="storeBox dark-border">
         <div className="fm-fields">
-          <h2>عبّر عن تميز متجرك</h2>
+          <h2 className='dark-text'>عبّر عن تميز متجرك</h2>
           <p>عن طريق مجموعة متنوعة من الثيمات المميزة</p>
-          <form action="">
+          <form className='dark-border' action="">
             <input
               type="text"
               name=""
               dir="rtl"
               placeholder="ابحث عن تصميم جديد.."
-              class="no-border-input"
+              className="no-border-input bg-transparent"
             />
 
             <img src="images/StoreDesign/search-line.png" />
@@ -100,13 +101,13 @@ const storedesign = () => {
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 gap-6">
           {stylistsData2.map((stylist, index) => (
-            <div key={index} className="st-bx-container">
+            <div key={index} className="st-bx-container dark-border bg-color">
               <div className="st-mn-img">
                 <img src="images/StoreDesign/mn.png" alt="Stylist" />
               </div>
               <div className="st-mn-body">
                 <div className="st-mn-heading text-center">
-                  <h2>{stylist.name}</h2>
+                  <h2 className='dark-text-light'>{stylist.name}</h2>
                 </div>
                 <div>
                   <div className="st-txt-rtng-cntn-col flex gap-1 justify-center items-center my-4">
@@ -115,7 +116,7 @@ const storedesign = () => {
                     <img src="images/StoreDesign/Star.png" alt="Star" />
                     <img src="images/StoreDesign/Star.png" alt="Star" />
                     <img src="images/StoreDesign/Star.png" alt="Star" />
-                    <p>{stylist.rating}</p>
+                    <p className='dark-a'>{stylist.rating}</p>
                   </div>
                 </div>
                 <div className="st-txt-rtng-cntn-col text-center ">
@@ -124,13 +125,13 @@ const storedesign = () => {
               </div>
               <div className="st-mn-btm-btn border-t border-gray-300 flex ">
                 <div className="border-l  w-full">
-                  <Button className="border-0">
+                  <Button className="border-0 dark-text-light">
                     <FiShoppingCart />
                     شراء
                   </Button>
                 </div>
                 <div className="w-full">
-                  <Button className="border-0 customEyebutton">
+                  <Button className="border-0 customEyebutton dark-text-light">
                     <MdOutlineRemoveRedEye />
                     معاينة
                   </Button>

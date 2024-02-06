@@ -38,7 +38,7 @@ const OrderTable = ({ count }) => {
             cellPadding="0"
             cellSpacing="0"
           >
-            <thead>
+            <thead className='bg-dark-head'>
               <tr>
                 <th className="checkbox-flex " key="selectAllCheckbox">
                   <label
@@ -54,8 +54,8 @@ const OrderTable = ({ count }) => {
                   </label>
                 </th>
                 <th>
-                  <p>
-                    <b> الطلبات </b>({displayedOrders.length} طلب)
+                  <p className='dark-text'>
+                    <b className='dark-text'> الطلبات </b>({displayedOrders.length} طلب)
                   </p>
                 </th>
                 <th colSpan="2" dir="ltr">
@@ -88,14 +88,14 @@ const OrderTable = ({ count }) => {
                           </div>
                         </td>
                         <td>
-                          <h2>{order.userName}</h2>
-                          <p>{order.orderDetails}</p>
+                          <h2 className='dark-a'>{order.userName}</h2>
+                          <p className='dark-text'>{order.orderDetails}</p>
                         </td>
                       </tr>
                     </table>
                   </td>
                   <td>
-                    <h3 className="sm-text-h4">{order.price}</h3>
+                    <h3 className="sm-text-h4 dark-text-light">{order.price}</h3>
                   </td>
                   <td>
                     <h4 className="text-center sm-text-h4">

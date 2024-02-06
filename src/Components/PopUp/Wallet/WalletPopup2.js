@@ -46,14 +46,13 @@ export default function CustomizedDialogs() {
         <div className="flex items-center gap-4">
           <img src="images/Wallet/wallet-line.png" alt="" />
           <div className="wp-md-sc-row-body-sb-row-col">
-            <h3>البطاقة الإئتمانية</h3>
+            <h3 className='dark-a'>البطاقة الإئتمانية</h3>
             <p>
               أضِف جميع فروعك وأظهرها لعملائك عبر إضافة عدد غير محدود من فروع
               متجرك
             </p>
           </div>
-        </div>
-        <FaAngleLeft />
+        </div><FaAngleLeft  className="dark-a" />
       </div>
       <BootstrapDialog
         onClose={handleClose}

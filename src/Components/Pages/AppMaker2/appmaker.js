@@ -13,7 +13,7 @@ const AppMaker = () => {
       <div className="bannar-1 h-[218.563px] bg-[#004D5A] rounded-xl p-5 flex items-center justify-between recommendedApps">
         <div className="flex items-center gap-5 flex-wrap">
           <div className="bn-icon">
-            <img src="images/AppMaker/banner-Icon.png" />
+            <img src="images/AppMaker/banner-Icon.png" alt='' />
           </div>
           <div className="bn-content">
             <h2>
@@ -29,14 +29,14 @@ const AppMaker = () => {
           تصفح متجر تطبيقات سلة
         </button>
       </div>
-      <div className="bannar-2 flex justify-between items-center rounded-xl border border-[#BDBDBD] p-5 h-[150px] my-5 recommendedApps2">
+      <div className="bannar-2 flex justify-between dark-border items-center rounded-xl border border-[#BDBDBD] p-5 h-[150px] my-5 recommendedApps2">
         <div className="flex flex-wrap gap-5">
           <div className="bn-icon">
-            <img src="images/AppMaker/img.png" />
+            <img src="images/AppMaker/img.png" alt='' />
           </div>
           <div className="bn-content">
-            <h2>التطبيقات الموصى بها لك</h2>
-            <h3>
+            <h2 className='dark-text'>التطبيقات الموصى بها لك</h2>
+            <h3 className='dark-text3'>
               نرشح لك بعض التطبيقات التي ستساعدك على إدارة متجرك وزيادة مبيعاتك
               بشكل أف ضل.
               <span className="underline">مشاهدة جميع التطبيقات</span>
@@ -49,7 +49,7 @@ const AppMaker = () => {
       </div>
       <div className="top-title">
         <Button className="btn-hover common-btn">
-          <a className="flex gap-2 items-center" href="#">
+          <a className="flex gap-2 items-center" href="#" >
             جميع التطبيقات (37)
           </a>
         </Button>

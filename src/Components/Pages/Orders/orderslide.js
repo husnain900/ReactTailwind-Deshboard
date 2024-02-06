@@ -67,7 +67,7 @@ const TechOrderTopBoxes = () => {
           <div
             key={order.id}
             className={`tech-order-top-box-item ${
-              activeOrder === order.id ? 'tech-active-order' : ''
+              activeOrder === order.id ? 'tech-active-order' : 'dark-border'
             }`}
             onClick={() => handleItemClick(order.id)}
           >
@@ -77,17 +77,17 @@ const TechOrderTopBoxes = () => {
             >
               <FaTimes />
             </button>
-            <div className="tech-order-top-box-item-icon">{order.icon}</div>
+            <div className="tech-order-top-box-item-icon dark-text">{order.icon}</div>
             <div className="tech-order-top-box-item-content">
               <h5>
                 <span
                   className="status-circle"
                   style={{ backgroundColor: order.statusColor }}
                 ></span>
-                <span className="tech-order-top-box-item-text">
+                <span className="tech-order-top-box-item-text dark-a">
                   {order.text}
                 </span>
-                <span>{order.count}</span>
+                <span className='dark-a'>{order.count}</span>
               </h5>
             </div>
           </div>

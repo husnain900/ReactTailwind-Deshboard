@@ -30,7 +30,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function Routespages() {
   return (
     <Router>
-      <div className="flex">
+      <div className="flex bg-dark-content">
         <div className="lg:w-[24%] xl:w-[20%] relative p-0 hidden lg:block">
           <Sidebar />
         </div>

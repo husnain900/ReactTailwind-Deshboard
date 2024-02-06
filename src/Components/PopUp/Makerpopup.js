@@ -21,7 +21,7 @@ export default function Modal() {
 
   return (
     <>
-      <button className="maker-btn" onClick={() => setShowModal(true)}>
+      <button className="maker-btn dark-text-light" onClick={() => setShowModal(true)}>
         تغيير
       </button>
 
