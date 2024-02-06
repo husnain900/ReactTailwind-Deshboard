@@ -97,7 +97,7 @@ export default function CustomizedDialogs() {
   return (
     <React.Fragment>
       <button
-        className="border border-1 border-[#BBF3E5] rounded-full text-[#003C47] text-12 font-light p-2"
+        className="border border-1 dark-text-light border-[#BBF3E5] rounded-full text-[#003C47] text-12 font-light p-2"
         onClick={handleClickOpen}
       >
         استكشف مزايا الباقة

@@ -244,3 +244,8 @@
 
 @media screen and (min-width: 1024px) {
 }
+
+/* darkmode  */
+.darkmode .d13-btm-section-rows {
+  border-bottom: 1px solid #444444;
+}

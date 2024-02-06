@@ -112,6 +112,10 @@
   border-bottom: 1px solid #dadada;
 }
 
+.ab-container table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
 .ab-container table tbody tr td button {
   color: var(--003-c-47, #003c47);
   font-size: 15px;
@@ -142,6 +146,12 @@
   padding: 0px !important;
   margin: 0px;
 }
+
 .abandondTable {
   overflow-x: auto;
+}
+/* darkmode  */
+.darkmode .ab-container table tbody tr td {
+
+  border-bottom: 1px solid #444444 ;
 }

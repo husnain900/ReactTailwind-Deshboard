@@ -45,7 +45,7 @@ const Wallet = () => {
   return (
     <div>
       <BreadCrum />
-      <div className="wp-tp-row">
+      <div className="wp-tp-row dark-border">
         <a href="#">
           <div className="wp-tp-sub-row">
             <div className="wp-tp-row-col">
@@ -54,10 +54,10 @@ const Wallet = () => {
                   <img src="images/Wallet/Vector.png" />
                 </span>
                 <div className="wp-tp-txt-col">
-                  <p>
+                  <p className='dark-a'>
                     توثيق المتجر <span>(غير مكتمل)</span>
                   </p>
-                  <p>
+                  <p className='dark-text-light'>
                     يتطلب توثيق بيانات مالك المتجر والحساب البنكي لإستقبال
                     المبالغ والمدفوعات الإلكترونية وسحب رصيد المتجر
                   </p>
@@ -77,53 +77,53 @@ const Wallet = () => {
         </a>
       </div>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1 gap-9 my-11">
-        <div className="wp-md-row-col">
-          <div className="wp-md-row-sub-col">
-            <div className="wp-md-roe-col-fst-rw">
+        <div className="wp-md-row-col dark-border">
+          <div className="wp-md-row-sub-col ">
+            <div className="wp-md-roe-col-fst-rw dark-text">
               <img src="images/Wallet/wallet-line.png" />
-              <p>Store credit</p>
-            </div>
+              <p className='dark-text'>Store credit</p>
+            </div>  
             <div className="wp-md-roe-col-body">
               <img src="images/Wallet/wallet-line.png" />
-              <h2>You currently have no balance</h2>
-              <h4 style={{ paddingBottom: '50px' }}>
+              <h2 className='dark-a'>You currently have no balance</h2>
+              <h4 className='dark-text' style={{ paddingBottom: '50px' }}>
                 Add credit by adding credit
               </h4>
               <div className="">
                 <button className="addCreditBtn">Add Credit</button>
-                <button className="balanceWithdrawBtn">
+                <button className="balanceWithdrawBtn dark-text">
                   Balance withdrawl
                 </button>
               </div>
 
-              <p style={{ marginTop: '20px' }}>Operational Log</p>
+              <p className='dark-text' style={{ marginTop: '20px' }}>Operational Log</p>
             </div>
           </div>
         </div>
-        <div className="wp-md-row-col">
-          <div className="wp-md-row-sub-col">
-            <div className="wp-md-roe-col-fst-rw">
+        <div className="wp-md-row-col dark-border">
+          <div className="wp-md-row-sub-col ">
+            <div className="dark-text wp-md-roe-col-fst-rw">
               <img src="images/Wallet/logo-white 1.png" />
-              <p>Electronic payments balance</p>
+              <p className='dark-text'>Electronic payments balance</p>
             </div>
             <div className="wp-md-roe-col-body">
               <img src="images/Wallet/wallet-line.png" />
-              <h2>
-                110.76<span>SAR</span>
+              <h2 className='dark-a'>
+                110.76<span className='dark-a'>SAR</span>
               </h2>
               <div className="wp-md-col-btm">
-                <button>Balance Details</button>
+                <button className='dark-text-light'>Balance Details</button>
               </div>
-              <p>Operational Log</p>
+              <p className='dark-text'>Operational Log</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="wp-md-sc-row">
-        <div className="wp-md-sc-row-head">
-          <div className="wp-md-sc-row-sub-head">
+      <div className="wp-md-sc-row dark-border">
+        <div className="wp-md-sc-row-head bg-dark-head">
+          <div className="wp-md-sc-row-sub-head dark-a">
             <img src="images/Wallet/sound-module-line.png" alt="Sound Module" />
-            <h2>إعدادات الفوترة</h2>
+            <h2 className='dark-a'>إعدادات الفوترة</h2>
           </div>
         </div>
         <div className="wp-md-sc-row-body">
@@ -150,11 +150,11 @@ const Wallet = () => {
         </div>
       </div>
       {/*  */}
-      <section className="tech-static-p-main my-5">
+      <section className="tech-static-p-main my-5 bg-dark-head">
         <div className="tech-static-p-title flex justify-between items-center">
-          <div className="flex gap-3 items-center">
+          <div className="dark-a flex gap-3 items-center">
             <RiMenu2Line size={28} />
-            <h6>مبيعات المنتجات</h6>
+            <h6 className='dark-a'>مبيعات المنتجات</h6>
           </div>
           <Button style={{ color: '#003C47' }}>
             <p className="underline">تصدير</p>
@@ -250,10 +250,10 @@ const Wallet = () => {
         </div>
       </section>
       <section className="tech-static-p-main my-5">
-        <div className="tech-static-p-title flex justify-between items-center">
-          <div className="flex gap-3 items-center">
+        <div className="tech-static-p-title flex bg-dark-head justify-between items-center">
+          <div className="flex dark-a gap-3 items-center">
             <FaRegFileLines size={28} />
-            <h6>فواتير المشتريات</h6>
+            <h6 className='dark-a'>فواتير المشتريات</h6>
           </div>
           <Button
             style={{
@@ -306,7 +306,7 @@ const Wallet = () => {
                             <div className="tech-static-p-more-popup">
                               <ul>
                                 <li className="hover:bg-gray-200 hover:rounded">
-                                  <a href="#">
+                                  <a className='dark-a' href="#">
                                     <span
                                       className="flex items-center gap-2"
                                       style={{ color: '#003c47' }}
@@ -317,7 +317,7 @@ const Wallet = () => {
                                   </a>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <a className='dark-a' href="#">
                                     <span
                                       className="flex items-center gap-2"
                                       style={{ color: '#003c47' }}
@@ -338,7 +338,7 @@ const Wallet = () => {
                   <tr>
                     <td colSpan={4} style={{ textAlign: 'left' }}>
                       <Button style={{ color: '#003C47' }}>
-                        <p className="underline">طباعة</p>
+                        <p className="underline dark-a">طباعة</p>
                       </Button>
                     </td>
                   </tr>

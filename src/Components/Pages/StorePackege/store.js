@@ -25,7 +25,7 @@ const Store = () => {
     <div>
       <BreadCrum />
       <div className="d13-container">
-        <div className="d13-tp-section">
+        <div className="d13-tp-section dark-border">
           <div className="d13-tp-sub-section grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-9">
             {plans.map((plan, index) => (
               <div key={index} className="d13-top-sec-col tp-col-br">
@@ -34,7 +34,7 @@ const Store = () => {
                     src="images/StorePackages/xeJklDBbhGaXTyC43Gpe3z0K22oYQHODhtVT8XZL 1.png"
                     alt=""
                   />
-                  <h2>{plan.title}</h2>
+                  <h2 className="dark-text-light">{plan.title}</h2>
                   <p>{plan.description}</p>
                   <StorePackagePopup />
                 </div>
@@ -43,25 +43,25 @@ const Store = () => {
             <div className="d13-top-sec-col rmv-spc">
               {plans.map((plan, index) => (
                 <div key={index} className="d13-top-col-lf-bx">
-                  <h4>تاريخ التجديد: {plan.renewalDate}</h4>
-                  <h1>{plan.remainingDays}يوم</h1>
+                  <h4 className="dark-a">تاريخ التجديد: {plan.renewalDate}</h4>
+                  <h1 className="dark-text-light">{plan.remainingDays}يوم</h1>
                   <p>الايام المتبقية</p>
                 </div>
               ))}
-              <h5>اختر المدة</h5>
+              <h5 className="dark-a">اختر المدة</h5>
               {plans.map((plan, index) => (
                 <div key={index} className="flex gap-2 items-center">
                   <Radio name="color" color="amber" />
-                  <label>{plan.options[0].label}</label>
+                  <label className="dark-text" >{plan.options[0].label}</label>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        <div className="d13-btm-section">
-          <div className="d13-btm-to-cntnt">
+        <div className="d13-btm-section dark-border">
+          <div className="d13-btm-to-cntnt dark-a ">
             <img src="images/StorePackages/puzzle.png" alt="" />
-            <h3>رالإضافات</h3>
+            <h3 className="dark-a">رالإضافات</h3>
           </div>
           {addons.map((addon, index) => (
             <div key={index} className="d13-btm-section-rows" >
@@ -71,7 +71,7 @@ const Store = () => {
                     <img src={addon.icon} alt="" />
                   </div>
                   <div className="d13-btm-col-text ">
-                    <h3>{addon.title}</h3>
+                    <h3 className="dark-text3">{addon.title}</h3>
                     <p className="text-wrap addonParagraph">{addon.description}</p>
                   </div>
                 </div>
@@ -80,13 +80,14 @@ const Store = () => {
                 <form>
                   <input
                     type="text"
+                    className="dark-text-light"
                     style={{width:'150px'}}
                     name=""
                     placeholder={`العدد الحالي ${
                       currentCounts[addon.title] || 0
                     }`}
                   />
-                  <button onClick={(event) => handleAddCount(addon, event)}>
+                  <button  onClick={(event) => handleAddCount(addon, event)}>
                     <img src="images/StorePackages/add-line.png" alt="" />
                   </button>
                 </form>
@@ -100,7 +101,7 @@ const Store = () => {
                   <img src="images/StorePackages/call.png" alt="" />
                 </div>
                 <div className="d13-btm-col-text">
-                  <h3>رصيد واتساب</h3>
+                  <h3 className="dark-text3">رصيد واتساب</h3>
                   <p>
                     انطلق لتنشيط مبيعاتك عبر إرسال الحملات التسويقية والعروض إلى
                     عملائك
